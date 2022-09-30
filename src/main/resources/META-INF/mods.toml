@@ -1,0 +1,42 @@
+modLoader="javafml"
+loaderVersion="[36,)"
+license="GNU General Public License v3.0"
+#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
+
+[[mods]]
+modId="projectarsenal"
+version="${file.jarVersion}"
+displayName="Project Arsenal"
+#updateJSONURL="https://change.me.example.invalid/updates.json"
+#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+#logoFile="examplemod.png"
+credits="The community of Project Arsenal"
+authors="Halo of Blocks Team: Autovw, CasualNoLifer"
+description='''
+A community project and add-on to MrCrayfish's Gun Mod
+'''
+
+[[dependencies.projectarsenal]]
+    modId="forge"
+    mandatory=true
+    versionRange="[36,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.projectarsenal]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.16.5,1.17)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.projectarsenal]]
+    modId="cgm"
+    mandatory=true
+    versionRange="[1.2.6,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.projectarsenal]]
+    modId="obfuscate"
+    mandatory=true
+    versionRange="[0.6.3,)"
+    ordering="NONE"
+    side="BOTH"
