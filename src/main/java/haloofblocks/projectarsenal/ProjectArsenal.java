@@ -1,5 +1,11 @@
 package haloofblocks.projectarsenal;
 
+import haloofblocks.projectarsenal.client.ClientHandler;
+import haloofblocks.projectarsenal.core.registry.ArsenalBlockEntities;
+import haloofblocks.projectarsenal.core.registry.ArsenalBlocks;
+import haloofblocks.projectarsenal.core.registry.ArsenalContainers;
+import haloofblocks.projectarsenal.core.registry.ArsenalItems;
+import haloofblocks.projectarsenal.network.PacketHandler;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
@@ -8,6 +14,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * @author Autovw
+ */
 @Mod(ProjectArsenal.MOD_ID)
 public class ProjectArsenal
 {
@@ -17,15 +26,23 @@ public class ProjectArsenal
     public ProjectArsenal()
     {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        ArsenalItems.ITEMS.register(bus);
+        ArsenalBlocks.BLOCKS.register(bus);
+        ArsenalBlockEntities.BLOCK_ENTITIES.register(bus);
+        ArsenalContainers.CONTAINERS.register(bus);
+
         bus.addListener(this::commonSetup);
         bus.addListener(this::clientSetup);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+        event.enqueueWork(PacketHandler::setup);
     }
 
     private void clientSetup(final FMLClientSetupEvent event)
     {
+        event.enqueueWork(ClientHandler::setup);
     }
 }
