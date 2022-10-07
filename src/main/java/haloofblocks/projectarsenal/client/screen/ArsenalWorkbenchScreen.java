@@ -57,6 +57,7 @@ public class ArsenalWorkbenchScreen extends ContainerScreen<ArsenalWorkbenchCont
 {
     private static final ResourceLocation GUI_BASE = new ResourceLocation("cgm:textures/gui/workbench.png");
     private static int maxItems = 6;
+    private static int maxScrollPos = 97;
     private static boolean showAssemble = true;
     private static boolean showRemaining = false;
 
@@ -72,6 +73,8 @@ public class ArsenalWorkbenchScreen extends ContainerScreen<ArsenalWorkbenchCont
     private CheckBox checkBoxMaterials;
     private ItemStack displayStack;
     private boolean ignoreTextInput;
+    private int itemPos;
+    private int scrollPos;
 
     public ArsenalWorkbenchScreen(ArsenalWorkbenchContainer container, PlayerInventory playerInventory, ITextComponent title)
     {
@@ -86,6 +89,8 @@ public class ArsenalWorkbenchScreen extends ContainerScreen<ArsenalWorkbenchCont
         {
             this.imageHeight += 28;
         }
+        this.itemPos = 0;
+        this.scrollPos = 0;
     }
 
     private void createTabs(NonNullList<WorkbenchRecipe> recipes)
@@ -300,6 +305,28 @@ public class ArsenalWorkbenchScreen extends ContainerScreen<ArsenalWorkbenchCont
         return result;
     }
 
+    @Override
+    public boolean mouseScrolled(double mouseX, double mouseY, double delta)
+    {
+        boolean result = super.mouseScrolled(mouseX, mouseY, delta);
+
+        this.filteredMaterials = this.getMaterials();
+        int items = this.checkBoxAssemble.isToggled() ? this.filteredMaterials.size() : this.currentTab.getRecipes().size();
+
+        if (items <= maxItems)
+        {
+            // TODO implement scrollbar properly
+        }
+
+        return result;
+    }
+
+    private boolean isInsideScrollbar(double mouseX, double mouseY)
+    {
+        // TODO implement scrollbar properly
+        return mouseX >= this.leftPos && mouseY >= this.topPos;
+    }
+
     private void loadItem(int index)
     {
         WorkbenchRecipe recipe = this.currentTab.getRecipes().get(index);
@@ -415,7 +442,7 @@ public class ArsenalWorkbenchScreen extends ContainerScreen<ArsenalWorkbenchCont
         }
 
         int size = this.checkBoxAssemble.isToggled() ? this.filteredMaterials.size() : this.currentTab.getRecipes().size();
-        for (int i = 0; i < size; i++)
+        for (int i = this.itemPos; i < size; i++)
         {
             int itemX = startX + 172;
             int itemY = startY + i * 19 + 63;
@@ -578,15 +605,18 @@ public class ArsenalWorkbenchScreen extends ContainerScreen<ArsenalWorkbenchCont
         else
         {
             // draw enabled slide
-            this.blit(matrixStack, startX + 179 + 77, startY + 64, 164, 184, 12, 15);
+            this.blit(matrixStack, startX + 179 + 77, startY + 64 + this.scrollPos, 164, 184, 12, 15);
         }
         // TODO add slide functionality
 
         // draw items
-        for (int i = 0; i < items; i++)
+        for (int i = this.itemPos; i < items; i++)
         {
             RenderSystem.color4f(1.0F, 1.0F, 1.0F, 1.0F);
             this.minecraft.getTextureManager().bind(GUI_BASE);
+
+            if (i - this.itemPos >= maxItems)
+                break;
 
             if (this.checkBoxAssemble.isToggled())
             {
