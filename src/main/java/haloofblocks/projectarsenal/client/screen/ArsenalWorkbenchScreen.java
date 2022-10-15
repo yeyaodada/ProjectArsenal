@@ -29,6 +29,7 @@ import net.minecraft.client.renderer.IRenderTypeBuffer;
 import net.minecraft.client.renderer.RenderHelper;
 import net.minecraft.client.renderer.model.ItemCameraTransforms;
 import net.minecraft.client.renderer.texture.OverlayTexture;
+import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.client.util.InputMappings;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.inventory.container.ClickType;
@@ -44,9 +45,8 @@ import net.minecraft.util.text.TranslationTextComponent;
 import org.lwjgl.opengl.GL11;
 
 import java.awt.*;
-import java.util.ArrayList;
+import java.util.*;
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -420,6 +420,41 @@ public class ArsenalWorkbenchScreen extends ContainerScreen<ArsenalWorkbenchCont
     {
         this.ignoreTextInput = false;
         return super.keyReleased(key, code, modifiers);
+    }
+
+    // refreshing search results for searchbar
+    /*
+    private void refreshSearchResults()
+    {
+        this.shownRecipes = this.currentTab.getRecipes();
+        Iterator<WorkbenchRecipe> iterator = this.shownRecipes.iterator();
+        if (!this.searchBar.getValue().isEmpty() && !showAssemble)
+        {
+            boolean match = false;
+            String search = this.searchBar.getValue().toLowerCase(Locale.ROOT);
+
+            while (iterator.hasNext())
+            {
+                ItemStack stack = iterator.next().getResultItem();
+                for (ITextComponent line : stack.getTooltipLines(this.minecraft.player, this.minecraft.options.advancedItemTooltips ? ITooltipFlag.TooltipFlags.ADVANCED : ITooltipFlag.TooltipFlags.NORMAL))
+                {
+                    if (TextFormatting.stripFormatting(line.getString()).toLowerCase(Locale.ROOT).contains(search))
+                    {
+                        match = true;
+                        break;
+                    }
+                }
+
+                if (!match)
+                    iterator.remove();
+            }
+        }
+    }
+     */
+
+    private void fillRecipeList(List<WorkbenchRecipe> list)
+    {
+        list.addAll(this.currentTab.getRecipes());
     }
 
     @Override
