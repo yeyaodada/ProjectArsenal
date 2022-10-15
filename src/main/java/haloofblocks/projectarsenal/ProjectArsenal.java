@@ -1,9 +1,6 @@
 package haloofblocks.projectarsenal;
 
 import haloofblocks.projectarsenal.client.ClientHandler;
-import haloofblocks.projectarsenal.core.registry.ArsenalBlockEntities;
-import haloofblocks.projectarsenal.core.registry.ArsenalBlocks;
-import haloofblocks.projectarsenal.core.registry.ArsenalContainers;
 import haloofblocks.projectarsenal.core.registry.ArsenalItems;
 import haloofblocks.projectarsenal.network.PacketHandler;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -28,9 +25,6 @@ public class ProjectArsenal
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ArsenalItems.ITEMS.register(bus);
-        ArsenalBlocks.BLOCKS.register(bus);
-        ArsenalBlockEntities.BLOCK_ENTITIES.register(bus);
-        ArsenalContainers.CONTAINERS.register(bus);
 
         bus.addListener(this::commonSetup);
         bus.addListener(this::clientSetup);

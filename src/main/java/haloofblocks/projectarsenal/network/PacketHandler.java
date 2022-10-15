@@ -2,7 +2,6 @@ package haloofblocks.projectarsenal.network;
 
 import com.mrcrayfish.guns.network.message.IMessage;
 import haloofblocks.projectarsenal.ProjectArsenal;
-import haloofblocks.projectarsenal.network.message.MessageCraft;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.LogicalSide;
 import net.minecraftforge.fml.network.NetworkRegistry;
@@ -22,7 +21,6 @@ public class PacketHandler
 
     public static void setup()
     {
-        registerPlayMessage(MessageCraft.class, MessageCraft::new, LogicalSide.SERVER);
     }
 
     private static <T extends IMessage> void registerPlayMessage(Class<T> clazz, Supplier<T> messageSupplier, LogicalSide side)
