@@ -19,7 +19,7 @@
     "life": 50
   },
   "sounds": {
-    "fire": "projectarsenal:item.desert_eagle.fire",
+    "fire": "projectarsenal:item.deserteagle.fire",
     "reload": "cgm:item.pistol.reload",
     "cock": "cgm:item.shotgun.cock"
   },

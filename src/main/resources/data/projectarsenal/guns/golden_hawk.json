@@ -19,7 +19,7 @@
     "life": 99
   },
   "sounds": {
-    "fire": "projectarsenal:item.golden_hawk.fire",
+    "fire": "projectarsenal:item.goldenhawk.fire",
     "reload": "cgm:item.pistol.reload",
     "cock": "cgm:item.shotgun.cock"
   },

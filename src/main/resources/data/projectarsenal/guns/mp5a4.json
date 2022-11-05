@@ -22,7 +22,7 @@
   "sounds": {
     "fire": "projectarsenal:item.mp5a4.fire",
     "reload": "cgm:item.pistol.reload",
-    "cock": "cgm:item.machine_pistol.cock"
+    "cock": "cgm:item.assault_rifle.cock"
   },
   "display": {
     "flash": {
