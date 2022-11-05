@@ -10,7 +10,7 @@
 		"60": "projectarsenal:item/deagle_metal_2",
 		"61": "projectarsenal:item/deagle_metal_3",
 		"62": "projectarsenal:item/glow_green",
-		"particle": "projectarsenal:item/white_stained_glass"
+		"particle": "projectarsenal:item/deagle_metal_2"
 	},
 	"elements": [
 		{

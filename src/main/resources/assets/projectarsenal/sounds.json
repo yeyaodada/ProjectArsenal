@@ -15,11 +15,11 @@
       }
     ]
   },
-  "item.desert_eagle.fire": {
+  "item.deserteagle.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
       {
-        "name": "projectarsenal:item/desert_eagle"
+        "name": "projectarsenal:item/deserteagle"
       }
     ]
   },
@@ -31,11 +31,11 @@
       }
     ]
   },
-  "item.golden_hawk.fire": {
+  "item.goldenhawk.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
       {
-        "name": "projectarsenal:item/golden_hawk"
+        "name": "projectarsenal:item/goldenhawk"
       }
     ]
   },

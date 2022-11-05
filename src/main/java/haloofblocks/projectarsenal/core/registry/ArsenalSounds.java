@@ -16,9 +16,9 @@ public class ArsenalSounds
 
     public static final RegistryObject<SoundEvent> AA_TWELVE = register("item.aa12.fire");
     public static final RegistryObject<SoundEvent> AUTO_NINE = register("item.auto9.fire");
-    public static final RegistryObject<SoundEvent> DESERT_EAGLE = register("item.desert_eagle.fire");
+    public static final RegistryObject<SoundEvent> DESERT_EAGLE = register("item.deserteagle.fire");
     public static final RegistryObject<SoundEvent> DP_TWENTY_SEVEN = register("item.dp27.fire");
-    public static final RegistryObject<SoundEvent> GOLDEN_HAWK = register("item.golden_hawk.fire");
+    public static final RegistryObject<SoundEvent> GOLDEN_HAWK = register("item.goldenhawk.fire");
     public static final RegistryObject<SoundEvent> M_TWO_FOUR_NINE = register("item.m249.fire");
     public static final RegistryObject<SoundEvent> MAXIM_NINE = register("item.maxim9.fire");
     public static final RegistryObject<SoundEvent> MOSSOU = register("item.mossou.fire");
