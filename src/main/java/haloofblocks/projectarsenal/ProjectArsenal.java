@@ -2,6 +2,7 @@ package haloofblocks.projectarsenal;
 
 import haloofblocks.projectarsenal.client.ClientHandler;
 import haloofblocks.projectarsenal.core.registry.ArsenalItems;
+import haloofblocks.projectarsenal.core.registry.ArsenalSounds;
 import haloofblocks.projectarsenal.network.PacketHandler;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
@@ -25,6 +26,7 @@ public class ProjectArsenal
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ArsenalItems.ITEMS.register(bus);
+        ArsenalSounds.SOUNDS.register(bus);
 
         bus.addListener(this::commonSetup);
         bus.addListener(this::clientSetup);
