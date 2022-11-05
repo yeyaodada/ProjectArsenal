@@ -20,7 +20,7 @@ public class ArsenalItems
     public static final RegistryObject<Item> AUTO_NINE = registerGun("auto9");
     public static final RegistryObject<Item> DESERT_EAGLE = registerGun("desert_eagle");
     public static final RegistryObject<Item> DP_TWENTY_SEVEN = registerGun("dp27");
-    public static final RegistryObject<Item> GOLDEN_HAWK = registerGun("golden_eagle");
+    public static final RegistryObject<Item> GOLDEN_HAWK = registerGun("golden_hawk");
     public static final RegistryObject<Item> M_TWO_FOUR_NINE = registerGun("m249");
     public static final RegistryObject<Item> MAXIM_NINE = registerGun("maxim9");
     public static final RegistryObject<Item> MOSSOU = registerGun("mossou");
