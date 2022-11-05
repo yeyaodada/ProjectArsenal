@@ -1,0 +1,41 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 3,
+    "gripType": "cgm:two_handed",
+    "maxAmmo": 120,
+    "reloadAmount": 10,
+    "recoilAngle": 5.0,
+    "recoilKick": 1.0,
+    "recoilAdsReduction": 0.65,
+    "alwaysSpread": true,
+    "spread": 3.0
+  },
+  "projectile": {
+    "item": "cgm:advanced_bullet",
+    "visible": false,
+    "gravity": true,
+    "damage": 8,
+    "size": 0.2,
+    "speed": 50.0,
+    "life": 50
+  },
+  "sounds": {
+    "fire": "projectarsenal:item.m249.fire",
+    "reload": "cgm:item.pistol.reload",
+    "cock": "cgm:item.heavy_rifle.cock"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.3,
+      "zOffset": -10.0
+    }
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.6,
+      "yOffset": 4.9,
+      "zOffset": 2.75
+    }
+  }
+}
