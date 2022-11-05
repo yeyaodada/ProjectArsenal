@@ -14,5 +14,69 @@
         "name": "projectarsenal:item/auto9"
       }
     ]
+  },
+  "item.desert_eagle.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      {
+        "name": "projectarsenal:item/desert_eagle"
+      }
+    ]
+  },
+  "item.dp27.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      {
+        "name": "projectarsenal:item/dp27"
+      }
+    ]
+  },
+  "item.golden_hawk.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      {
+        "name": "projectarsenal:item/golden_hawk"
+      }
+    ]
+  },
+  "item.m249.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      {
+        "name": "projectarsenal:item/m249"
+      }
+    ]
+  },
+  "item.maxim9.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      {
+        "name": "projectarsenal:item/maxim9"
+      }
+    ]
+  },
+  "item.mossou.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      {
+        "name": "projectarsenal:item/mossou"
+      }
+    ]
+  },
+  "item.mp5a4.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      {
+        "name": "projectarsenal:item/mp5a4"
+      }
+    ]
+  },
+  "item.val.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      {
+        "name": "projectarsenal:item/val"
+      }
+    ]
   }
 }
