@@ -1,0 +1,18 @@
+{
+  "item.aa12.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      {
+        "name": "projectarsenal:item/aa12"
+      }
+    ]
+  },
+  "item.auto9.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      {
+        "name": "projectarsenal:item/auto9"
+      }
+    ]
+  }
+}
