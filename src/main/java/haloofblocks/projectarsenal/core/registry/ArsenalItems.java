@@ -17,7 +17,15 @@ public class ArsenalItems
 
     // ===== GUNS ===== //
     public static final RegistryObject<Item> AA_TWELVE = registerGun("aa12");
-
+    public static final RegistryObject<Item> AUTO_NINE = registerGun("auto9");
+    public static final RegistryObject<Item> DESERT_EAGLE = registerGun("desert_eagle");
+    public static final RegistryObject<Item> DP_TWENTY_SEVEN = registerGun("dp27");
+    public static final RegistryObject<Item> GOLDEN_HAWK = registerGun("golden_eagle");
+    public static final RegistryObject<Item> M_TWO_FOUR_NINE = registerGun("m249");
+    public static final RegistryObject<Item> MAXIM_NINE = registerGun("maxim9");
+    public static final RegistryObject<Item> MOSSOU = registerGun("mossou");
+    public static final RegistryObject<Item> MP_FIVE_A_FOUR = registerGun("mp5a4");
+    public static final RegistryObject<Item> VAL = registerGun("val");
     // ===== ATTACHMENTS ===== //
 
     // ===== AMMUNITION ===== //
