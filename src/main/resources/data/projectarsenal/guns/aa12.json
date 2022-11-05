@@ -20,7 +20,7 @@
     "life": 50
   },
   "sounds": {
-    "fire": "additionalguns:item.aa12.fire",
+    "fire": "projectarsenal:item.aa12.fire",
     "reload": "cgm:item.pistol.reload",
     "cock": "cgm:item.shotgun.cock",
     "silencedFire": "cgm:item.shotgun.silenced_fire"
