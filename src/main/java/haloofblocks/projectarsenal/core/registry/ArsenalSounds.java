@@ -12,6 +12,9 @@ import net.minecraftforge.registries.ForgeRegistries;
  */
 public class ArsenalSounds
 {
+    /**
+     * The {@link DeferredRegister} we use for registering sound events.
+     */
     public static final DeferredRegister<SoundEvent> SOUNDS = DeferredRegister.create(ForgeRegistries.SOUND_EVENTS, ProjectArsenal.MOD_ID);
 
     public static final RegistryObject<SoundEvent> AA_TWELVE = register("item.aa12.fire");

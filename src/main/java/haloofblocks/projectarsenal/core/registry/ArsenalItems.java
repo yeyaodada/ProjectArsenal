@@ -13,6 +13,9 @@ import net.minecraftforge.registries.ForgeRegistries;
  */
 public class ArsenalItems
 {
+    /**
+     * The {@link DeferredRegister} we use for registering items.
+     */
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ProjectArsenal.MOD_ID);
 
     // ===== GUNS ===== //
@@ -26,10 +29,17 @@ public class ArsenalItems
     public static final RegistryObject<Item> MOSSOU = registerGun("mossou");
     public static final RegistryObject<Item> MP_FIVE_A_FOUR = registerGun("mp5a4");
     public static final RegistryObject<Item> VAL = registerGun("val");
+
     // ===== ATTACHMENTS ===== //
 
     // ===== AMMUNITION ===== //
 
+    /**
+     * Helper method for registering guns
+     *
+     * @param name The in-game name of the gun
+     * @return {@link RegistryObject} for the gun item
+     */
     private static RegistryObject<Item> registerGun(String name)
     {
         return ITEMS.register(name, () -> new GunItem(new Item.Properties().stacksTo(1).tab(ProjectArsenalTab.TAB)));
