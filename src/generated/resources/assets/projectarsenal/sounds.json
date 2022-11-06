@@ -2,81 +2,61 @@
   "item.aa12.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
-      {
-        "name": "projectarsenal:item/aa12"
-      }
+      "projectarsenal:item/aa12"
     ]
   },
   "item.auto9.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
-      {
-        "name": "projectarsenal:item/auto9"
-      }
+      "projectarsenal:item/auto9"
     ]
   },
   "item.deserteagle.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
-      {
-        "name": "projectarsenal:item/deserteagle"
-      }
+      "projectarsenal:item/deserteagle"
     ]
   },
   "item.dp27.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
-      {
-        "name": "projectarsenal:item/dp27"
-      }
+      "projectarsenal:item/dp27"
     ]
   },
   "item.goldenhawk.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
-      {
-        "name": "projectarsenal:item/goldenhawk"
-      }
+      "projectarsenal:item/goldenhawk"
     ]
   },
   "item.m249.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
-      {
-        "name": "projectarsenal:item/m249"
-      }
+      "projectarsenal:item/m249"
     ]
   },
   "item.maxim9.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
-      {
-        "name": "projectarsenal:item/maxim9"
-      }
+      "projectarsenal:item/maxim9"
     ]
   },
   "item.mossou.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
-      {
-        "name": "projectarsenal:item/mossou"
-      }
+      "projectarsenal:item/mossou"
     ]
   },
   "item.mp5a4.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
-      {
-        "name": "projectarsenal:item/mp5a4"
-      }
+      "projectarsenal:item/mp5a4"
     ]
   },
   "item.val.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
-      {
-        "name": "projectarsenal:item/val"
-      }
+      "projectarsenal:item/val"
     ]
   }
 }

@@ -3,11 +3,15 @@ package haloofblocks.projectarsenal;
 import haloofblocks.projectarsenal.client.ClientHandler;
 import haloofblocks.projectarsenal.core.registry.ArsenalItems;
 import haloofblocks.projectarsenal.core.registry.ArsenalSounds;
+import haloofblocks.projectarsenal.datagen.ArsenalSoundDefinitionsGenerator;
 import haloofblocks.projectarsenal.network.PacketHandler;
+import net.minecraft.data.DataGenerator;
+import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.minecraftforge.fml.event.lifecycle.GatherDataEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -30,6 +34,7 @@ public class ProjectArsenal
 
         bus.addListener(this::commonSetup);
         bus.addListener(this::clientSetup);
+        bus.addListener(this::gatherData);
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
@@ -40,5 +45,16 @@ public class ProjectArsenal
     private void clientSetup(final FMLClientSetupEvent event)
     {
         event.enqueueWork(ClientHandler::setup);
+    }
+
+    private void gatherData(final GatherDataEvent event)
+    {
+        DataGenerator generator = event.getGenerator();
+        ExistingFileHelper helper = event.getExistingFileHelper();
+
+        if (event.includeClient())
+        {
+            generator.addProvider(new ArsenalSoundDefinitionsGenerator(generator, helper));
+        }
     }
 }
