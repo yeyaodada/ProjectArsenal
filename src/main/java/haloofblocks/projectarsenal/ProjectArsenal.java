@@ -3,7 +3,7 @@ package haloofblocks.projectarsenal;
 import haloofblocks.projectarsenal.client.ClientHandler;
 import haloofblocks.projectarsenal.core.registry.ArsenalItems;
 import haloofblocks.projectarsenal.core.registry.ArsenalSounds;
-import haloofblocks.projectarsenal.datagen.ArsenalSoundDefinitionsGenerator;
+import haloofblocks.projectarsenal.datagen.*;
 import haloofblocks.projectarsenal.network.PacketHandler;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -55,6 +55,11 @@ public class ProjectArsenal
         if (event.includeClient())
         {
             generator.addProvider(new ArsenalSoundDefinitionsGenerator(generator, helper));
+        }
+
+        if (event.includeServer())
+        {
+            generator.addProvider(new ArsenalRecipeGenerator(generator));
         }
     }
 }

@@ -1,0 +1,16 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 16
+    },
+    {
+      "item": "minecraft:anvil",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "projectarsenal:aa12"
+  }
+}
