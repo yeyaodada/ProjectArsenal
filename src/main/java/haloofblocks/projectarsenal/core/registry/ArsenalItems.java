@@ -1,8 +1,8 @@
 package haloofblocks.projectarsenal.core.registry;
 
-import com.mrcrayfish.guns.GunMod;
 import com.mrcrayfish.guns.item.GunItem;
 import haloofblocks.projectarsenal.ProjectArsenal;
+import haloofblocks.projectarsenal.ProjectArsenalTab;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
@@ -32,6 +32,6 @@ public class ArsenalItems
 
     private static RegistryObject<Item> registerGun(String name)
     {
-        return ITEMS.register(name, () -> new GunItem(new Item.Properties().stacksTo(1).tab(GunMod.GROUP)));
+        return ITEMS.register(name, () -> new GunItem(new Item.Properties().stacksTo(1).tab(ProjectArsenalTab.TAB)));
     }
 }
