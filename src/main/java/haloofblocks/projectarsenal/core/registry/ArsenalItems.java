@@ -19,16 +19,16 @@ public class ArsenalItems
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ProjectArsenal.MOD_ID);
 
     // ===== GUNS ===== //
-    public static final RegistryObject<Item> AA_TWELVE = registerGun("aa12");
-    public static final RegistryObject<Item> AUTO_NINE = registerGun("auto9");
-    public static final RegistryObject<Item> DESERT_EAGLE = registerGun("desert_eagle");
-    public static final RegistryObject<Item> DP_TWENTY_SEVEN = registerGun("dp27");
-    public static final RegistryObject<Item> GOLDEN_HAWK = registerGun("golden_hawk");
-    public static final RegistryObject<Item> M_TWO_FOUR_NINE = registerGun("m249");
-    public static final RegistryObject<Item> MAXIM_NINE = registerGun("maxim9");
-    public static final RegistryObject<Item> MOSSOU = registerGun("mossou");
-    public static final RegistryObject<Item> MP_FIVE_A_FOUR = registerGun("mp5a4");
-    public static final RegistryObject<Item> VAL = registerGun("val");
+    public static final RegistryObject<Item> AA_TWELVE = registerGun("aa12", false);
+    public static final RegistryObject<Item> AUTO_NINE = registerGun("auto9", false);
+    public static final RegistryObject<Item> DESERT_EAGLE = registerGun("desert_eagle", false);
+    public static final RegistryObject<Item> DP_TWENTY_SEVEN = registerGun("dp27", false);
+    public static final RegistryObject<Item> GOLDEN_HAWK = registerGun("golden_hawk", false);
+    public static final RegistryObject<Item> M_TWO_FOUR_NINE = registerGun("m249", false);
+    public static final RegistryObject<Item> MAXIM_NINE = registerGun("maxim9", false);
+    public static final RegistryObject<Item> MOSSOU = registerGun("mossou", false);
+    public static final RegistryObject<Item> MP_FIVE_A_FOUR = registerGun("mp5a4", false);
+    public static final RegistryObject<Item> VAL = registerGun("val", false);
 
     // ===== ATTACHMENTS ===== //
 
@@ -38,10 +38,11 @@ public class ArsenalItems
      * Helper method for registering guns
      *
      * @param name The in-game name of the gun
+     * @param canColor If the gun can be colored or not
      * @return {@link RegistryObject} for the gun item
      */
-    private static RegistryObject<Item> registerGun(String name)
+    private static RegistryObject<Item> registerGun(String name, boolean canColor)
     {
-        return ITEMS.register(name, () -> new ArsenalGunItem(new Item.Properties().stacksTo(1).tab(ProjectArsenalTab.TAB)));
+        return ITEMS.register(name, () -> new ArsenalGunItem(new Item.Properties().stacksTo(1).tab(ProjectArsenalTab.TAB), canColor));
     }
 }

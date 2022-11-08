@@ -6,7 +6,6 @@ import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
 import net.minecraft.util.text.ITextComponent;
-import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.TranslationTextComponent;
 import net.minecraft.world.World;
@@ -19,9 +18,12 @@ import java.util.List;
  */
 public class ArsenalGunItem extends GunItem
 {
-    public ArsenalGunItem(Properties properties)
+    private final boolean canColor;
+
+    public ArsenalGunItem(Properties properties, boolean canColor)
     {
         super(properties);
+        this.canColor = canColor;
     }
 
     @Override
@@ -39,5 +41,11 @@ public class ArsenalGunItem extends GunItem
             tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.reload_amount", TextFormatting.WHITE.toString() + modifiedGun.getGeneral().getReloadAmount()).withStyle(TextFormatting.GRAY));
             tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.fire_rate", TextFormatting.WHITE.toString() + modifiedGun.getGeneral().getRate()).withStyle(TextFormatting.GRAY));
         }
+    }
+
+    @Override
+    public boolean canColor(ItemStack stack)
+    {
+        return this.canColor;
     }
 }
