@@ -5,12 +5,12 @@
     "gripType": "cgm:two_handed",
     "maxAmmo": 20,
     "reloadAmount": 2,
-    "recoilAngle": 8.0,
+    "recoilAngle": 4.0,
     "recoilKick": 1.0,
     "recoilAdsReduction": 0.75,
     "projectileAmount": 8,
     "alwaysSpread": true,
-    "spread": 15.0
+    "spread": 20.0
   },
   "projectile": {
     "item": "cgm:shell",

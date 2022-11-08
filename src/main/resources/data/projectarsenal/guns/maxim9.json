@@ -11,7 +11,7 @@
   },
   "projectile": {
     "item": "cgm:advanced_bullet",
-    "damage": 13,
+    "damage": 14,
     "size": 0.5,
     "speed": 50.0,
     "life": 50
