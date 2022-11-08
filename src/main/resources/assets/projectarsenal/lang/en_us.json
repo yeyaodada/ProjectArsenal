@@ -14,6 +14,9 @@
   "subtitle.projectarsenal.suppressed_fire": "Silenced gunfire",
   "subtitle.projectarsenal.enchanted_fire": "Enchanted gunfire",
 
+  "info.projectarsenal.reload_amount": "Reload Amount: %s",
+  "info.projectarsenal.fire_rate": "Fire Rate: %s",
+
   "container.projectarsenal.arsenal_workbench": "Arsenal Workbench",
 
   "gui.projectarsenal.arsenal_workbench.show_assemble": "Show Assemble"
