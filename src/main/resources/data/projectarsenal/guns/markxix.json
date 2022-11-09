@@ -19,7 +19,7 @@
     "life": 75
   },
   "sounds": {
-    "fire": "projectarsenal:item.handcannon.fire",
+    "fire": "projectarsenal:item.markxix.fire",
     "reload": "cgm:item.pistol.reload",
     "cock": "cgm:item.pistol.cock"
     

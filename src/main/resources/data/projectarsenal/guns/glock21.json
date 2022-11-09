@@ -1,6 +1,7 @@
 {
   "general": {
     "rate": 2,
+    "auto": true,
     "gripType": "cgm:one_handed",
     "maxAmmo": 14,
     "reloadAmount": 7,
@@ -19,7 +20,7 @@
     "life": 50
   },
   "sounds": {
-    "fire": "projectarsenal:item.glock.fire",
+    "fire": "projectarsenal:item.glock21.fire",
     "reload": "cgm:item.pistol.reload",
     "cock": "cgm:item.pistol.cock"
     
@@ -27,7 +28,7 @@
   "display": {
     "flash": {
       "yOffset": 9.5,
-      "zOffset": -2.9
+      "zOffset": -2.0
     }
   },
   "modules": {

@@ -15,8 +15,8 @@
     "item": "cgm:advanced_bullet",
     "visible": false,
     "gravity": true,
-    "damage": 8,
-    "size": 0.2,
+    "damage": 10,
+    "size": 1.2,
     "speed": 50.0,
     "life": 50
   },

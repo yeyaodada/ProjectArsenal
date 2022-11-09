@@ -39,7 +39,7 @@ public class ArsenalSoundDefinitionsGenerator extends SoundDefinitionsProvider
         regularFire(ArsenalSounds.GLOCK_TWENTY_ONE.get(), "item/glock21");
 
         // ===== SUPPRESSED FIRE ===== //
-        suppressedFire(ArsenalSounds.SHRIKE_SUPPRESSION.get(), "item/shrike_suppression");
+        suppressedFire(ArsenalSounds.SHRIKE_SUPPRESSION.get(), "item/shrike_suppressed");
 
         // ===== ENCHANTED FIRE ===== //
 
