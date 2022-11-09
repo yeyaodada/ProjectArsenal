@@ -4,7 +4,7 @@
     "gripType": "cgm:one_handed",
     "maxAmmo": 7,
     "reloadAmount": 2,
-    "recoilAngle": 17.5,
+    "recoilAngle": 15.0,
     "recoilKick": 2.0,
     "recoilAdsReduction": 0.6,
     "alwaysSpread": true,

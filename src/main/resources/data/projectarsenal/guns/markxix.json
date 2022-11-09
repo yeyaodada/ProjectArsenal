@@ -1,0 +1,40 @@
+{
+  "general": {
+    "rate": 6,
+    "gripType": "cgm:one_handed",
+    "maxAmmo": 8,
+    "reloadAmount": 3,
+    "recoilAngle": 5.0,
+    "recoilKick": 1.3,
+    "recoilAdsReduction": 0.65,
+    "projectileAmount": 1,
+    "alwaysSpread": true,
+    "spread": 2.5
+  },
+  "projectile": {
+    "item": "cgm:basic_bullet",
+    "damage": 15.0,
+    "size": 1.0,
+    "speed": 75.0,
+    "life": 75
+  },
+  "sounds": {
+    "fire": "projectarsenal:item.handcannon.fire",
+    "reload": "cgm:item.pistol.reload",
+    "cock": "cgm:item.pistol.cock"
+    
+  },
+  "display": {
+    "flash": {
+      "yOffset": 9.5,
+      "zOffset": -2.9
+    }
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.6,
+      "yOffset": 10.05,
+      "zOffset": 1
+    }
+  }
+}

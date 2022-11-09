@@ -29,6 +29,10 @@ public class ArsenalItems
     public static final RegistryObject<Item> MOSSOU = registerGun("mossou", false);
     public static final RegistryObject<Item> MP_FIVE_A_FOUR = registerGun("mp5a4", false);
     public static final RegistryObject<Item> VAL = registerGun("val", false);
+    public static final RegistryObject<Item> SHRIKE = registerGun("shrike", true);
+    public static final RegistryObject<Item> GLOCK_TWENTY_ONE = registerGun("glock21", true);
+    public static final RegistryObject<Item> P_TWO_FIFTY = registerGun("p250", false);
+    public static final RegistryObject<Item> MARK_XIX = registerGun("markxix", false);
 
     // ===== ATTACHMENTS ===== //
 

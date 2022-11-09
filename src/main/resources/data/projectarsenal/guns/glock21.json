@@ -1,40 +1,40 @@
 {
   "general": {
-    "auto": true,
     "rate": 2,
-    "gripType": "cgm:two_handed",
-    "maxAmmo": 45,
-    "reloadAmount": 9,
+    "gripType": "cgm:one_handed",
+    "maxAmmo": 14,
+    "reloadAmount": 7,
     "recoilAngle": 2.0,
-    "recoilKick": 0.2,
+    "recoilKick": 0.75,
     "recoilAdsReduction": 0.6,
+    "projectileAmount": 1,
     "alwaysSpread": true,
-    "spread": 4.5
+    "spread": 1.5
   },
   "projectile": {
     "item": "cgm:basic_bullet",
-    "visible": true,
-    "damage": 6.5,
+    "damage": 12.0,
     "size": 0.5,
-    "speed": 30.0,
+    "speed": 50.0,
     "life": 50
   },
   "sounds": {
-    "fire": "projectarsenal:item.mp5a4.fire",
+    "fire": "projectarsenal:item.glock.fire",
     "reload": "cgm:item.pistol.reload",
-    "cock": "cgm:item.assault_rifle.cock"
+    "cock": "cgm:item.pistol.cock"
+    
   },
   "display": {
     "flash": {
-      "yOffset": 3.6,
-      "zOffset": -3.4
+      "yOffset": 9.5,
+      "zOffset": -2.9
     }
   },
   "modules": {
     "zoom": {
       "fovModifier": 0.6,
-      "yOffset": 5.6,
-      "zOffset": -1
+      "yOffset": 9.825,
+      "zOffset": -0.5
     }
   }
 }

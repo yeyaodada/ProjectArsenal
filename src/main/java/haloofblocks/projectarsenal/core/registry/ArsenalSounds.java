@@ -26,7 +26,11 @@ public class ArsenalSounds
     public static final RegistryObject<SoundEvent> MAXIM_NINE = register("item.maxim9.fire");
     public static final RegistryObject<SoundEvent> MOSSOU = register("item.mossou.fire");
     public static final RegistryObject<SoundEvent> MP_FIVE_A_FOUR = register("item.mp5a4.fire");
-    public static final RegistryObject<SoundEvent> VAL = register("item.val.fire");
+    public static final RegistryObject<SoundEvent> SHRIKE = register("item.shrike.fire");
+    public static final RegistryObject<SoundEvent> SHRIKE_SUPPRESSION = register("item.shrike.suppressed");
+    public static final RegistryObject<SoundEvent> P_TWO_FIFTY = register("item.p250.fire");
+    public static final RegistryObject<SoundEvent> GLOCK_TWENTY_ONE = register("item.glock.fire");
+    public static final RegistryObject<SoundEvent> MARKXIX = register("item.markxix.fire");
 
     /**
      * Helper method used to register sounds
