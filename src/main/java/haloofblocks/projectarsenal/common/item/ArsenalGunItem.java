@@ -37,10 +37,18 @@ public class ArsenalGunItem extends GunItem
         Gun modifiedGun = getModifiedGun(stack);
         CompoundNBT nbt = stack.getTag();
 
-        if (nbt != null)
-        {
-            tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.reload_amount", TextFormatting.WHITE.toString() + modifiedGun.getGeneral().getReloadAmount()).withStyle(TextFormatting.GRAY));
-            tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.fire_rate", TextFormatting.WHITE.toString() + modifiedGun.getGeneral().getRate()).withStyle(TextFormatting.GRAY));
+        if (nbt != null) {
+            // Reload Amount
+            if (Config.CLIENT.gunTooltipInfo.showReloadAmount.get())
+            {
+                tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.reload_amount", TextFormatting.WHITE.toString() + modifiedGun.getGeneral().getReloadAmount()).withStyle(TextFormatting.GRAY));
+            }
+
+            // Fire Rate
+            if (Config.CLIENT.gunTooltipInfo.showFireRate.get())
+            {
+                tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.fire_rate", TextFormatting.WHITE.toString() + modifiedGun.getGeneral().getRate()).withStyle(TextFormatting.GRAY));
+            }
         }
     }
 
