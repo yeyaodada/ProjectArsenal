@@ -37,7 +37,8 @@ public class ArsenalGunItem extends GunItem
         Gun modifiedGun = getModifiedGun(stack);
         CompoundNBT nbt = stack.getTag();
 
-        if (nbt != null) {
+        if (nbt != null)
+        {
             // Reload Amount
             if (Config.CLIENT.gunTooltipInfo.showReloadAmount.get())
             {
@@ -60,6 +61,12 @@ public class ArsenalGunItem extends GunItem
             if (Config.CLIENT.gunTooltipInfo.showProjectileSpeed.get())
             {
                 tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.projectile_speed", TextFormatting.WHITE.toString() + modifiedGun.getProjectile().getSpeed()).withStyle(TextFormatting.GRAY));
+            }
+
+            // Projectile Spread
+            if (Config.CLIENT.gunTooltipInfo.showProjectileSpread.get())
+            {
+                tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.projectile_spread", TextFormatting.WHITE.toString() + modifiedGun.getGeneral().getSpread()).withStyle(TextFormatting.GRAY));
             }
         }
     }

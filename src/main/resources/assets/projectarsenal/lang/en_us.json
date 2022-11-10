@@ -22,6 +22,7 @@
   "info.projectarsenal.fire_rate": "Fire Rate: %s",
   "info.projectarsenal.automatic": "Automatic: %s",
   "info.projectarsenal.projectile_speed": "Projectile Speed: %s",
+  "info.projectarsenal.projectile_spread": "Projectile Spread: %s",
 
   "container.projectarsenal.arsenal_workbench": "Arsenal Workbench",
 
