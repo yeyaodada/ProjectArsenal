@@ -20,7 +20,7 @@
     "life": 50
   },
   "sounds": {
-    "fire": "projectarsenal:item.glock21.fire",
+    "fire": "projectarsenal:item.auto9.fire",
     "reload": "cgm:item.pistol.reload",
     "cock": "cgm:item.pistol.cock"
     

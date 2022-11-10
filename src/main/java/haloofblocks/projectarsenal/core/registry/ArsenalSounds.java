@@ -30,7 +30,6 @@ public class ArsenalSounds
     public static final RegistryObject<SoundEvent> SHRIKE_FIRE = register("item.shrike.fire");
     public static final RegistryObject<SoundEvent> SHRIKE_SUPPRESSED = register("item.shrike.suppressed");
     public static final RegistryObject<SoundEvent> P_TWO_FIFTY = register("item.p250.fire");
-    public static final RegistryObject<SoundEvent> GLOCK_TWENTY_ONE = register("item.glock21.fire");
     public static final RegistryObject<SoundEvent> MARKXIX = register("item.markxix.fire");
 
     /**

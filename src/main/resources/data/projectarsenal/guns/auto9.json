@@ -4,17 +4,17 @@
     "rate": 2,
     "gripType": "cgm:one_handed",
     "maxAmmo": 50,
-    "reloadAmount": 5,
+    "reloadAmount": 10,
     "recoilAngle": 2.0,
-    "recoilKick": 1.0,
+    "recoilKick": 1.5,
     "recoilAdsReduction": 0.8,
-    "alwaysSpread": true,
+    "alwaysSpread": false,
     "spread": 0.0
   },
   "projectile": {
     "item": "cgm:basic_bullet",
     "visible": true,
-    "damage": 6,
+    "damage": 7,
     "size": 0.5,
     "speed": 50.0,
     "life": 50
