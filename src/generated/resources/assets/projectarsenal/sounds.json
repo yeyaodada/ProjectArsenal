@@ -53,6 +53,12 @@
       "projectarsenal:item/mp5a4"
     ]
   },
+  "item.val.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      "projectarsenal:item/val"
+    ]
+  },
   "item.shrike.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
