@@ -27,7 +27,7 @@ public class ProjectArsenalTab extends ItemGroup
     @Override
     public ItemStack makeIcon()
     {
-        GunItem gun = (GunItem) ArsenalItems.M_TWO_FOUR_NINE.get();
+        GunItem gun = (GunItem) ArsenalItems.GOLDEN_HAWK.get();
         ItemStack stack = gun.getDefaultInstance();
         stack.getOrCreateTag().putInt("AmmoCount", gun.getGun().getGeneral().getMaxAmmo());
         return stack;
