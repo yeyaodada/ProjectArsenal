@@ -49,6 +49,12 @@ public class ArsenalGunItem extends GunItem
             {
                 tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.fire_rate", TextFormatting.WHITE.toString() + modifiedGun.getGeneral().getRate()).withStyle(TextFormatting.GRAY));
             }
+
+            // Automatic
+            if (Config.CLIENT.gunTooltipInfo.showAutomatic.get())
+            {
+                tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.automatic", TextFormatting.WHITE.toString() + modifiedGun.getGeneral().isAuto()).withStyle(TextFormatting.GRAY));
+            }
         }
     }
 
