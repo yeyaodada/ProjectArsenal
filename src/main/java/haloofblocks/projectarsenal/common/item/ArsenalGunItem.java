@@ -2,6 +2,7 @@ package haloofblocks.projectarsenal.common.item;
 
 import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.item.GunItem;
+import haloofblocks.projectarsenal.config.Config;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundNBT;
@@ -47,5 +48,11 @@ public class ArsenalGunItem extends GunItem
     public boolean canColor(ItemStack stack)
     {
         return this.canColor;
+    }
+
+    @Override
+    public boolean isFoil(ItemStack stack)
+    {
+        return super.isFoil(stack) && Config.CLIENT.enableGunEnchantmentGlint.get();
     }
 }
