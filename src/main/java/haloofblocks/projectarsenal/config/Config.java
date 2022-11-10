@@ -44,6 +44,7 @@ public class Config
             public final ForgeConfigSpec.BooleanValue showReloadAmount;
             public final ForgeConfigSpec.BooleanValue showFireRate;
             public final ForgeConfigSpec.BooleanValue showAutomatic;
+            public final ForgeConfigSpec.BooleanValue showProjectileSpeed;
 
             public GunTooltipInfo(ForgeConfigSpec.Builder builder)
             {
@@ -58,6 +59,9 @@ public class Config
                     this.showAutomatic = builder
                             .comment("If true, shows if gun is Automatic or not on the tooltip. False by default.")
                             .define("showAutomatic", false);
+                    this.showProjectileSpeed = builder
+                            .comment("If true, shows the Projectile Speed of projectiles fired from the gun on the tooltip. False by default.")
+                            .define("showProjectileSpeed", false);
                 }
                 builder.pop();
             }

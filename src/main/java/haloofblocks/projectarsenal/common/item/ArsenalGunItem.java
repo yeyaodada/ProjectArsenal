@@ -55,6 +55,12 @@ public class ArsenalGunItem extends GunItem
             {
                 tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.automatic", TextFormatting.WHITE.toString() + modifiedGun.getGeneral().isAuto()).withStyle(TextFormatting.GRAY));
             }
+
+            // Projectile Speed
+            if (Config.CLIENT.gunTooltipInfo.showProjectileSpeed.get())
+            {
+                tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.projectile_speed", TextFormatting.WHITE.toString() + modifiedGun.getProjectile().getSpeed()).withStyle(TextFormatting.GRAY));
+            }
         }
     }
 
