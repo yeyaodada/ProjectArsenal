@@ -5,7 +5,7 @@ license="GNU General Public License v3.0"
 
 [[mods]]
 modId="projectarsenal"
-version="${file.jarVersion}"
+version="development"
 displayName="Project Arsenal"
 #updateJSONURL="https://change.me.example.invalid/updates.json"
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/"

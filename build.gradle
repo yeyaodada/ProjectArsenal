@@ -10,15 +10,15 @@ buildscript {
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'maven-publish'
 
-version = 'development'
+version = "${project.mod_version}-${project.minecraft_version}"
 group = 'haloofblocks.projectarsenal'
 archivesBaseName = 'projectarsenal'
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(8)
 
-println('Java: ' + System.getProperty('java.version') + ' JVM: ' + System.getProperty('java.vm.version') + '(' + System.getProperty('java.vendor') + ') Arch: ' + System.getProperty('os.arch'))
+println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
 minecraft {
-    mappings channel: 'official', version: '1.16.5'
+    mappings channel: 'official', version: project.minecraft_version
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
     
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
@@ -76,16 +76,16 @@ repositories {
 }
 
 dependencies {
-    minecraft 'net.minecraftforge:forge:1.16.5-36.2.39'
+    minecraft "net.minecraftforge:forge:${forge_version}"
 
     // required dependencies
-    implementation fg.deobf('curse.maven:obfuscate-289380:3740120')
-    implementation fg.deobf('curse.maven:gun-mod-289479:3830458')
+    implementation fg.deobf("curse.maven:obfuscate-289380:${obfuscate_version}")
+    implementation fg.deobf("curse.maven:gun-mod-289479:${gunmod_version}")
 
     // optional dependencies
-    runtimeOnly fg.deobf('curse.maven:configured-457570:3946491')
-    runtimeOnly fg.deobf('curse.maven:catalogue-459701:3780550')
-    runtimeOnly fg.deobf('curse.maven:jei-238222:3681294')
+    runtimeOnly fg.deobf("curse.maven:configured-457570:${configured_version}")
+    runtimeOnly fg.deobf("curse.maven:catalogue-459701:${catalogue_version}")
+    runtimeOnly fg.deobf("curse.maven:jei-238222:${jei_version}")
 }
 
 jar {
@@ -102,19 +102,9 @@ jar {
     }
 }
 
-jar.finalizedBy('reobfJar') 
-// However if you are in a multi-project build, dev time needs unobfed jar files, so you can delay the obfuscation until publishing by doing
-//publish.dependsOn('reobfJar')
-
-publishing {
-    publications {
-        mavenJava(MavenPublication) {
-            artifact jar
-        }
-    }
-    repositories {
-        maven {
-            url "file:///${project.projectDir}/mcmodsrepo"
-        }
-    }
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8' // Use the UTF-8 charset for Java compilation
 }
+
+jar.finalizedBy('reobfJar') 
+
