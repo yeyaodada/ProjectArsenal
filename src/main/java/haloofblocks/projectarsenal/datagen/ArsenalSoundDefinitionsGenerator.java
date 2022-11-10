@@ -33,13 +33,13 @@ public class ArsenalSoundDefinitionsGenerator extends SoundDefinitionsProvider
         regularFire(ArsenalSounds.MAXIM_NINE.get(), "item/maxim9");
         regularFire(ArsenalSounds.MOSSOU.get(), "item/mossou");
         regularFire(ArsenalSounds.MP_FIVE_A_FOUR.get(), "item/mp5a4");
-        regularFire(ArsenalSounds.SHRIKE.get(), "item/shrike");
+        regularFire(ArsenalSounds.SHRIKE_FIRE.get(), "item/shrike");
         regularFire(ArsenalSounds.P_TWO_FIFTY.get(), "item/p250");
         regularFire(ArsenalSounds.MARKXIX.get(), "item/markxix");
         regularFire(ArsenalSounds.GLOCK_TWENTY_ONE.get(), "item/glock21");
 
         // ===== SUPPRESSED FIRE ===== //
-        suppressedFire(ArsenalSounds.SHRIKE_SUPPRESSION.get(), "item/shrike_suppressed");
+        suppressedFire(ArsenalSounds.SHRIKE_SUPPRESSED.get(), "item/shrike_suppressed");
 
         // ===== ENCHANTED FIRE ===== //
 

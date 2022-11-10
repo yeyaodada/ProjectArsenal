@@ -24,7 +24,7 @@
     "fire": "projectarsenal:item.shrike.fire",
     "reload": "cgm:item.pistol.reload",
     "cock": "cgm:item.assault_rifle.cock",
-    "silencedFire": "projectarsenal:item.shrike_suppressed.suppressed"
+    "silencedFire": "projectarsenal:item.shrike.suppressed"
   },
   "display": {
     "flash": {

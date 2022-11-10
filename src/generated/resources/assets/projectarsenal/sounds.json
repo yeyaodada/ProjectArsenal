@@ -77,7 +77,7 @@
       "projectarsenal:item/glock21"
     ]
   },
-  "item.shrike_suppressed.suppressed": {
+  "item.shrike.suppressed": {
     "subtitle": "subtitle.projectarsenal.suppressed_fire",
     "sounds": [
       "projectarsenal:item/shrike_suppressed"
