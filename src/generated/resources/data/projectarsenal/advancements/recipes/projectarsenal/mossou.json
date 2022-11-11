@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "projectarsenal:aa12"
+      "projectarsenal:mossou"
     ]
   },
   "criteria": {
@@ -16,12 +16,12 @@
         ]
       }
     },
-    "has_anvil": {
+    "has_acacia_planks": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:anvil"
+            "item": "minecraft:acacia_planks"
           }
         ]
       }
@@ -56,12 +56,12 @@
         ]
       }
     },
-    "has_netherite_ingots": {
+    "has_diamond_block": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "forge:ingots/netherite"
+            "tag": "forge:storage_blocks/diamond"
           }
         ]
       }
@@ -69,18 +69,18 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "projectarsenal:aa12"
+        "recipe": "projectarsenal:mossou"
       }
     }
   },
   "requirements": [
     [
       "has_iron_ingots",
-      "has_anvil",
+      "has_acacia_planks",
       "has_fire_charge",
       "has_firework_star",
       "has_gunpowder",
-      "has_netherite_ingots",
+      "has_diamond_block",
       "has_the_recipe"
     ]
   ]

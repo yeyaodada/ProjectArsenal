@@ -6,7 +6,7 @@
       "count": 32
     },
     {
-      "item": "minecraft:anvil",
+      "tag": "forge:gems/emerald",
       "count": 1
     },
     {
@@ -14,19 +14,11 @@
       "count": 1
     },
     {
-      "item": "minecraft:firework_star",
-      "count": 3
-    },
-    {
       "tag": "forge:gunpowder",
-      "count": 20
-    },
-    {
-      "tag": "forge:ingots/netherite",
-      "count": 2
+      "count": 10
     }
   ],
   "result": {
-    "item": "projectarsenal:aa12"
+    "item": "projectarsenal:maxim9"
   }
 }

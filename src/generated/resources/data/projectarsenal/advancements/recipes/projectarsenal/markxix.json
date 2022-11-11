@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "projectarsenal:aa12"
+      "projectarsenal:markxix"
     ]
   },
   "criteria": {
@@ -16,12 +16,22 @@
         ]
       }
     },
-    "has_anvil": {
+    "has_redstone_block": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:anvil"
+            "tag": "forge:storage_blocks/redstone"
+          }
+        ]
+      }
+    },
+    "has_black_concrete": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:black_concrete"
           }
         ]
       }
@@ -36,32 +46,12 @@
         ]
       }
     },
-    "has_firework_star": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:firework_star"
-          }
-        ]
-      }
-    },
     "has_gunpowder": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:gunpowder"
-          }
-        ]
-      }
-    },
-    "has_netherite_ingots": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "forge:ingots/netherite"
+            "tag": "forge:gunpowder"
           }
         ]
       }
@@ -69,18 +59,17 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "projectarsenal:aa12"
+        "recipe": "projectarsenal:markxix"
       }
     }
   },
   "requirements": [
     [
       "has_iron_ingots",
-      "has_anvil",
+      "has_redstone_block",
+      "has_black_concrete",
       "has_fire_charge",
-      "has_firework_star",
       "has_gunpowder",
-      "has_netherite_ingots",
       "has_the_recipe"
     ]
   ]

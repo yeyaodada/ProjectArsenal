@@ -1,0 +1,20 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 50
+    },
+    {
+      "item": "minecraft:fire_charge",
+      "count": 1
+    },
+    {
+      "tag": "forge:gunpowder",
+      "count": 10
+    }
+  ],
+  "result": {
+    "item": "projectarsenal:mp5a4"
+  }
+}

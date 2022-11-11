@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "projectarsenal:aa12"
+      "projectarsenal:shrike"
     ]
   },
   "criteria": {
@@ -16,47 +16,37 @@
         ]
       }
     },
-    "has_anvil": {
+    "has_iron_nugget": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:anvil"
+            "tag": "forge:nuggets/iron"
           }
         ]
       }
     },
-    "has_fire_charge": {
+    "has_iron_block": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:fire_charge"
+            "tag": "forge:storage_blocks/iron"
           }
         ]
       }
     },
-    "has_firework_star": {
+    "has_white_concrete": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:firework_star"
+            "item": "minecraft:white_concrete"
           }
         ]
       }
     },
-    "has_gunpowder": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:gunpowder"
-          }
-        ]
-      }
-    },
-    "has_netherite_ingots": {
+    "has_ingots_netherite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
@@ -69,18 +59,17 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "projectarsenal:aa12"
+        "recipe": "projectarsenal:shrike"
       }
     }
   },
   "requirements": [
     [
       "has_iron_ingots",
-      "has_anvil",
-      "has_fire_charge",
-      "has_firework_star",
-      "has_gunpowder",
-      "has_netherite_ingots",
+      "has_iron_nugget",
+      "has_iron_block",
+      "has_white_concrete",
+      "has_ingots_netherite",
       "has_the_recipe"
     ]
   ]

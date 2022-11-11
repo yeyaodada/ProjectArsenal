@@ -6,12 +6,22 @@
     ]
   },
   "criteria": {
-    "has_iron_ingots": {
+    "has_gunpowder": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "forge:ingots/iron"
+            "tag": "forge:gunpowder"
+          }
+        ]
+      }
+    },
+    "has_gold_ingots": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ingots/gold"
           }
         ]
       }
@@ -46,6 +56,16 @@
         ]
       }
     },
+    "has_golden_horse_armor": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:golden_horse_armor"
+          }
+        ]
+      }
+    },
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
@@ -55,10 +75,12 @@
   },
   "requirements": [
     [
-      "has_iron_ingots",
+      "has_gunpowder",
+      "has_gold_ingots",
       "has_diamond",
       "has_heart_of_the_sea",
       "has_soul_torch",
+      "has_golden_horse_armor",
       "has_the_recipe"
     ]
   ]

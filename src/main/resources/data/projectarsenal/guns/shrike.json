@@ -9,7 +9,7 @@
     "recoilKick": 1.75,
     "recoilAdsReduction": 0.75,
     "alwaysSpread": true,
-    "spread": 2.0
+    "spread": 3.0
   },
   "projectile": {
     "item": "cgm:advanced_bullet",

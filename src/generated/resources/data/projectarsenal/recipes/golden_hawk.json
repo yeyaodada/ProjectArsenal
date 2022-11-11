@@ -16,6 +16,10 @@
     {
       "item": "minecraft:soul_torch",
       "count": 1
+    },
+    {
+      "item": "minecraft:golden_horse_armor",
+      "count": 1
     }
   ],
   "result": {

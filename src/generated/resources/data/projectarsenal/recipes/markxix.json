@@ -1,0 +1,28 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 64
+    },
+    {
+      "tag": "forge:storage_blocks/redstone",
+      "count": 3
+    },
+    {
+      "item": "minecraft:black_concrete",
+      "count": 16
+    },
+    {
+      "item": "minecraft:fire_charge",
+      "count": 1
+    },
+    {
+      "tag": "forge:gunpowder",
+      "count": 20
+    }
+  ],
+  "result": {
+    "item": "projectarsenal:markxix"
+  }
+}

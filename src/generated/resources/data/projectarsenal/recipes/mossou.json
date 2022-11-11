@@ -6,8 +6,8 @@
       "count": 32
     },
     {
-      "item": "minecraft:anvil",
-      "count": 1
+      "item": "minecraft:acacia_planks",
+      "count": 48
     },
     {
       "item": "minecraft:fire_charge",
@@ -22,11 +22,11 @@
       "count": 20
     },
     {
-      "tag": "forge:ingots/netherite",
-      "count": 2
+      "tag": "forge:storage_blocks/diamond",
+      "count": 1
     }
   ],
   "result": {
-    "item": "projectarsenal:aa12"
+    "item": "projectarsenal:mossou"
   }
 }
