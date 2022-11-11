@@ -18,7 +18,7 @@
       "count": 1
     },
     {
-      "item": "minecraft:gunpowder",
+      "tag": "forge:gunpowder",
       "count": 20
     }
   ],

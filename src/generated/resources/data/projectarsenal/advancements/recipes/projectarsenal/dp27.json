@@ -51,7 +51,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:gunpowder"
+            "tag": "forge:gunpowder"
           }
         ]
       }

@@ -6,11 +6,11 @@
       "count": 200
     },
     {
-      "item": "minecraft:iron_nugget",
+      "tag": "forge:nuggets/iron",
       "count": 75
     },
     {
-      "item": "minecraft:iron_block",
+      "tag": "forge:storage_blocks/iron",
       "count": 10
     },
     {

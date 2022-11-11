@@ -21,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:emerald"
+            "tag": "forge:gems/emerald"
           }
         ]
       }
@@ -41,7 +41,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:gunpowder"
+            "tag": "forge:gunpowder"
           }
         ]
       }

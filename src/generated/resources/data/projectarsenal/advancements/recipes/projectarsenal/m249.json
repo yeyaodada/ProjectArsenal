@@ -21,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:iron_nugget"
+            "tag": "forge:nuggets/iron"
           }
         ]
       }
@@ -31,7 +31,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:iron_block"
+            "tag": "forge:storage_blocks/iron"
           }
         ]
       }

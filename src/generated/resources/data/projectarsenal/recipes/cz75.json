@@ -10,7 +10,7 @@
       "count": 32
     },
     {
-      "item": "minecraft:glowstone_dust",
+      "tag": "forge:dusts/glowstone",
       "count": 3
     },
     {
@@ -18,7 +18,7 @@
       "count": 1
     },
     {
-      "item": "minecraft:gunpowder",
+      "tag": "forge:gunpowder",
       "count": 10
     }
   ],

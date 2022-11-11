@@ -31,7 +31,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:glowstone_dust"
+            "tag": "forge:dusts/glowstone"
           }
         ]
       }
@@ -51,7 +51,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:gunpowder"
+            "tag": "forge:gunpowder"
           }
         ]
       }
