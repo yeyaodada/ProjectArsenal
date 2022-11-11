@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "projectarsenal:aa12"
+      "projectarsenal:desert_eagle"
     ]
   },
   "criteria": {
@@ -16,12 +16,12 @@
         ]
       }
     },
-    "has_anvil": {
+    "has_emerald": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:anvil"
+            "item": "minecraft:emerald"
           }
         ]
       }
@@ -46,30 +46,19 @@
         ]
       }
     },
-    "has_netherite_ingots": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "forge:ingots/netherite"
-          }
-        ]
-      }
-    },
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "projectarsenal:aa12"
+        "recipe": "projectarsenal:desert_eagle"
       }
     }
   },
   "requirements": [
     [
       "has_iron_ingots",
-      "has_anvil",
+      "has_emerald",
       "has_fire_charge",
       "has_gunpowder",
-      "has_netherite_ingots",
       "has_the_recipe"
     ]
   ]

@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "projectarsenal:aa12"
+      "projectarsenal:golden_hawk"
     ]
   },
   "criteria": {
@@ -16,42 +16,32 @@
         ]
       }
     },
-    "has_anvil": {
+    "has_diamond": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:anvil"
+            "item": "minecraft:diamond"
           }
         ]
       }
     },
-    "has_fire_charge": {
+    "has_heart_of_the_sea": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:fire_charge"
+            "item": "minecraft:heart_of_the_sea"
           }
         ]
       }
     },
-    "has_gunpowder": {
+    "has_soul_torch": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:gunpowder"
-          }
-        ]
-      }
-    },
-    "has_netherite_ingots": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "forge:ingots/netherite"
+            "item": "minecraft:soul_torch"
           }
         ]
       }
@@ -59,17 +49,16 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "projectarsenal:aa12"
+        "recipe": "projectarsenal:golden_hawk"
       }
     }
   },
   "requirements": [
     [
       "has_iron_ingots",
-      "has_anvil",
-      "has_fire_charge",
-      "has_gunpowder",
-      "has_netherite_ingots",
+      "has_diamond",
+      "has_heart_of_the_sea",
+      "has_soul_torch",
       "has_the_recipe"
     ]
   ]

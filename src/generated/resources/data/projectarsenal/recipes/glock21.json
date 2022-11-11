@@ -1,0 +1,28 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 32
+    },
+    {
+      "item": "minecraft:white_concrete",
+      "count": 32
+    },
+    {
+      "item": "minecraft:diamond",
+      "count": 1
+    },
+    {
+      "item": "minecraft:fire_charge",
+      "count": 1
+    },
+    {
+      "item": "minecraft:gunpowder",
+      "count": 20
+    }
+  ],
+  "result": {
+    "item": "projectarsenal:glock21"
+  }
+}

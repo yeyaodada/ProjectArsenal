@@ -3,26 +3,26 @@
   "materials": [
     {
       "tag": "forge:ingots/iron",
+      "count": 24
+    },
+    {
+      "item": "minecraft:white_concrete",
       "count": 32
     },
     {
-      "item": "minecraft:anvil",
-      "count": 1
+      "item": "minecraft:glowstone_dust",
+      "count": 3
     },
     {
       "item": "minecraft:fire_charge",
       "count": 1
     },
     {
-      "item": "minecraft:firework_star",
-      "count": 3
-    },
-    {
-      "tag": "forge:ingots/netherite",
-      "count": 2
+      "item": "minecraft:gunpowder",
+      "count": 10
     }
   ],
   "result": {
-    "item": "projectarsenal:aa12"
+    "item": "projectarsenal:cz75"
   }
 }

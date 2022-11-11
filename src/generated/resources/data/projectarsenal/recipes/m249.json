@@ -1,0 +1,28 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 200
+    },
+    {
+      "item": "minecraft:iron_nugget",
+      "count": 75
+    },
+    {
+      "item": "minecraft:iron_block",
+      "count": 10
+    },
+    {
+      "item": "minecraft:green_concrete",
+      "count": 32
+    },
+    {
+      "tag": "forge:ingots/netherite",
+      "count": 3
+    }
+  ],
+  "result": {
+    "item": "projectarsenal:m249"
+  }
+}

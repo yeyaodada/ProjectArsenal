@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "projectarsenal:aa12"
+      "projectarsenal:dp27"
     ]
   },
   "criteria": {
@@ -16,12 +16,22 @@
         ]
       }
     },
-    "has_anvil": {
+    "has_netherite_ingots": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:anvil"
+            "tag": "forge:ingots/netherite"
+          }
+        ]
+      }
+    },
+    "has_spruce_planks": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:spruce_planks"
           }
         ]
       }
@@ -46,30 +56,20 @@
         ]
       }
     },
-    "has_netherite_ingots": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "forge:ingots/netherite"
-          }
-        ]
-      }
-    },
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "projectarsenal:aa12"
+        "recipe": "projectarsenal:dp27"
       }
     }
   },
   "requirements": [
     [
       "has_iron_ingots",
-      "has_anvil",
+      "has_netherite_ingots",
+      "has_spruce_planks",
       "has_fire_charge",
       "has_gunpowder",
-      "has_netherite_ingots",
       "has_the_recipe"
     ]
   ]

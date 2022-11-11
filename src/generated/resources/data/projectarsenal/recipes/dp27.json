@@ -1,0 +1,28 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 128
+    },
+    {
+      "tag": "forge:ingots/netherite",
+      "count": 3
+    },
+    {
+      "item": "minecraft:spruce_planks",
+      "count": 16
+    },
+    {
+      "item": "minecraft:fire_charge",
+      "count": 1
+    },
+    {
+      "item": "minecraft:gunpowder",
+      "count": 20
+    }
+  ],
+  "result": {
+    "item": "projectarsenal:dp27"
+  }
+}
