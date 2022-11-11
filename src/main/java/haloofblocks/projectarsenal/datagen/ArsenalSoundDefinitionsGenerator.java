@@ -37,10 +37,14 @@ public class ArsenalSoundDefinitionsGenerator extends SoundDefinitionsProvider
         regularFire(ArsenalSounds.SHRIKE_FIRE.get(), "item/shrike");
         regularFire(ArsenalSounds.P_TWO_FIFTY.get(), "item/p250");
         regularFire(ArsenalSounds.MARKXIX.get(), "item/markxix");
+        regularFire(ArsenalSounds.VECTOR.get(), "item/vector");
+        regularFire(ArsenalSounds.CZ_SEVEN_FIVE.get(), "item/cz75");
+        regularFire(ArsenalSounds.M_NINETEEN_ELEVEN.get(), "item/m1911");
+        regularFire(ArsenalSounds.PRISMATIC.get(), "item/prismatic");
 
         // ===== SUPPRESSED FIRE ===== //
         suppressedFire(ArsenalSounds.SHRIKE_SUPPRESSED.get(), "item/shrike_suppressed");
-
+        suppressedFire(ArsenalSounds.VECTOR_SUPPRESSED.get(), "item/vector_suppressed");
         // ===== ENCHANTED FIRE ===== //
 
         // ===== MISCELLANEOUS ===== //

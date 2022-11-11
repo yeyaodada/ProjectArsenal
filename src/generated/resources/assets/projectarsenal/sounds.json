@@ -77,16 +77,40 @@
       "projectarsenal:item/markxix"
     ]
   },
-  "item.glock21.fire": {
+  "item.vector.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
-      "projectarsenal:item/glock21"
+      "projectarsenal:item/vector"
+    ]
+  },
+  "item.cz75.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      "projectarsenal:item/cz75"
+    ]
+  },
+  "item.m1911.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      "projectarsenal:item/m1911"
+    ]
+  },
+  "item.prismatic.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      "projectarsenal:item/prismatic"
     ]
   },
   "item.shrike.suppressed": {
     "subtitle": "subtitle.projectarsenal.suppressed_fire",
     "sounds": [
       "projectarsenal:item/shrike_suppressed"
+    ]
+  },
+  "item.vector.suppressed": {
+    "subtitle": "subtitle.projectarsenal.suppressed_fire",
+    "sounds": [
+      "projectarsenal:item/vector_suppressed"
     ]
   }
 }

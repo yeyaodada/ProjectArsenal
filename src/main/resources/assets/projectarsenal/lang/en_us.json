@@ -13,6 +13,10 @@
   "item.projectarsenal.p250": "P250",
   "item.projectarsenal.markxix": "Mark XIX",
   "item.projectarsenal.glock21": "Glock 21",
+  "item.projectarsenal.m1911": "M1911",
+  "item.projectarsenal.prismatic": "AF2011A1",
+  "item.projectarsenal.vector": "Vector-E",
+  "item.projectarsenal.cz75": "CZ-75 Semi",
 
   "subtitle.projectarsenal.regular_fire": "Gunfire",
   "subtitle.projectarsenal.suppressed_fire": "Silenced gunfire",
