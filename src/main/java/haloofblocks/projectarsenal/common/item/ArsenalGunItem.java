@@ -51,10 +51,13 @@ public class ArsenalGunItem extends GunItem
                 tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.fire_rate", TextFormatting.WHITE.toString() + modifiedGun.getGeneral().getRate()).withStyle(TextFormatting.GRAY));
             }
 
-            // Automatic
-            if (Config.CLIENT.gunTooltipInfo.showAutomatic.get())
+            // Fire Mode
+            if (Config.CLIENT.gunTooltipInfo.showFireMode.get())
             {
-                tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.automatic", TextFormatting.WHITE.toString() + modifiedGun.getGeneral().isAuto()).withStyle(TextFormatting.GRAY));
+                String key = "info.projectarsenal.fire_mode";
+                ITextComponent semiAuto = new TranslationTextComponent(key + ".semi_auto").withStyle(TextFormatting.WHITE);
+                ITextComponent fullAuto = new TranslationTextComponent(key + ".full_auto").withStyle(TextFormatting.WHITE);
+                tooltip.add(index++, new TranslationTextComponent(key, modifiedGun.getGeneral().isAuto() ? fullAuto : semiAuto).withStyle(TextFormatting.GRAY));
             }
 
             // Projectile Speed
