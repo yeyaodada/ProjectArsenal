@@ -31,6 +31,7 @@ public class ProjectArsenal
     public ProjectArsenal()
     {
         ModLoadingContext.get().registerConfig(ModConfig.Type.CLIENT, Config.CLIENT_SPEC);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Config.COMMON_SPEC);
 
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
 

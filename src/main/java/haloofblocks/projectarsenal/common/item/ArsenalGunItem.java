@@ -77,7 +77,7 @@ public class ArsenalGunItem extends GunItem
     @Override
     public boolean canColor(ItemStack stack)
     {
-        return this.canColor;
+        return this.canColor || Config.COMMON.experimental.forceGunDyeAbility.get();
     }
 
     @Override

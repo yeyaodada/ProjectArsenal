@@ -11,11 +11,18 @@ public class Config
     public static final ForgeConfigSpec CLIENT_SPEC;
     public static final Client CLIENT;
 
+    public static final ForgeConfigSpec COMMON_SPEC;
+    public static final Common COMMON;
+
     static
     {
         final Pair<Client, ForgeConfigSpec> clientConfigPair = new ForgeConfigSpec.Builder().configure(Client::new);
         CLIENT_SPEC = clientConfigPair.getRight();
         CLIENT = clientConfigPair.getLeft();
+
+        final Pair<Common, ForgeConfigSpec> commonConfigPair = new ForgeConfigSpec.Builder().configure(Common::new);
+        COMMON_SPEC = commonConfigPair.getRight();
+        COMMON = commonConfigPair.getLeft();
     }
 
     /**
@@ -66,6 +73,39 @@ public class Config
                     this.showProjectileSpread = builder
                             .comment("If true, shows the Projectile Spread of projectiles fired from the gun on the tooltip. False by default.")
                             .define("showProjectileSpread", false);
+                }
+                builder.pop();
+            }
+        }
+    }
+
+    /**
+     * Common config for Project Arsenal
+     */
+    public static class Common
+    {
+        public final Experimental experimental;
+
+        public Common(ForgeConfigSpec.Builder builder)
+        {
+            builder.push("common");
+            {
+                this.experimental = new Experimental(builder);
+            }
+            builder.pop();
+        }
+
+        public static class Experimental
+        {
+            public final ForgeConfigSpec.BooleanValue forceGunDyeAbility;
+
+            public Experimental(ForgeConfigSpec.Builder builder)
+            {
+                builder.push("experimental");
+                {
+                    this.forceGunDyeAbility = builder
+                            .comment("If true, forces guns that have the dyeing behaviour turned off by default to be dye-able again. This option could be useful to modpack and/or resource pack developers. False by default.")
+                            .define("forceGunDyeAbility", false);
                 }
                 builder.pop();
             }
