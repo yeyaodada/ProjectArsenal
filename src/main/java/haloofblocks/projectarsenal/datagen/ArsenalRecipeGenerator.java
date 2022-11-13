@@ -1,10 +1,7 @@
 package haloofblocks.projectarsenal.datagen;
 
-import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.crafting.WorkbenchIngredient;
 import com.mrcrayfish.guns.crafting.WorkbenchRecipeBuilder;
-import com.mrcrayfish.guns.datagen.GunGen;
-import com.mrcrayfish.guns.item.GunItem;
 import haloofblocks.projectarsenal.core.registry.ArsenalItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.IFinishedRecipe;
