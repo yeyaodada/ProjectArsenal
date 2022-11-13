@@ -40,3 +40,7 @@ A community project and add-on to MrCrayfish's Gun Mod
     versionRange="[0.6.3,)"
     ordering="NONE"
     side="BOTH"
+
+[modproperties.projectarsenal]
+    catalogueItemIcon="projectarsenal:goldenhawk"
+    configuredBackground="minecraft:textures/block/anvil.png"
