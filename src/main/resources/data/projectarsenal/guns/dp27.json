@@ -23,7 +23,8 @@
   "sounds": {
     "fire": "projectarsenal:item.dp27.fire",
     "reload": "cgm:item.pistol.reload",
-    "cock": "cgm:item.heavy_rifle.cock"
+    "cock": "cgm:item.heavy_rifle.cock",
+    "silencedFire": "projectarsenal:item.shrike.suppressed"
   },
   "display": {
     "flash": {
