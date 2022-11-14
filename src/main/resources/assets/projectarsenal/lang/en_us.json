@@ -18,6 +18,9 @@
   "item.projectarsenal.vector": "Vector-E",
   "item.projectarsenal.cz75": "CZ-75 Semi",
 
+  "item.projectarsenal.sniper_muzzle_break": "Sniper Muzzle Break",
+  "item.projectarsenal.r2_suppressor": "R2 Suppressor",
+
   "subtitle.projectarsenal.regular_fire": "Gunfire",
   "subtitle.projectarsenal.suppressed_fire": "Silenced gunfire",
   "subtitle.projectarsenal.enchanted_fire": "Enchanted gunfire",
