@@ -1,10 +1,10 @@
 {
   "general": {
     "auto": true,
-    "rate": 3,
+    "rate": 2,
     "gripType": "cgm:two_handed",
-    "maxAmmo": 100,
-    "reloadAmount": 9,
+    "maxAmmo": 200,
+    "reloadAmount": 15,
     "recoilAngle": 3.0,
     "recoilKick": 1.75,
     "recoilAdsReduction": 0.75,
@@ -15,7 +15,7 @@
     "item": "cgm:advanced_bullet",
     "visible": false,
     "gravity": true,
-    "damage": 12.0,
+    "damage": 9.0,
     "size": 1.0,
     "speed": 60.0,
     "life": 60
@@ -29,30 +29,30 @@
   "display": {
     "flash": {
       "yOffset": 10.5,
-      "zOffset": -16
+      "zOffset": -14
     }
   },
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
       "yOffset": 12.20,
-      "zOffset": 4
+      "zOffset": 3
     },
     "attachments": {
       "scope": {
-        "yOffset": 5.0,
-        "zOffset": -2,
-        "scale": 1.0
+        "yOffset": 11.85,
+        "zOffset": 3,
+        "scale": 0.7
       },
       "barrel": {
         "yOffset": 10.25,
-        "zOffset": -13,
+        "zOffset": -12.5,
         "scale": 0.5
       },
       "underBarrel": {
         "yOffset": 10.0,
-        "zOffset": -5.35,
-        "scale": 0.5
+        "zOffset": -3.0,
+        "scale": 1.0
       }
     }
   }

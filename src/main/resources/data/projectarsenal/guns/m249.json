@@ -15,7 +15,7 @@
     "item": "cgm:advanced_bullet",
     "visible": false,
     "gravity": true,
-    "damage": 9.5,
+    "damage": 10.0,
     "size": 1.2,
     "speed": 50.0,
     "life": 50
@@ -36,6 +36,13 @@
       "fovModifier": 0.6,
       "yOffset": 4.9,
       "zOffset": 2.75
+    },
+    "attachments": {
+      "barrel": {
+        "yOffset": 3.24,
+        "zOffset": -9,
+        "scale": 0.30
+      }
     }
   }
 }

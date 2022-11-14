@@ -1,6 +1,6 @@
 {
   "general": {
-    "rate": 8,
+    "rate": 4,
     "gripType": "cgm:one_handed",
     "maxAmmo": 8,
     "reloadAmount": 4,
@@ -27,7 +27,7 @@
   "display": {
     "flash": {
       "yOffset": 9.5,
-      "zOffset": -2.4
+      "zOffset": -1.7
     }
   },
   "modules": {
@@ -35,6 +35,13 @@
       "fovModifier": 0.6,
       "yOffset": 9.75,
       "zOffset": 1.5
+    },
+    "attachments": {
+      "barrel": {
+        "yOffset": 9.325,
+        "zOffset": -1,
+        "scale": 0.3
+      }
     }
   }
 }

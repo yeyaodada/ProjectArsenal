@@ -1,11 +1,11 @@
 {
   "general": {
     "auto": true,
-    "rate": 6,
+    "rate": 4,
     "gripType": "cgm:two_handed",
     "maxAmmo": 20,
     "reloadAmount": 2,
-    "recoilAngle": 6.25,
+    "recoilAngle": 4.0,
     "recoilKick": 2.0,
     "recoilAdsReduction": 0.6,
     "projectileAmount": 8,
@@ -14,7 +14,7 @@
   },
   "projectile": {
     "item": "cgm:shell",
-    "damage": 40,
+    "damage": 24,
     "size": 1.0,
     "speed": 10.0,
     "life": 50
@@ -39,9 +39,9 @@
     },
     "attachments": {
       "barrel": {
-        "yOffset": 1.475,
-        "zOffset": -16,
-        "scale": 0.75
+        "yOffset": 1.44,
+        "zOffset": -14,
+        "scale": 0.5
       }
     }
   }
