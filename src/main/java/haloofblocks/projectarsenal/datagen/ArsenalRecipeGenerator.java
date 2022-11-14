@@ -229,6 +229,24 @@ public class ArsenalRecipeGenerator extends RecipeProvider
                 .addCriterion("has_fire_charge", has(Items.FIRE_CHARGE))
                 .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
                 .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ArsenalItems.DEAGLE_CLASSIC.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 64))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.GEMS_EMERALD, 3))
+                .addIngredient(WorkbenchIngredient.of(Items.FIRE_CHARGE, 1))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 20))
+                .addCriterion("has_iron_ingots", has(Tags.Items.INGOTS_IRON))
+                .addCriterion("has_emerald", has(Tags.Items.GEMS_EMERALD))
+                .addCriterion("has_fire_charge", has(Items.FIRE_CHARGE))
+                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
+                .build(consumer);
+        WorkbenchRecipeBuilder.crafting(ArsenalItems.M_NINE.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 40))
+                .addIngredient(WorkbenchIngredient.of(Items.FIRE_CHARGE, 1))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 20))
+                .addCriterion("has_iron_ingots", has(Tags.Items.INGOTS_IRON))
+                .addCriterion("has_fire_charge", has(Items.FIRE_CHARGE))
+                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
+                .build(consumer);
 
     }
 }

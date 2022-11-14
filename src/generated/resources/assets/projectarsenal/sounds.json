@@ -101,6 +101,12 @@
       "projectarsenal:item/prismatic"
     ]
   },
+  "item.scarh.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      "projectarsenal:item/scarh"
+    ]
+  },
   "item.shrike.suppressed": {
     "subtitle": "subtitle.projectarsenal.suppressed_fire",
     "sounds": [

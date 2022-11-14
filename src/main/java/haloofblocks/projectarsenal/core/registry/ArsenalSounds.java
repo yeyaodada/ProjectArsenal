@@ -36,6 +36,7 @@ public class ArsenalSounds
     public static final RegistryObject<SoundEvent> PRISMATIC = register("item.prismatic.fire");
     public static final RegistryObject<SoundEvent> VECTOR = register("item.vector.fire");
     public static final RegistryObject<SoundEvent> VECTOR_SUPPRESSED = register("item.vector.suppressed");
+    public static final RegistryObject<SoundEvent> SCARH = register("item.scarh.fire");
 
     /**
      * Helper method used to register sounds
