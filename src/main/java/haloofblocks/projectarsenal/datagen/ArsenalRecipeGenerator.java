@@ -100,12 +100,13 @@ public class ArsenalRecipeGenerator extends RecipeProvider
                 .addIngredient(WorkbenchIngredient.of(Items.HEART_OF_THE_SEA, 1))
                 .addIngredient(WorkbenchIngredient.of(Items.SOUL_TORCH, 1))
                 .addIngredient(WorkbenchIngredient.of(Items.GOLDEN_HORSE_ARMOR, 1))
-                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.STORAGE_BLOCKS_NETHERITE, 1))
                 .addCriterion("has_gold_ingots", has(Tags.Items.INGOTS_GOLD))
                 .addCriterion("has_diamond", has(Tags.Items.GEMS_DIAMOND))
                 .addCriterion("has_heart_of_the_sea", has(Items.HEART_OF_THE_SEA))
                 .addCriterion("has_soul_torch", has(Items.SOUL_TORCH))
                 .addCriterion("has_golden_horse_armor", has(Items.GOLDEN_HORSE_ARMOR))
+                .addCriterion("has_netherite_block", has(Tags.Items.STORAGE_BLOCKS_NETHERITE))
                 .build(consumer);
         WorkbenchRecipeBuilder.crafting(ArsenalItems.M_TWO_FOUR_NINE.get())
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 200))
@@ -247,6 +248,19 @@ public class ArsenalRecipeGenerator extends RecipeProvider
                 .addCriterion("has_fire_charge", has(Items.FIRE_CHARGE))
                 .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
                 .build(consumer);
-
+        WorkbenchRecipeBuilder.crafting(ArsenalItems.SCARH.get())
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 64))
+                .addIngredient(WorkbenchIngredient.of(Items.GUNPOWDER, 12))
+                .addIngredient(WorkbenchIngredient.of(Items.REDSTONE, 12))
+                .addIngredient(WorkbenchIngredient.of(Items.FIRE_CHARGE, 1))
+                .addIngredient(WorkbenchIngredient.of(Items.IRON_HORSE_ARMOR, 1))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.STORAGE_BLOCKS_NETHERITE, 1))
+                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
+                .addCriterion("has_iron_ingots", has(Tags.Items.INGOTS_IRON))
+                .addCriterion("has_redstone", has(Items.REDSTONE))
+                .addCriterion("has_fire_charge", has(Items.FIRE_CHARGE))
+                .addCriterion("has_iron_horse_armor", has(Items.IRON_HORSE_ARMOR))
+                .addCriterion("has_netherite_block", has(Tags.Items.STORAGE_BLOCKS_NETHERITE))
+                .build(consumer);
     }
 }

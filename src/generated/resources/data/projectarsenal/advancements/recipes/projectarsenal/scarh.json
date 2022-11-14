@@ -2,56 +2,56 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "projectarsenal:golden_hawk"
+      "projectarsenal:scarh"
     ]
   },
   "criteria": {
-    "has_gold_ingots": {
+    "has_gunpowder": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "forge:ingots/gold"
+            "tag": "forge:gunpowder"
           }
         ]
       }
     },
-    "has_diamond": {
+    "has_iron_ingots": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "forge:gems/diamond"
+            "tag": "forge:ingots/iron"
           }
         ]
       }
     },
-    "has_heart_of_the_sea": {
+    "has_redstone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:heart_of_the_sea"
+            "item": "minecraft:redstone"
           }
         ]
       }
     },
-    "has_soul_torch": {
+    "has_fire_charge": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:soul_torch"
+            "item": "minecraft:fire_charge"
           }
         ]
       }
     },
-    "has_golden_horse_armor": {
+    "has_iron_horse_armor": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:golden_horse_armor"
+            "item": "minecraft:iron_horse_armor"
           }
         ]
       }
@@ -69,17 +69,17 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "projectarsenal:golden_hawk"
+        "recipe": "projectarsenal:scarh"
       }
     }
   },
   "requirements": [
     [
-      "has_gold_ingots",
-      "has_diamond",
-      "has_heart_of_the_sea",
-      "has_soul_torch",
-      "has_golden_horse_armor",
+      "has_gunpowder",
+      "has_iron_ingots",
+      "has_redstone",
+      "has_fire_charge",
+      "has_iron_horse_armor",
       "has_netherite_block",
       "has_the_recipe"
     ]

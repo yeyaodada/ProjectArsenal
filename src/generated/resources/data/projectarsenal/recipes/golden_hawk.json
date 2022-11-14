@@ -20,6 +20,10 @@
     {
       "item": "minecraft:golden_horse_armor",
       "count": 1
+    },
+    {
+      "tag": "forge:storage_blocks/netherite",
+      "count": 1
     }
   ],
   "result": {

@@ -1,0 +1,32 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 64
+    },
+    {
+      "item": "minecraft:gunpowder",
+      "count": 12
+    },
+    {
+      "item": "minecraft:redstone",
+      "count": 12
+    },
+    {
+      "item": "minecraft:fire_charge",
+      "count": 1
+    },
+    {
+      "item": "minecraft:iron_horse_armor",
+      "count": 1
+    },
+    {
+      "tag": "forge:storage_blocks/netherite",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "projectarsenal:scarh"
+  }
+}
