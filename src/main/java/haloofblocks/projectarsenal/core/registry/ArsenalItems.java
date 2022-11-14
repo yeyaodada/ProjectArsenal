@@ -2,7 +2,9 @@ package haloofblocks.projectarsenal.core.registry;
 
 import com.mrcrayfish.guns.common.GunModifiers;
 import com.mrcrayfish.guns.item.BarrelItem;
+import com.mrcrayfish.guns.item.UnderBarrelItem;
 import com.mrcrayfish.guns.item.attachment.impl.Barrel;
+import com.mrcrayfish.guns.item.attachment.impl.UnderBarrel;
 import haloofblocks.projectarsenal.ProjectArsenal;
 import haloofblocks.projectarsenal.ProjectArsenalTab;
 import haloofblocks.projectarsenal.common.item.ArsenalGunItem;
@@ -45,6 +47,9 @@ public class ArsenalItems
     public static final RegistryObject<Item> SNIPER_MUZZLE_BREAK = registerBarrel("sniper_muzzle_break", Barrel.create(6.0f, GunModifiers.REDUCED_RECOIL), false);
     public static final RegistryObject<Item> R_TWO_SUPPRESSOR = registerBarrel("r2_suppressor", Barrel.create(13.0f, GunModifiers.REDUCED_RECOIL, GunModifiers.SILENCED), false);
 
+    public static final RegistryObject<Item> SKELETON_GRIP = registerUnderBarrel("skeletongrip", UnderBarrel.create(GunModifiers.LIGHT_RECOIL), false);
+    public static final RegistryObject<Item> VERTICAL_GRIP = registerUnderBarrel("verticalgrip", UnderBarrel.create(GunModifiers.LIGHT_RECOIL), false);
+
     // ===== AMMUNITION ===== //
 
     /**
@@ -70,5 +75,18 @@ public class ArsenalItems
     private static RegistryObject<Item> registerBarrel(String name, Barrel barrel, boolean canColor)
     {
         return ITEMS.register(name, () -> new BarrelItem(barrel, new Item.Properties().stacksTo(1).tab(ProjectArsenalTab.TAB), canColor));
+    }
+
+    /**
+     * Helper method for registering under barrel attachments
+     *
+     * @param name The in-game name of the under barrel attachment
+     * @param underBarrel The {@link UnderBarrel} properties
+     * @param canColor If the attachment can be colored or not
+     * @return {@link RegistryObject} for the under barrel attachment item
+     */
+    private static RegistryObject<Item> registerUnderBarrel(String name, UnderBarrel underBarrel, boolean canColor)
+    {
+        return ITEMS.register(name, () -> new UnderBarrelItem(underBarrel, new Item.Properties().stacksTo(1).tab(ProjectArsenalTab.TAB), canColor));
     }
 }
