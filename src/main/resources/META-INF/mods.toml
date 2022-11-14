@@ -9,7 +9,7 @@ version="development"
 displayName="Project Arsenal"
 #updateJSONURL="https://change.me.example.invalid/updates.json"
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
-#logoFile="examplemod.png"
+logoFile="icon.png"
 credits="The community of Project Arsenal"
 authors="Halo of Blocks Team: Autovw, CasualNoLifer"
 description='''
@@ -42,5 +42,5 @@ A community project and add-on to MrCrayfish's Gun Mod
     side="BOTH"
 
 [modproperties.projectarsenal]
-    catalogueItemIcon="projectarsenal:goldenhawk"
+    catalogueImageIcon="icon.png"
     configuredBackground="minecraft:textures/block/anvil.png"
