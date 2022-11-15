@@ -1,0 +1,24 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 2
+    },
+    {
+      "item": "minecraft:iron_nugget",
+      "count": 4
+    },
+    {
+      "item": "minecraft:black_concrete",
+      "count": 3
+    },
+    {
+      "tag": "forge:gems/diamond",
+      "count": 3
+    }
+  ],
+  "result": {
+    "item": "projectarsenal:verticalgrip"
+  }
+}

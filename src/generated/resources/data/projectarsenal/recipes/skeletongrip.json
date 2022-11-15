@@ -1,0 +1,20 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "tag": "forge:ingots/iron",
+      "count": 1
+    },
+    {
+      "item": "minecraft:iron_bars",
+      "count": 7
+    },
+    {
+      "tag": "forge:gems/diamond",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "projectarsenal:skeletongrip"
+  }
+}
