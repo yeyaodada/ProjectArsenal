@@ -21,7 +21,7 @@
     "life": 50
   },
   "sounds": {
-    "fire": "projectarsenal:item.val.fire",
+    "fire": "projectarsenal:item.integral_suppression.fire",
     "reload": "cgm:item.pistol.reload",
     "cock": "cgm:item.assault_rifle.cock"
   },

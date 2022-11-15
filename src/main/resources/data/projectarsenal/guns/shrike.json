@@ -7,7 +7,7 @@
     "reloadAmount": 15,
     "recoilAngle": 3.0,
     "recoilKick": 1.75,
-    "recoilAdsReduction": 0.75,
+    "recoilAdsReduction": 0.55,
     "alwaysSpread": true,
     "spread": 3.0
   },
@@ -15,7 +15,7 @@
     "item": "cgm:advanced_bullet",
     "visible": false,
     "gravity": true,
-    "damage": 9.0,
+    "damage": 10.0,
     "size": 1.0,
     "speed": 60.0,
     "life": 60
