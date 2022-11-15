@@ -231,7 +231,7 @@ public class ArsenalRecipeGenerator extends RecipeProvider
                 .addCriterion("has_fire_charge", has(Items.FIRE_CHARGE))
                 .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
                 .build(consumer);
-        WorkbenchRecipeBuilder.crafting(ArsenalItems.DEAGLE_CLASSIC.get())
+        WorkbenchRecipeBuilder.crafting(ArsenalItems.DESERT_EAGLE_CLASSIC.get())
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 64))
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.GEMS_EMERALD, 3))
                 .addIngredient(WorkbenchIngredient.of(Items.FIRE_CHARGE, 1))
@@ -295,7 +295,7 @@ public class ArsenalRecipeGenerator extends RecipeProvider
                 .addCriterion("has_black_wool", has(Items.BLACK_WOOL))
                 .addCriterion("has_emerald", has(Tags.Items.GEMS_EMERALD))
                 .build(consumer);
-        WorkbenchRecipeBuilder.crafting(ArsenalItems.SNIPER_MUZZLE_BREAK.get())
+        WorkbenchRecipeBuilder.crafting(ArsenalItems.SPECIAL_MUZZLE_BREAK.get())
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 7))
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.GEMS_EMERALD, 3))
                 .addCriterion("has_iron_ingots", has(Tags.Items.INGOTS_IRON))

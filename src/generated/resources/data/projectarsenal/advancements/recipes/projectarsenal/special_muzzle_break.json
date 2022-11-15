@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "projectarsenal:deagle_classic"
+      "projectarsenal:special_muzzle_break"
     ]
   },
   "criteria": {
@@ -26,30 +26,10 @@
         ]
       }
     },
-    "has_fire_charge": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:fire_charge"
-          }
-        ]
-      }
-    },
-    "has_gunpowder": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "forge:gunpowder"
-          }
-        ]
-      }
-    },
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "projectarsenal:deagle_classic"
+        "recipe": "projectarsenal:special_muzzle_break"
       }
     }
   },
@@ -57,8 +37,6 @@
     [
       "has_iron_ingots",
       "has_emerald",
-      "has_fire_charge",
-      "has_gunpowder",
       "has_the_recipe"
     ]
   ]

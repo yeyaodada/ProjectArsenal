@@ -44,10 +44,10 @@ public class ArsenalItems
     public static final RegistryObject<Item> VECTOR = registerGun("vector", true);
     public static final RegistryObject<Item> M_NINE = registerGun("m9", false);
     public static final RegistryObject<Item> SCARH = registerGun("scarh", true);
-    public static final RegistryObject<Item> DEAGLE_CLASSIC = registerGun("deagle_classic", false);
+    public static final RegistryObject<Item> DESERT_EAGLE_CLASSIC = registerGun("desert_eagle_classic", false);
 
     // ===== ATTACHMENTS ===== //
-    public static final RegistryObject<Item> SNIPER_MUZZLE_BREAK = registerBarrel("sniper_muzzle_break", Barrel.create(6.0f, GunModifiers.REDUCED_RECOIL), false);
+    public static final RegistryObject<Item> SPECIAL_MUZZLE_BREAK = registerBarrel("special_muzzle_break", Barrel.create(6.0f, GunModifiers.REDUCED_RECOIL), false);
     public static final RegistryObject<Item> R_TWO_SUPPRESSOR = registerBarrel("r2_suppressor", Barrel.create(13.0f, GunModifiers.REDUCED_RECOIL, GunModifiers.SILENCED), false);
 
     public static final RegistryObject<Item> SKELETON_GRIP = registerUnderBarrel("skeletongrip", UnderBarrel.create(GunModifiers.LIGHT_RECOIL), false);
