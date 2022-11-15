@@ -13,7 +13,7 @@
   },
   "projectile": {
     "item": "cgm:basic_bullet",
-    "damage": 8.0,
+    "damage": 9.5,
     "size": 0.5,
     "speed": 50.0,
     "life": 50

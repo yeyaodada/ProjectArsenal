@@ -6,10 +6,10 @@
     "maxAmmo": 45,
     "reloadAmount": 9,
     "recoilAngle": 3.0,
-    "recoilKick": 1.25,
-    "recoilAdsReduction": 0.6,
+    "recoilKick": 0.5,
+    "recoilAdsReduction": 0.65,
     "alwaysSpread": true,
-    "spread": 4.5
+    "spread": 5.0
   },
   "projectile": {
     "item": "cgm:basic_bullet",
@@ -34,8 +34,8 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.6,
-      "yOffset": 5.6,
-      "zOffset": -1
+      "yOffset": 5.55,
+      "zOffset": 2.7
     },
     "attachments": {
       "barrel": {
