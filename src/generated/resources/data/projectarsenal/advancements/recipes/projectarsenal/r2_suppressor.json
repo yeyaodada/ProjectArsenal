@@ -21,7 +21,7 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:iron_nugget"
+            "tag": "forge:nuggets/iron"
           }
         ]
       }

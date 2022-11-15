@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "projectarsenal:verticalgrip"
+      "projectarsenal:sniper_muzzle_break"
     ]
   },
   "criteria": {
@@ -16,32 +16,12 @@
         ]
       }
     },
-    "has_iron_nugget": {
+    "has_emerald": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "forge:nuggets/iron"
-          }
-        ]
-      }
-    },
-    "has_black_concrete": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:black_concrete"
-          }
-        ]
-      }
-    },
-    "has_diamond": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "forge:gems/diamond"
+            "tag": "forge:gems/emerald"
           }
         ]
       }
@@ -49,16 +29,14 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "projectarsenal:verticalgrip"
+        "recipe": "projectarsenal:sniper_muzzle_break"
       }
     }
   },
   "requirements": [
     [
       "has_iron_ingots",
-      "has_iron_nugget",
-      "has_black_concrete",
-      "has_diamond",
+      "has_emerald",
       "has_the_recipe"
     ]
   ]

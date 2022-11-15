@@ -6,16 +6,6 @@
     ]
   },
   "criteria": {
-    "has_gunpowder": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "forge:gunpowder"
-          }
-        ]
-      }
-    },
     "has_iron_ingots": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
@@ -26,12 +16,22 @@
         ]
       }
     },
+    "has_gunpowder": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:gunpowder"
+          }
+        ]
+      }
+    },
     "has_redstone": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:redstone"
+            "tag": "forge:dusts/redstone"
           }
         ]
       }
@@ -75,8 +75,8 @@
   },
   "requirements": [
     [
-      "has_gunpowder",
       "has_iron_ingots",
+      "has_gunpowder",
       "has_redstone",
       "has_fire_charge",
       "has_iron_horse_armor",

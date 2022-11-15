@@ -6,11 +6,11 @@
       "count": 64
     },
     {
-      "item": "minecraft:gunpowder",
+      "tag": "forge:gunpowder",
       "count": 12
     },
     {
-      "item": "minecraft:redstone",
+      "tag": "forge:dusts/redstone",
       "count": 12
     },
     {

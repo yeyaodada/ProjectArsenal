@@ -24,6 +24,7 @@ public class ArsenalRecipeGenerator extends RecipeProvider
     @Override
     protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer)
     {
+        // ===== GUNS ===== //
         WorkbenchRecipeBuilder.crafting(ArsenalItems.AA_TWELVE.get())
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 32))
                 .addIngredient(WorkbenchIngredient.of(Items.ANVIL, 1))
@@ -250,25 +251,27 @@ public class ArsenalRecipeGenerator extends RecipeProvider
                 .build(consumer);
         WorkbenchRecipeBuilder.crafting(ArsenalItems.SCARH.get())
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 64))
-                .addIngredient(WorkbenchIngredient.of(Items.GUNPOWDER, 12))
-                .addIngredient(WorkbenchIngredient.of(Items.REDSTONE, 12))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.GUNPOWDER, 12))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.DUSTS_REDSTONE, 12))
                 .addIngredient(WorkbenchIngredient.of(Items.FIRE_CHARGE, 1))
                 .addIngredient(WorkbenchIngredient.of(Items.IRON_HORSE_ARMOR, 1))
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.STORAGE_BLOCKS_NETHERITE, 1))
-                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
                 .addCriterion("has_iron_ingots", has(Tags.Items.INGOTS_IRON))
-                .addCriterion("has_redstone", has(Items.REDSTONE))
+                .addCriterion("has_gunpowder", has(Tags.Items.GUNPOWDER))
+                .addCriterion("has_redstone", has(Tags.Items.DUSTS_REDSTONE))
                 .addCriterion("has_fire_charge", has(Items.FIRE_CHARGE))
                 .addCriterion("has_iron_horse_armor", has(Items.IRON_HORSE_ARMOR))
                 .addCriterion("has_netherite_block", has(Tags.Items.STORAGE_BLOCKS_NETHERITE))
                 .build(consumer);
+
+        // ===== UNDER BARRELS ===== //
         WorkbenchRecipeBuilder.crafting(ArsenalItems.VERTICAL_GRIP.get())
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 2))
-                .addIngredient(WorkbenchIngredient.of(Items.IRON_NUGGET, 4))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 4))
                 .addIngredient(WorkbenchIngredient.of(Items.BLACK_CONCRETE, 3))
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.GEMS_DIAMOND, 3))
                 .addCriterion("has_iron_ingots", has(Tags.Items.INGOTS_IRON))
-                .addCriterion("has_iron_nugget", has(Items.IRON_NUGGET))
+                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
                 .addCriterion("has_black_concrete", has(Items.BLACK_CONCRETE))
                 .addCriterion("has_diamond", has(Tags.Items.GEMS_DIAMOND))
                 .build(consumer);
@@ -280,17 +283,19 @@ public class ArsenalRecipeGenerator extends RecipeProvider
                 .addCriterion("has_iron_bars", has(Items.IRON_BARS))
                 .addCriterion("has_diamond", has(Tags.Items.GEMS_DIAMOND))
                 .build(consumer);
+
+        // ===== BARRELS ===== //
         WorkbenchRecipeBuilder.crafting(ArsenalItems.R_TWO_SUPPRESSOR.get())
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 3))
-                .addIngredient(WorkbenchIngredient.of(Items.IRON_NUGGET, 2))
+                .addIngredient(WorkbenchIngredient.of(Tags.Items.NUGGETS_IRON, 2))
                 .addIngredient(WorkbenchIngredient.of(Items.BLACK_WOOL, 5))
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.GEMS_EMERALD, 7))
                 .addCriterion("has_iron_ingots", has(Tags.Items.INGOTS_IRON))
-                .addCriterion("has_iron_nugget", has(Items.IRON_NUGGET))
+                .addCriterion("has_iron_nugget", has(Tags.Items.NUGGETS_IRON))
                 .addCriterion("has_black_wool", has(Items.BLACK_WOOL))
                 .addCriterion("has_emerald", has(Tags.Items.GEMS_EMERALD))
                 .build(consumer);
-        WorkbenchRecipeBuilder.crafting(ArsenalItems.R_TWO_SUPPRESSOR.get())
+        WorkbenchRecipeBuilder.crafting(ArsenalItems.SNIPER_MUZZLE_BREAK.get())
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.INGOTS_IRON, 7))
                 .addIngredient(WorkbenchIngredient.of(Tags.Items.GEMS_EMERALD, 3))
                 .addCriterion("has_iron_ingots", has(Tags.Items.INGOTS_IRON))
