@@ -1,14 +1,14 @@
 modLoader="javafml"
 loaderVersion="[36,)"
 license="GNU General Public License v3.0"
-#issueTrackerURL="https://change.me.to.your.issue.tracker.example.invalid/"
+issueTrackerURL="https://github.com/HaloOfBlocks/ProjectArsenal/issues"
 
 [[mods]]
 modId="projectarsenal"
 version="development"
 displayName="Project Arsenal"
-#updateJSONURL="https://change.me.example.invalid/updates.json"
-#displayURL="https://change.me.to.your.mods.homepage.example.invalid/"
+updateJSONURL="https://raw.githubusercontent.com/HaloOfBlocks/ModVersions/main/projectarsenal/update.json?token=GHSAT0AAAAAABWZUTPEDDYUVOD3F64EIHN6Y3T74ZA"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/project-arsenal"
 logoFile="icon.png"
 credits="The community of Project Arsenal"
 authors="Halo of Blocks Team: Autovw, CasualNoLifer"
