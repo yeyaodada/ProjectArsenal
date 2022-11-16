@@ -5,7 +5,7 @@ issueTrackerURL="https://github.com/HaloOfBlocks/ProjectArsenal/issues"
 
 [[mods]]
 modId="projectarsenal"
-version="development"
+version="0.1.0"
 displayName="Project Arsenal"
 updateJSONURL="https://raw.githubusercontent.com/HaloOfBlocks/ModVersions/main/projectarsenal/update.json?token=GHSAT0AAAAAABWZUTPEDDYUVOD3F64EIHN6Y3T74ZA"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/project-arsenal"
