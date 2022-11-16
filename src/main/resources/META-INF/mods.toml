@@ -1,11 +1,11 @@
 modLoader="javafml"
-loaderVersion="[36,)"
+loaderVersion="[40,)"
 license="GNU General Public License v3.0"
 issueTrackerURL="https://github.com/HaloOfBlocks/ProjectArsenal/issues"
 
 [[mods]]
 modId="projectarsenal"
-version="development"
+version="1+development"
 displayName="Project Arsenal"
 updateJSONURL="https://raw.githubusercontent.com/HaloOfBlocks/ModVersions/main/projectarsenal/update.json?token=GHSAT0AAAAAABWZUTPEDDYUVOD3F64EIHN6Y3T74ZA"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/project-arsenal"
@@ -19,25 +19,25 @@ A community project and add-on to MrCrayfish's Gun Mod
 [[dependencies.projectarsenal]]
     modId="forge"
     mandatory=true
-    versionRange="[36,)"
+    versionRange="[40,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.projectarsenal]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.16.5,1.17)"
+    versionRange="[1.18.2,1.19)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.projectarsenal]]
     modId="cgm"
     mandatory=true
-    versionRange="[1.2.6,)"
+    versionRange="[1.2.7,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.projectarsenal]]
-    modId="obfuscate"
+    modId="framework"
     mandatory=true
-    versionRange="[0.6.3,)"
+    versionRange="[0.2.4,)"
     ordering="NONE"
     side="BOTH"
 

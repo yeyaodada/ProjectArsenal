@@ -4,9 +4,9 @@ import com.mrcrayfish.guns.crafting.WorkbenchIngredient;
 import com.mrcrayfish.guns.crafting.WorkbenchRecipeBuilder;
 import haloofblocks.projectarsenal.core.registry.ArsenalItems;
 import net.minecraft.data.DataGenerator;
-import net.minecraft.data.IFinishedRecipe;
-import net.minecraft.data.RecipeProvider;
-import net.minecraft.item.Items;
+import net.minecraft.data.recipes.FinishedRecipe;
+import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.world.item.Items;
 import net.minecraftforge.common.Tags;
 
 import java.util.function.Consumer;
@@ -22,7 +22,7 @@ public class ArsenalRecipeGenerator extends RecipeProvider
     }
 
     @Override
-    protected void buildShapelessRecipes(Consumer<IFinishedRecipe> consumer)
+    protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer)
     {
         // ===== GUNS ===== //
         WorkbenchRecipeBuilder.crafting(ArsenalItems.AA_TWELVE.get())

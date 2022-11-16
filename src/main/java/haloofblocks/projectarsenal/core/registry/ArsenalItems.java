@@ -8,10 +8,10 @@ import com.mrcrayfish.guns.item.attachment.impl.UnderBarrel;
 import haloofblocks.projectarsenal.ProjectArsenal;
 import haloofblocks.projectarsenal.ProjectArsenalTab;
 import haloofblocks.projectarsenal.common.item.ArsenalGunItem;
-import net.minecraft.item.Item;
-import net.minecraftforge.fml.RegistryObject;
+import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.registries.RegistryObject;
 
 /**
  * @author Autovw

@@ -3,21 +3,21 @@ package haloofblocks.projectarsenal;
 import com.mrcrayfish.guns.client.CustomGunManager;
 import com.mrcrayfish.guns.item.GunItem;
 import haloofblocks.projectarsenal.core.registry.ArsenalItems;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.NonNullList;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.minecraft.core.NonNullList;
 
 /**
  * Creative tab for Project Arsenal
  *
  * @author Autovw
  */
-public class ProjectArsenalTab extends ItemGroup
+public class ProjectArsenalTab extends CreativeModeTab
 {
     /**
      * Instance of the {@link ProjectArsenalTab}
      */
-    public static final ItemGroup TAB = new ProjectArsenalTab(ProjectArsenal.MOD_ID);
+    public static final CreativeModeTab TAB = new ProjectArsenalTab(ProjectArsenal.MOD_ID);
 
     private ProjectArsenalTab(String label)
     {

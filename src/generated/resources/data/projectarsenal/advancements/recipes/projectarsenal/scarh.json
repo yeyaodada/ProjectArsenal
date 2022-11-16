@@ -41,7 +41,9 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:fire_charge"
+            "items": [
+              "minecraft:fire_charge"
+            ]
           }
         ]
       }
@@ -51,7 +53,9 @@
       "conditions": {
         "items": [
           {
-            "item": "minecraft:iron_horse_armor"
+            "items": [
+              "minecraft:iron_horse_armor"
+            ]
           }
         ]
       }
