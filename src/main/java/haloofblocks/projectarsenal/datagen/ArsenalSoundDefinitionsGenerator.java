@@ -45,6 +45,7 @@ public class ArsenalSoundDefinitionsGenerator extends SoundDefinitionsProvider
         // ===== SUPPRESSED FIRE ===== //
         suppressedFire(ArsenalSounds.SHRIKE_SUPPRESSED.get(), "item/shrike_suppressed");
         suppressedFire(ArsenalSounds.VECTOR_SUPPRESSED.get(), "item/vector_suppressed");
+
         // ===== ENCHANTED FIRE ===== //
 
         // ===== MISCELLANEOUS ===== //
