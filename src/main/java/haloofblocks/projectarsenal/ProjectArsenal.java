@@ -8,6 +8,7 @@ import haloofblocks.projectarsenal.datagen.*;
 import haloofblocks.projectarsenal.network.PacketHandler;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.ExistingFileHelper;
+import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
@@ -15,7 +16,6 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.minecraftforge.forge.event.lifecycle.GatherDataEvent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
@@ -58,14 +58,8 @@ public class ProjectArsenal
         DataGenerator generator = event.getGenerator();
         ExistingFileHelper helper = event.getExistingFileHelper();
 
-        if (event.includeClient())
-        {
-            generator.addProvider(new ArsenalSoundDefinitionsGenerator(generator, helper));
-        }
+        generator.addProvider(event.includeClient(), new ArsenalSoundDefinitionsGenerator(generator, helper));
 
-        if (event.includeServer())
-        {
-            generator.addProvider(new ArsenalRecipeGenerator(generator));
-        }
+        generator.addProvider(event.includeServer(), new ArsenalRecipeGenerator(generator));
     }
 }

@@ -2,24 +2,24 @@
   "type": "cgm:workbench",
   "materials": [
     {
-      "tag": "forge:ingots/iron",
-      "count": 64
+      "count": 64,
+      "tag": "forge:ingots/iron"
     },
     {
-      "tag": "forge:storage_blocks/redstone",
-      "count": 3
+      "count": 3,
+      "tag": "forge:storage_blocks/redstone"
     },
     {
-      "item": "minecraft:black_concrete",
-      "count": 16
+      "count": 16,
+      "item": "minecraft:black_concrete"
     },
     {
-      "item": "minecraft:fire_charge",
-      "count": 1
+      "count": 1,
+      "item": "minecraft:fire_charge"
     },
     {
-      "tag": "forge:gunpowder",
-      "count": 20
+      "count": 20,
+      "tag": "forge:gunpowder"
     }
   ],
   "result": {

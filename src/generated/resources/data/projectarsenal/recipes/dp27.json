@@ -2,24 +2,24 @@
   "type": "cgm:workbench",
   "materials": [
     {
-      "tag": "forge:ingots/iron",
-      "count": 128
+      "count": 128,
+      "tag": "forge:ingots/iron"
     },
     {
-      "tag": "forge:ingots/netherite",
-      "count": 3
+      "count": 3,
+      "tag": "forge:ingots/netherite"
     },
     {
-      "item": "minecraft:spruce_planks",
-      "count": 16
+      "count": 16,
+      "item": "minecraft:spruce_planks"
     },
     {
-      "item": "minecraft:fire_charge",
-      "count": 1
+      "count": 1,
+      "item": "minecraft:fire_charge"
     },
     {
-      "tag": "forge:gunpowder",
-      "count": 20
+      "count": 20,
+      "tag": "forge:gunpowder"
     }
   ],
   "result": {

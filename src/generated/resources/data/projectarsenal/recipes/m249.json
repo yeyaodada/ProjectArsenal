@@ -2,24 +2,24 @@
   "type": "cgm:workbench",
   "materials": [
     {
-      "tag": "forge:ingots/iron",
-      "count": 200
+      "count": 200,
+      "tag": "forge:ingots/iron"
     },
     {
-      "tag": "forge:nuggets/iron",
-      "count": 75
+      "count": 75,
+      "tag": "forge:nuggets/iron"
     },
     {
-      "tag": "forge:storage_blocks/iron",
-      "count": 10
+      "count": 10,
+      "tag": "forge:storage_blocks/iron"
     },
     {
-      "item": "minecraft:green_concrete",
-      "count": 32
+      "count": 32,
+      "item": "minecraft:green_concrete"
     },
     {
-      "tag": "forge:ingots/netherite",
-      "count": 3
+      "count": 3,
+      "tag": "forge:ingots/netherite"
     }
   ],
   "result": {

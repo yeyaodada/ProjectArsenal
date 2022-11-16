@@ -2,20 +2,20 @@
   "type": "cgm:workbench",
   "materials": [
     {
-      "tag": "forge:ingots/iron",
-      "count": 48
+      "count": 48,
+      "tag": "forge:ingots/iron"
     },
     {
-      "item": "minecraft:white_concrete",
-      "count": 24
+      "count": 24,
+      "item": "minecraft:white_concrete"
     },
     {
-      "item": "minecraft:fire_charge",
-      "count": 1
+      "count": 1,
+      "item": "minecraft:fire_charge"
     },
     {
-      "tag": "forge:gunpowder",
-      "count": 10
+      "count": 10,
+      "tag": "forge:gunpowder"
     }
   ],
   "result": {

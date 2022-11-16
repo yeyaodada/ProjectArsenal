@@ -2,28 +2,28 @@
   "type": "cgm:workbench",
   "materials": [
     {
-      "tag": "forge:ingots/iron",
-      "count": 64
+      "count": 64,
+      "tag": "forge:ingots/iron"
     },
     {
-      "tag": "forge:gunpowder",
-      "count": 12
+      "count": 12,
+      "tag": "forge:gunpowder"
     },
     {
-      "tag": "forge:dusts/redstone",
-      "count": 12
+      "count": 12,
+      "tag": "forge:dusts/redstone"
     },
     {
-      "item": "minecraft:fire_charge",
-      "count": 1
+      "count": 1,
+      "item": "minecraft:fire_charge"
     },
     {
-      "item": "minecraft:iron_horse_armor",
-      "count": 1
+      "count": 1,
+      "item": "minecraft:iron_horse_armor"
     },
     {
-      "tag": "forge:storage_blocks/netherite",
-      "count": 1
+      "count": 1,
+      "tag": "forge:storage_blocks/netherite"
     }
   ],
   "result": {

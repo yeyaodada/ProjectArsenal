@@ -1,116 +1,116 @@
 {
   "item.aa12.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
       "projectarsenal:item/aa12"
-    ]
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
   },
   "item.auto9.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
       "projectarsenal:item/auto9"
-    ]
-  },
-  "item.deserteagle.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
-    "sounds": [
-      "projectarsenal:item/deserteagle"
-    ]
-  },
-  "item.dp27.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
-    "sounds": [
-      "projectarsenal:item/dp27"
-    ]
-  },
-  "item.goldenhawk.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
-    "sounds": [
-      "projectarsenal:item/goldenhawk"
-    ]
-  },
-  "item.m249.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
-    "sounds": [
-      "projectarsenal:item/m249"
-    ]
-  },
-  "item.mossou.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
-    "sounds": [
-      "projectarsenal:item/mossou"
-    ]
-  },
-  "item.mp5a4.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
-    "sounds": [
-      "projectarsenal:item/mp5a4"
-    ]
-  },
-  "item.integral_suppression.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
-    "sounds": [
-      "projectarsenal:item/integral_suppression"
-    ]
-  },
-  "item.shrike.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
-    "sounds": [
-      "projectarsenal:item/shrike"
-    ]
-  },
-  "item.p250.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
-    "sounds": [
-      "projectarsenal:item/p250"
-    ]
-  },
-  "item.markxix.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
-    "sounds": [
-      "projectarsenal:item/markxix"
-    ]
-  },
-  "item.vector.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
-    "sounds": [
-      "projectarsenal:item/vector"
-    ]
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
   },
   "item.cz75.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
       "projectarsenal:item/cz75"
-    ]
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.deserteagle.fire": {
+    "sounds": [
+      "projectarsenal:item/deserteagle"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.dp27.fire": {
+    "sounds": [
+      "projectarsenal:item/dp27"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.goldenhawk.fire": {
+    "sounds": [
+      "projectarsenal:item/goldenhawk"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.integral_suppression.fire": {
+    "sounds": [
+      "projectarsenal:item/integral_suppression"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
   },
   "item.m1911.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
       "projectarsenal:item/m1911"
-    ]
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.m249.fire": {
+    "sounds": [
+      "projectarsenal:item/m249"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.markxix.fire": {
+    "sounds": [
+      "projectarsenal:item/markxix"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.mossou.fire": {
+    "sounds": [
+      "projectarsenal:item/mossou"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.mp5a4.fire": {
+    "sounds": [
+      "projectarsenal:item/mp5a4"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.p250.fire": {
+    "sounds": [
+      "projectarsenal:item/p250"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
   },
   "item.prismatic.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
       "projectarsenal:item/prismatic"
-    ]
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
   },
   "item.scarh.fire": {
-    "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
       "projectarsenal:item/scarh"
-    ]
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.shrike.fire": {
+    "sounds": [
+      "projectarsenal:item/shrike"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
   },
   "item.shrike.suppressed": {
-    "subtitle": "subtitle.projectarsenal.suppressed_fire",
     "sounds": [
       "projectarsenal:item/shrike_suppressed"
-    ]
+    ],
+    "subtitle": "subtitle.projectarsenal.suppressed_fire"
+  },
+  "item.vector.fire": {
+    "sounds": [
+      "projectarsenal:item/vector"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
   },
   "item.vector.suppressed": {
-    "subtitle": "subtitle.projectarsenal.suppressed_fire",
     "sounds": [
       "projectarsenal:item/vector_suppressed"
-    ]
+    ],
+    "subtitle": "subtitle.projectarsenal.suppressed_fire"
   }
 }

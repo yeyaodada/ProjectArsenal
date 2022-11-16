@@ -2,28 +2,28 @@
   "type": "cgm:workbench",
   "materials": [
     {
-      "tag": "forge:ingots/iron",
-      "count": 32
+      "count": 32,
+      "tag": "forge:ingots/iron"
     },
     {
-      "item": "minecraft:acacia_planks",
-      "count": 48
+      "count": 48,
+      "item": "minecraft:acacia_planks"
     },
     {
-      "item": "minecraft:fire_charge",
-      "count": 1
+      "count": 1,
+      "item": "minecraft:fire_charge"
     },
     {
-      "item": "minecraft:firework_star",
-      "count": 3
+      "count": 3,
+      "item": "minecraft:firework_star"
     },
     {
-      "tag": "forge:gunpowder",
-      "count": 20
+      "count": 20,
+      "tag": "forge:gunpowder"
     },
     {
-      "tag": "forge:storage_blocks/diamond",
-      "count": 1
+      "count": 1,
+      "tag": "forge:storage_blocks/diamond"
     }
   ],
   "result": {
