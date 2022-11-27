@@ -6,15 +6,15 @@
     "maxAmmo": 20,
     "reloadAmount": 2,
     "recoilAngle": 4.0,
-    "recoilKick": 2.0,
-    "recoilAdsReduction": 0.3,
+    "recoilKick": 4.0,
+    "recoilAdsReduction": 0.9,
     "projectileAmount": 8,
     "alwaysSpread": true,
-    "spread": 22.0
+    "spread": 24.0
   },
   "projectile": {
     "item": "cgm:shell",
-    "damage": 32,
+    "damage": 24,
     "size": 1.0,
     "speed": 10.0,
     "life": 50
@@ -28,25 +28,25 @@
   "display": {
     "flash": {
       "yOffset": 0,
-      "zOffset": -22.5
+      "zOffset": -20.7
     }
   },
   "modules": {
     "zoom": {
-      "yOffset": 3.2,
-      "zOffset": 12.2,
+      "yOffset": 2.7,
+      "zOffset": 9,
       "fovModifier": 0.7
     },
     "attachments": {
       "barrel": {
         "yOffset": 0,
-        "zOffset": -22,
-        "scale": 0.6
+        "zOffset": -18,
+        "scale": 0.55
       },
         "underBarrel": {
-          "yOffset": -1.5,
-          "zOffset": -12,
-          "scale": 1.25
+          "yOffset": -1.425,
+          "zOffset": -10,
+          "scale": 1.0
         }
       }
     }

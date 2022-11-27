@@ -40,8 +40,8 @@
     },
     "attachments": {
       "scope": {
-        "yOffset": 10.6,
-        "zOffset": 11.2,
+        "yOffset": 12.0,
+        "zOffset": 4.785,
         "scale": 0.7
       },
       "barrel": {
