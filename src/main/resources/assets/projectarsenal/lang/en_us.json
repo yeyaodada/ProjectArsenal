@@ -39,6 +39,7 @@
   "info.projectarsenal.fire_mode.full_auto": "Full-Automatic",
   "info.projectarsenal.projectile_speed": "Projectile Speed: %s",
   "info.projectarsenal.projectile_spread": "Projectile Spread: %s",
+  "info.projectarsenal.non_dyeable": "This gun cannot be dyed",
 
   "container.projectarsenal.arsenal_workbench": "Arsenal Workbench",
 

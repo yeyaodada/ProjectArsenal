@@ -53,6 +53,7 @@ public class Config
             public final ForgeConfigSpec.BooleanValue showFireMode;
             public final ForgeConfigSpec.BooleanValue showProjectileSpeed;
             public final ForgeConfigSpec.BooleanValue showProjectileSpread;
+            public final ForgeConfigSpec.BooleanValue showNonDyeable;
 
             public GunTooltipInfo(ForgeConfigSpec.Builder builder)
             {
@@ -73,6 +74,9 @@ public class Config
                     this.showProjectileSpread = builder
                             .comment("If true, shows the Projectile Spread of projectiles fired from the gun on the tooltip. False by default.")
                             .define("showProjectileSpread", false);
+                    this.showNonDyeable = builder
+                            .comment("If true, shows a tooltip on guns that are not dyeable. True by default.")
+                            .define("showNonDyeable", true);
                 }
                 builder.pop();
             }
