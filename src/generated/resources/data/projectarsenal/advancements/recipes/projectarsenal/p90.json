@@ -1,18 +1,6 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_anvil": {
-      "conditions": {
-        "items": [
-          {
-            "items": [
-              "minecraft:anvil"
-            ]
-          }
-        ]
-      },
-      "trigger": "minecraft:inventory_changed"
-    },
     "has_fire_charge": {
       "conditions": {
         "items": [
@@ -25,13 +13,11 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_firework_star": {
+    "has_ingots_netherite": {
       "conditions": {
         "items": [
           {
-            "items": [
-              "minecraft:firework_star"
-            ]
+            "tag": "forge:ingots/netherite"
           }
         ]
       },
@@ -47,36 +33,37 @@
       },
       "trigger": "minecraft:inventory_changed"
     },
-    "has_netherite_ingots": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "projectarsenal:p90"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_white_concrete": {
       "conditions": {
         "items": [
           {
-            "tag": "forge:ingots/netherite"
+            "items": [
+              "minecraft:green_concrete"
+            ]
           }
         ]
       },
       "trigger": "minecraft:inventory_changed"
-    },
-    "has_the_recipe": {
-      "conditions": {
-        "recipe": "projectarsenal:aa12"
-      },
-      "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
       "has_iron_ingots",
-      "has_anvil",
+      "has_white_concrete",
+      "has_ingots_netherite",
       "has_fire_charge",
-      "has_firework_star",
-      "has_netherite_ingots",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "projectarsenal:aa12"
+      "projectarsenal:p90"
     ]
   }
 }

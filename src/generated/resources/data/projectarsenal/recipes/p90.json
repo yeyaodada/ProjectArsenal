@@ -2,16 +2,16 @@
   "type": "cgm:workbench",
   "materials": [
     {
-      "count": 32,
+      "count": 48,
       "tag": "forge:ingots/iron"
     },
     {
-      "count": 32,
+      "count": 48,
       "item": "minecraft:white_concrete"
     },
     {
       "count": 1,
-      "tag": "forge:gems/diamond"
+      "tag": "forge:ingots/netherite"
     },
     {
       "count": 1,
@@ -19,6 +19,6 @@
     }
   ],
   "result": {
-    "item": "projectarsenal:glock21"
+    "item": "projectarsenal:p90"
   }
 }
