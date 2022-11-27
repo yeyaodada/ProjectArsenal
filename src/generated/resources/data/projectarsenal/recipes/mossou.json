@@ -6,8 +6,8 @@
       "count": 32
     },
     {
-      "item": "minecraft:acacia_planks",
-      "count": 48
+      "item": "minecraft:spruce_planks",
+      "count": 32
     },
     {
       "item": "minecraft:fire_charge",
@@ -16,10 +16,6 @@
     {
       "item": "minecraft:firework_star",
       "count": 3
-    },
-    {
-      "tag": "forge:gunpowder",
-      "count": 20
     },
     {
       "tag": "forge:storage_blocks/diamond",

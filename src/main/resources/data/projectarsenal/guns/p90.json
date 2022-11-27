@@ -1,0 +1,48 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 1,
+    "gripType": "cgm:two_handed",
+    "maxAmmo": 50,
+    "reloadAmount": 10,
+    "recoilAngle": 0.75,
+    "recoilKick": 1.35,
+    "recoilAdsReduction": 0.80,
+    "alwaysSpread": true,
+    "spread": 4.0
+  },
+  "projectile": {
+    "item": "cgm:basic_bullet",
+    "visible": false,
+    "gravity": true,
+    "damage": 6.5,
+    "size": 0.15,
+    "speed": 20.0,
+    "life": 30
+  },
+  "sounds": {
+    "fire": "projectarsenal:item.p90.fire",
+    "reload": "cgm:item.pistol.reload",
+    "cock": "cgm:item.assault_rifle.cock"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 9.2,
+      "zOffset": -5.5
+    }
+  },
+  "modules": {
+    "zoom": {
+      "fovModifier": 0.6,
+      "yOffset": 13,
+      "zOffset": 4
+    },
+    "attachments": {
+      "barrel": {
+        "yOffset": 9.2,
+        "zOffset": -5,
+        "scale": 0.4
+      }
+    }
+  }
+}

@@ -36,22 +36,22 @@
         ]
       }
     },
-    "has_green_concrete": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "item": "minecraft:green_concrete"
-          }
-        ]
-      }
-    },
     "has_ingots_netherite": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
             "tag": "forge:ingots/netherite"
+          }
+        ]
+      }
+    },
+    "has_fire_charge": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "item": "minecraft:fire_charge"
           }
         ]
       }
@@ -68,8 +68,8 @@
       "has_iron_ingots",
       "has_iron_nugget",
       "has_iron_block",
-      "has_green_concrete",
       "has_ingots_netherite",
+      "has_fire_charge",
       "has_the_recipe"
     ]
   ]

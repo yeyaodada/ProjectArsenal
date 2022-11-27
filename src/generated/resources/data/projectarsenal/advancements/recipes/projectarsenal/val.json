@@ -16,22 +16,22 @@
         ]
       }
     },
-    "has_green_concrete": {
+    "has_white_concrete": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:green_concrete"
+            "item": "minecraft:white_concrete"
           }
         ]
       }
     },
-    "has_sponge": {
+    "has_black_wool": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "item": "minecraft:sponge"
+            "item": "minecraft:black_wool"
           }
         ]
       }
@@ -46,16 +46,6 @@
         ]
       }
     },
-    "has_gunpowder": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "forge:gunpowder"
-          }
-        ]
-      }
-    },
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
@@ -66,10 +56,9 @@
   "requirements": [
     [
       "has_iron_ingots",
-      "has_green_concrete",
-      "has_sponge",
+      "has_white_concrete",
+      "has_black_wool",
       "has_fire_charge",
-      "has_gunpowder",
       "has_the_recipe"
     ]
   ]

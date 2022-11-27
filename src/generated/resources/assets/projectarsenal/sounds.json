@@ -101,6 +101,12 @@
       "projectarsenal:item/scarh"
     ]
   },
+  "item.p90.fire": {
+    "subtitle": "subtitle.projectarsenal.regular_fire",
+    "sounds": [
+      "projectarsenal:item/p90"
+    ]
+  },
   "item.shrike.suppressed": {
     "subtitle": "subtitle.projectarsenal.suppressed_fire",
     "sounds": [

@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "projectarsenal:desert_eagle"
+      "projectarsenal:p90"
     ]
   },
   "criteria": {
@@ -16,12 +16,22 @@
         ]
       }
     },
-    "has_emerald": {
+    "has_white_concrete": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "forge:gems/emerald"
+            "item": "minecraft:green_concrete"
+          }
+        ]
+      }
+    },
+    "has_ingots_netherite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ingots/netherite"
           }
         ]
       }
@@ -39,14 +49,15 @@
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "projectarsenal:desert_eagle"
+        "recipe": "projectarsenal:p90"
       }
     }
   },
   "requirements": [
     [
       "has_iron_ingots",
-      "has_emerald",
+      "has_white_concrete",
+      "has_ingots_netherite",
       "has_fire_charge",
       "has_the_recipe"
     ]

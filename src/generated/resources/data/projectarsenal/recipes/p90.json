@@ -3,23 +3,15 @@
   "materials": [
     {
       "tag": "forge:ingots/iron",
-      "count": 150
-    },
-    {
-      "tag": "forge:nuggets/iron",
-      "count": 35
-    },
-    {
-      "tag": "forge:storage_blocks/iron",
-      "count": 7
+      "count": 48
     },
     {
       "item": "minecraft:white_concrete",
-      "count": 75
+      "count": 48
     },
     {
       "tag": "forge:ingots/netherite",
-      "count": 3
+      "count": 1
     },
     {
       "item": "minecraft:fire_charge",
@@ -27,6 +19,6 @@
     }
   ],
   "result": {
-    "item": "projectarsenal:shrike"
+    "item": "projectarsenal:p90"
   }
 }
