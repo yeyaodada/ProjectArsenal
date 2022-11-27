@@ -7,7 +7,7 @@
     },
     {
       "tag": "forge:gems/diamond",
-      "count": 7
+      "count": 16
     },
     {
       "item": "minecraft:heart_of_the_sea",
@@ -15,14 +15,14 @@
     },
     {
       "item": "minecraft:soul_torch",
-      "count": 1
+      "count": 3
     },
     {
       "item": "minecraft:golden_horse_armor",
       "count": 1
     },
     {
-      "tag": "forge:storage_blocks/netherite",
+      "item": "minecraft:nether_star",
       "count": 1
     }
   ],

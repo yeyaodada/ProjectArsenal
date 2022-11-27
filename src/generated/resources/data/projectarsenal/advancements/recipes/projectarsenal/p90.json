@@ -2,7 +2,7 @@
   "parent": "minecraft:recipes/root",
   "rewards": {
     "recipes": [
-      "projectarsenal:prismatic"
+      "projectarsenal:p90"
     ]
   },
   "criteria": {
@@ -22,8 +22,18 @@
         "items": [
           {
             "items": [
-              "minecraft:white_concrete"
+              "minecraft:green_concrete"
             ]
+          }
+        ]
+      }
+    },
+    "has_ingots_netherite": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "forge:ingots/netherite"
           }
         ]
       }
@@ -40,20 +50,10 @@
         ]
       }
     },
-    "has_ingots_netherite": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "forge:ingots/netherite"
-          }
-        ]
-      }
-    },
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
-        "recipe": "projectarsenal:prismatic"
+        "recipe": "projectarsenal:p90"
       }
     }
   },
@@ -61,8 +61,8 @@
     [
       "has_iron_ingots",
       "has_white_concrete",
-      "has_fire_charge",
       "has_ingots_netherite",
+      "has_fire_charge",
       "has_the_recipe"
     ]
   ]

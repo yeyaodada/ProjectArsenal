@@ -3,7 +3,7 @@
     "auto": true,
     "rate": 2,
     "gripType": "cgm:two_handed",
-    "maxAmmo": 120,
+    "maxAmmo": 45,
     "reloadAmount": 10,
     "recoilAngle": 2.0,
     "recoilKick": 0.65,
@@ -15,7 +15,7 @@
     "item": "cgm:advanced_bullet",
     "visible": false,
     "gravity": true,
-    "damage": 10.0,
+    "damage": 9.0,
     "size": 1.2,
     "speed": 50.0,
     "life": 50

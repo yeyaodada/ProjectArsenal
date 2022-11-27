@@ -50,16 +50,6 @@
         ]
       }
     },
-    "has_gunpowder": {
-      "trigger": "minecraft:inventory_changed",
-      "conditions": {
-        "items": [
-          {
-            "tag": "forge:gunpowder"
-          }
-        ]
-      }
-    },
     "has_the_recipe": {
       "trigger": "minecraft:recipe_unlocked",
       "conditions": {
@@ -73,7 +63,6 @@
       "has_white_concrete",
       "has_glowstone_dust",
       "has_fire_charge",
-      "has_gunpowder",
       "has_the_recipe"
     ]
   ]

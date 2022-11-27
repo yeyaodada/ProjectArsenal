@@ -28,12 +28,14 @@
         ]
       }
     },
-    "has_gunpowder": {
+    "has_black_concrete": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "tag": "forge:gunpowder"
+            "items": [
+              "minecraft:black_concrete"
+            ]
           }
         ]
       }
@@ -49,7 +51,7 @@
     [
       "has_iron_ingots",
       "has_fire_charge",
-      "has_gunpowder",
+      "has_black_concrete",
       "has_the_recipe"
     ]
   ]

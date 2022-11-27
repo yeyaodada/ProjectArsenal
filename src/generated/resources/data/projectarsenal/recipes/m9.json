@@ -3,14 +3,14 @@
   "materials": [
     {
       "tag": "forge:ingots/iron",
-      "count": 40
+      "count": 27
     },
     {
       "item": "minecraft:fire_charge",
       "count": 1
     },
     {
-      "tag": "forge:gunpowder",
+      "item": "minecraft:black_concrete",
       "count": 20
     }
   ],
