@@ -71,6 +71,12 @@ public class ArsenalGunItem extends GunItem
             {
                 tooltip.add(index++, new TranslatableComponent("info.projectarsenal.projectile_spread", ChatFormatting.WHITE.toString() + modifiedGun.getGeneral().getSpread()).withStyle(ChatFormatting.GRAY));
             }
+
+            // Non-dyeable
+            if (!canColor(stack) && Config.CLIENT.gunTooltipInfo.showNonDyeable.get())
+            {
+                tooltip.add(index++, new TranslatableComponent("info.projectarsenal.non_dyeable").withStyle(ChatFormatting.RED));
+            }
         }
     }
 
