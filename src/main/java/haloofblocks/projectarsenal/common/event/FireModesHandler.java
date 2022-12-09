@@ -17,6 +17,8 @@ import net.minecraftforge.fml.common.Mod;
 @Mod.EventBusSubscriber(modid = ProjectArsenal.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE)
 public class FireModesHandler
 {
+    private static int burstCount = 0;
+
     @SubscribeEvent
     public static void onPreGunFireEvent(GunFireEvent.Pre event)
     {
@@ -36,8 +38,41 @@ public class FireModesHandler
             event.setCanceled(true);
         }
 
+        if (gunItem.getSelectedFireMode().equals(FireModes.BURST))
+        {
+            if (burstCount > gunItem.getFireMode().getBurstCount())
+            {
+                event.setCanceled(true);
+            }
+        }
+
         // modify "auto" field when fire mode switches between full-auto and semi-auto
         setAuto(stack, !gunItem.getSelectedFireMode().equals(FireModes.SEMI_AUTOMATIC));
+    }
+
+    @SubscribeEvent
+    public static void onPostGunFireEvent(GunFireEvent.Post event)
+    {
+        if (event.isClient())
+            return;
+
+        ItemStack stack = event.getStack();
+
+        if (!(stack.getItem() instanceof ArsenalGunItem))
+            return;
+
+        ArsenalGunItem gunItem = (ArsenalGunItem) stack.getItem();
+
+        if (!gunItem.hasFireMode())
+            return;
+
+        if (gunItem.getSelectedFireMode().equals(FireModes.BURST))
+        {
+            if (burstCount <= gunItem.getFireMode().getBurstCount())
+            {
+                burstCount++;
+            }
+        }
     }
 
     /**
@@ -79,5 +114,13 @@ public class FireModesHandler
 
         // modify "auto" tag
         generalTag.putBoolean("Auto", auto);
+    }
+
+    /**
+     * Helper method for resetting the weapon's burst counter
+     */
+    public static void resetBurstCount()
+    {
+        burstCount = 0;
     }
 }

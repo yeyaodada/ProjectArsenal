@@ -9,6 +9,7 @@ import java.util.List;
 public class FireMode
 {
     private final List<FireModes> fireModes;
+    private int burstCount = 3;
 
     private FireMode(FireModes... fireModes)
     {
@@ -30,10 +31,31 @@ public class FireMode
     }
 
     /**
+     * Set burst count for weapon.
+     * This number is set to <b>3</b> by default.
+     *
+     * @param rounds The rounds to be fired automatically between a burst
+     * @return instance of {@link FireMode}
+     */
+    public FireMode setBurstCount(int rounds)
+    {
+        this.burstCount = rounds;
+        return this;
+    }
+
+    /**
      * @return List of set fire modes
      */
     public List<FireModes> getFireModes()
     {
         return this.fireModes;
+    }
+
+    /**
+     * @return Burst count for weapon
+     */
+    public int getBurstCount()
+    {
+        return this.burstCount;
     }
 }
