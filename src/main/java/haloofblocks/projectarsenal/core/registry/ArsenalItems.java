@@ -8,6 +8,7 @@ import com.mrcrayfish.guns.item.attachment.impl.UnderBarrel;
 import haloofblocks.projectarsenal.ProjectArsenal;
 import haloofblocks.projectarsenal.ProjectArsenalTab;
 import haloofblocks.projectarsenal.common.FireMode;
+import haloofblocks.projectarsenal.common.FireModes;
 import haloofblocks.projectarsenal.common.item.ArsenalGunItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.registries.DeferredRegister;
@@ -46,7 +47,7 @@ public class ArsenalItems
     public static final RegistryObject<Item> M_NINE = registerGun("m9", false);
     public static final RegistryObject<Item> SCARH = registerGun("scarh", true);
     public static final RegistryObject<Item> DESERT_EAGLE_CLASSIC = registerGun("desert_eagle_classic", false);
-    public static final RegistryObject<Item> P_NINETY = registerGun("p90", true);
+    public static final RegistryObject<Item> P_NINETY = registerGun("p90", FireMode.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.BURST, FireModes.SAFETY).setBurstCount(5), true);
 
     // ===== ATTACHMENTS ===== //
     public static final RegistryObject<Item> SPECIAL_MUZZLE_BREAK = registerBarrel("special_muzzle_break", Barrel.create(6.0f, GunModifiers.REDUCED_RECOIL), false);
