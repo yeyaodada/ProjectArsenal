@@ -104,6 +104,7 @@ public class ArsenalGunItem extends GunItem
             {
                 case SEMI_AUTOMATIC -> fireMode = "semi_auto";
                 case FULL_AUTOMATIC -> fireMode = "full_auto";
+                case BURST -> fireMode = "burst";
                 case SAFETY -> fireMode = "safety";
             }
         }
