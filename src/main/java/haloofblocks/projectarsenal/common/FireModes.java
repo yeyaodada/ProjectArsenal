@@ -18,6 +18,11 @@ public enum FireModes
      */
     FULL_AUTOMATIC,
     /**
+     * Burst fire mode.
+     * Fires 3 rounds (number can be changed through {@link FireMode#setBurstCount(int)}) before requiring input again.
+     */
+    BURST,
+    /**
      * Safety fire mode that will prevent the weapon from firing a round.
      */
     SAFETY

@@ -37,6 +37,7 @@
   "info.projectarsenal.fire_mode": "Fire Mode: %s",
   "info.projectarsenal.fire_mode.semi_auto": "Semi-Automatic",
   "info.projectarsenal.fire_mode.full_auto": "Full-Automatic",
+  "info.projectarsenal.fire_mode.burst": "Burst",
   "info.projectarsenal.fire_mode.safety": "Safety",
   "info.projectarsenal.projectile_speed": "Projectile Speed: %s",
   "info.projectarsenal.projectile_spread": "Projectile Spread: %s",
