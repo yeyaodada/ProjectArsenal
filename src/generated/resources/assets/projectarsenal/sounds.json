@@ -118,5 +118,11 @@
     "sounds": [
       "projectarsenal:item/vector_suppressed"
     ]
+  },
+  "item.switch_fire_mode": {
+    "subtitle": "subtitle.projectarsenal.switch_fire_mode",
+    "sounds": [
+      "projectarsenal:item/switch_fire_mode"
+    ]
   }
 }
