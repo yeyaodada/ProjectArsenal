@@ -71,12 +71,6 @@
       "projectarsenal:item/markxix"
     ]
   },
-  "item.switch_fire_mode": {
-    "sounds": [
-      "projectarsenal:item/switch_fire_mode"
-    ],
-    "subtitle": "subtitle.projectarsenal.switch_fire_mode"
-  },
   "item.vector.fire": {
     "subtitle": "subtitle.projectarsenal.regular_fire",
     "sounds": [
@@ -123,6 +117,18 @@
     "subtitle": "subtitle.projectarsenal.suppressed_fire",
     "sounds": [
       "projectarsenal:item/vector_suppressed"
+    ]
+  },
+  "item.switch_fire_mode": {
+    "subtitle": "subtitle.projectarsenal.switch_fire_mode",
+    "sounds": [
+      "projectarsenal:item/switch_fire_mode"
+    ]
+  },
+  "item.gunfire_blocked": {
+    "subtitle": "subtitle.projectarsenal.gunfire_blocked",
+    "sounds": [
+      "projectarsenal:item/gunfire_blocked"
     ]
   }
 }
