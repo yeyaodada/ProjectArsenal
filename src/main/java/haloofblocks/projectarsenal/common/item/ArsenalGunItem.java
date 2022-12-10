@@ -2,6 +2,7 @@ package haloofblocks.projectarsenal.common.item;
 
 import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.item.GunItem;
+import haloofblocks.projectarsenal.client.KeyBindings;
 import haloofblocks.projectarsenal.common.FireMode;
 import haloofblocks.projectarsenal.common.FireModes;
 import haloofblocks.projectarsenal.config.Config;
@@ -15,6 +16,7 @@ import net.minecraft.world.level.Level;
 
 import javax.annotation.Nullable;
 import java.util.List;
+import java.util.Locale;
 
 /**
  * @author Autovw
@@ -89,6 +91,12 @@ public class ArsenalGunItem extends GunItem
             if (!canColor(stack) && Config.CLIENT.gunTooltipInfo.showNonDyeable.get())
             {
                 tooltip.add(index++, Component.translatable("info.projectarsenal.non_dyeable").withStyle(ChatFormatting.RED));
+            }
+
+            // Switching fire mode
+            if (hasFireMode())
+            {
+                tooltip.add(index++, Component.translatable("info.projectarsenal.switch_fire_mode", KeyBindings.KEY_SELECT_FIRE_MODE.getTranslatedKeyMessage().getString().toUpperCase(Locale.ENGLISH)).withStyle(ChatFormatting.YELLOW));
             }
         }
     }
