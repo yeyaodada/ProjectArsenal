@@ -35,7 +35,6 @@ public class MessageResetBurst
             if (player != null)
             {
                 FireModesHandler.resetBurstCount();
-                System.out.println("Hello from packet");
             }
         });
         supplier.get().setPacketHandled(true);
