@@ -41,6 +41,7 @@ public class ArsenalSounds
 
     // ===== MISCELLANEOUS SOUNDS ===== //
     public static final RegistryObject<SoundEvent> SWITCH_FIRE_MODE = register("item.switch_fire_mode");
+    public static final RegistryObject<SoundEvent> GUNFIRE_BLOCKED = register("item.gunfire_blocked");
 
     /**
      * Helper method used to register sounds

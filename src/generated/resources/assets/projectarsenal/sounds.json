@@ -124,5 +124,11 @@
     "sounds": [
       "projectarsenal:item/switch_fire_mode"
     ]
+  },
+  "item.gunfire_blocked": {
+    "subtitle": "subtitle.projectarsenal.gunfire_blocked",
+    "sounds": [
+      "projectarsenal:item/gunfire_blocked"
+    ]
   }
 }
