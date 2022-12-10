@@ -106,7 +106,7 @@ public class FireModesHandler
             gunTag.put("General", generalTag);
 
         // return if fire mode tag is already properly set
-        if (generalTag.getBoolean("Auto") == auto)
+        if (generalTag.contains("Auto") && generalTag.getBoolean("Auto") == auto)
             return;
 
         if (generalTag.contains("Auto", Constants.NBT.TAG_ANY_NUMERIC))
