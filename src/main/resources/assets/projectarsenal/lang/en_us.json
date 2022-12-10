@@ -42,6 +42,7 @@
   "info.projectarsenal.projectile_speed": "Projectile Speed: %s",
   "info.projectarsenal.projectile_spread": "Projectile Spread: %s",
   "info.projectarsenal.non_dyeable": "This gun cannot be dyed",
+  "info.projectarsenal.switch_fire_mode": "Press %s in-game to switch Fire Mode",
 
   "container.projectarsenal.arsenal_workbench": "Arsenal Workbench",
 
