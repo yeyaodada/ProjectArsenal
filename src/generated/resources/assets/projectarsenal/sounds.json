@@ -35,6 +35,12 @@
     ],
     "subtitle": "subtitle.projectarsenal.regular_fire"
   },
+  "item.gunfire_blocked": {
+    "sounds": [
+      "projectarsenal:item/gunfire_blocked"
+    ],
+    "subtitle": "subtitle.projectarsenal.gunfire_blocked"
+  },
   "item.integral_suppression.fire": {
     "sounds": [
       "projectarsenal:item/integral_suppression"

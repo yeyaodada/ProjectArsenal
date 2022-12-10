@@ -32,6 +32,7 @@
   "subtitle.projectarsenal.suppressed_fire": "Silenced gunfire",
   "subtitle.projectarsenal.enchanted_fire": "Enchanted gunfire",
   "subtitle.projectarsenal.switch_fire_mode": "Switching Fire Mode",
+  "subtitle.projectarsenal.gunfire_blocked": "Gunfire blocked",
 
   "info.projectarsenal.reload_amount": "Reload Amount: %s",
   "info.projectarsenal.fire_rate": "Fire Rate: %s",
