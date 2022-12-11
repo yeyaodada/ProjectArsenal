@@ -8,6 +8,7 @@ import haloofblocks.projectarsenal.common.FireModes;
 import haloofblocks.projectarsenal.config.Config;
 import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
+import net.minecraft.nbt.Tag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
 import net.minecraft.network.chat.TranslatableComponent;
@@ -26,18 +27,12 @@ public class ArsenalGunItem extends GunItem
 {
     private final boolean canColor;
     private final FireMode fireMode;
-    private FireModes selectedFireMode;
 
     public ArsenalGunItem(@Nullable FireMode fireMode, Properties properties, boolean canColor)
     {
         super(properties);
         this.fireMode = fireMode;
         this.canColor = canColor;
-
-        if (hasFireMode())
-        {
-            this.selectedFireMode = fireMode.getFireModes().get(0);
-        }
     }
 
     public ArsenalGunItem(Properties properties, boolean canColor)
@@ -108,7 +103,7 @@ public class ArsenalGunItem extends GunItem
 
         if (hasFireMode())
         {
-            switch (getSelectedFireMode())
+            switch (getSelectedFireMode(stack))
             {
                 case SEMI_AUTOMATIC -> fireMode = "semi_auto";
                 case FULL_AUTOMATIC -> fireMode = "full_auto";
@@ -149,13 +144,39 @@ public class ArsenalGunItem extends GunItem
         return this.fireMode;
     }
 
-    public FireModes getSelectedFireMode()
+    /**
+     * Reads the weapon's selected fire mode from the <code>FireMode</code> tag.
+     *
+     * @param stack Weapon's item stack
+     * @return Selected fire mode
+     */
+    public FireModes getSelectedFireMode(ItemStack stack)
     {
-        return this.selectedFireMode;
+        CompoundTag tag = stack.getTag();
+        FireModes selectedFireMode = getInitialFireMode();
+
+        if (tag != null)
+        {
+            // write default fire mode into nbt if unset
+            if (!tag.contains("FireMode", Tag.TAG_INT))
+                tag.putInt("FireMode", getFireMode().getFireModes().indexOf(getInitialFireMode()));
+
+            int fireModeTag = tag.getInt("FireMode");
+            int size = getFireMode().getFireModes().size();
+            if (fireModeTag < size)
+            {
+                selectedFireMode = getFireMode().getFireModes().get(fireModeTag);
+            }
+        }
+
+        return selectedFireMode;
     }
 
-    public void setSelectedFireMode(FireModes selectedFireMode)
+    /**
+     * @return The first available fire mode set using {@link FireMode#set(FireModes...)}.
+     */
+    public FireModes getInitialFireMode()
     {
-        this.selectedFireMode = selectedFireMode;
+        return getFireMode().getFireModes().get(0);
     }
 }

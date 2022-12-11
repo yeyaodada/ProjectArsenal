@@ -1,8 +1,8 @@
 package haloofblocks.projectarsenal.network;
 
 import haloofblocks.projectarsenal.ProjectArsenal;
-import haloofblocks.projectarsenal.network.message.MessageSelectFireMode;
 import haloofblocks.projectarsenal.network.message.MessageResetBurst;
+import haloofblocks.projectarsenal.network.message.MessageSelectNextFireMode;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraftforge.network.NetworkDirection;
 import net.minecraftforge.network.NetworkRegistry;
@@ -20,8 +20,8 @@ public class PacketHandler
     public static void setup()
     {
         int index = 0;
-        PLAY_CHANNEL.messageBuilder(MessageSelectFireMode.class, index++, NetworkDirection.PLAY_TO_SERVER)
-                .encoder(MessageSelectFireMode::encode).decoder(MessageSelectFireMode::decode).consumer(MessageSelectFireMode::handle).add();
+        PLAY_CHANNEL.messageBuilder(MessageSelectNextFireMode.class, index++, NetworkDirection.PLAY_TO_SERVER)
+                .encoder(MessageSelectNextFireMode::encode).decoder(MessageSelectNextFireMode::decode).consumer(MessageSelectNextFireMode::handle).add();
         PLAY_CHANNEL.messageBuilder(MessageResetBurst.class, index++, NetworkDirection.PLAY_TO_SERVER)
                 .encoder(MessageResetBurst::encode).decoder(MessageResetBurst::decode).consumer(MessageResetBurst::handle).add();
     }
