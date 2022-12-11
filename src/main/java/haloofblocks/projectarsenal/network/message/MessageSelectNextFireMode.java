@@ -11,26 +11,22 @@ import java.util.function.Supplier;
  * @author Autovw
  */
 // TODO move to Framework's API
-public class MessageSelectFireMode
+public class MessageSelectNextFireMode
 {
-    private final int nextFireMode;
-
-    public MessageSelectFireMode(int nextFireMode)
+    public MessageSelectNextFireMode()
     {
-        this.nextFireMode = nextFireMode;
     }
 
-    public static void encode(MessageSelectFireMode message, PacketBuffer buffer)
+    public static void encode(MessageSelectNextFireMode message, PacketBuffer buffer)
     {
-        buffer.writeInt(message.nextFireMode);
     }
 
-    public static MessageSelectFireMode decode(PacketBuffer buffer)
+    public static MessageSelectNextFireMode decode(PacketBuffer buffer)
     {
-        return new MessageSelectFireMode(buffer.readInt());
+        return new MessageSelectNextFireMode();
     }
 
-    public static void handle(MessageSelectFireMode message, Supplier<NetworkEvent.Context> supplier)
+    public static void handle(MessageSelectNextFireMode message, Supplier<NetworkEvent.Context> supplier)
     {
         supplier.get().enqueueWork(() ->
         {
@@ -38,7 +34,7 @@ public class MessageSelectFireMode
 
             if (player != null)
             {
-                ServerPlayHandler.handleSelectFireMode(message.nextFireMode, player);
+                ServerPlayHandler.handleSelectFireMode(player);
             }
         });
         supplier.get().setPacketHandled(true);

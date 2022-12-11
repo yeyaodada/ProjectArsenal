@@ -3,6 +3,7 @@ package haloofblocks.projectarsenal.common.event;
 import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.event.GunFireEvent;
 import haloofblocks.projectarsenal.ProjectArsenal;
+import haloofblocks.projectarsenal.common.FireMode;
 import haloofblocks.projectarsenal.common.FireModes;
 import haloofblocks.projectarsenal.common.item.ArsenalGunItem;
 import net.minecraft.item.ItemStack;
@@ -32,13 +33,13 @@ public class FireModesHandler
         if (!gunItem.hasFireMode())
             return;
 
-        if (gunItem.getSelectedFireMode().equals(FireModes.SAFETY))
+        if (gunItem.getSelectedFireMode(stack).equals(FireModes.SAFETY))
         {
             // cancel all gun firing when safety mode is enabled
             event.setCanceled(true);
         }
 
-        if (gunItem.getSelectedFireMode().equals(FireModes.BURST))
+        if (gunItem.getSelectedFireMode(stack).equals(FireModes.BURST))
         {
             if (burstCount > gunItem.getFireMode().getBurstCount())
             {
@@ -47,7 +48,7 @@ public class FireModesHandler
         }
 
         // modify "auto" field when fire mode switches between full-auto and semi-auto
-        setAuto(stack, !gunItem.getSelectedFireMode().equals(FireModes.SEMI_AUTOMATIC));
+        setAuto(stack, !gunItem.getSelectedFireMode(stack).equals(FireModes.SEMI_AUTOMATIC));
     }
 
     @SubscribeEvent
@@ -66,7 +67,7 @@ public class FireModesHandler
         if (!gunItem.hasFireMode())
             return;
 
-        if (gunItem.getSelectedFireMode().equals(FireModes.BURST))
+        if (gunItem.getSelectedFireMode(stack).equals(FireModes.BURST))
         {
             if (burstCount <= gunItem.getFireMode().getBurstCount())
             {
@@ -114,6 +115,39 @@ public class FireModesHandler
 
         // modify "auto" tag
         generalTag.putBoolean("Auto", auto);
+    }
+
+    /**
+     * When called, selects the next available fire mode and adjusts the <code>FireMode</code> tag accordingly.
+     * @param stack The weapon's item stack
+     */
+    public static void nextFireMode(ItemStack stack)
+    {
+        CompoundNBT tag = stack.getTag();
+
+        if (tag == null)
+            return;
+
+        if (!(stack.getItem() instanceof ArsenalGunItem) || !((ArsenalGunItem) stack.getItem()).hasFireMode())
+            return;
+
+        ArsenalGunItem gunItem = (ArsenalGunItem) stack.getItem();
+
+        FireMode fireMode = gunItem.getFireMode();
+        FireModes selectedFireMode = gunItem.getSelectedFireMode(stack);
+        int index = fireMode.getFireModes().indexOf(selectedFireMode); // index of current fire mode
+        int next = index + 1; // index of the next fire mode
+        int size = fireMode.getFireModes().size();
+
+        // reset back to initial fire mode if there are no more fire modes available
+        if (index >= size - 1)
+            next = fireMode.getFireModes().indexOf(gunItem.getInitialFireMode());
+
+        if (tag.contains("FireMode", Constants.NBT.TAG_INT))
+            tag.remove("FireMode");
+
+        // Modify "FireMode" tag
+        tag.putInt("FireMode", next);
     }
 
     /**

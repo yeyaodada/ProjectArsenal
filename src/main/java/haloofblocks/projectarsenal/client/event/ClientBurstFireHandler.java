@@ -39,7 +39,7 @@ public class ClientBurstFireHandler
         if (!gunItem.hasFireMode())
             return;
 
-        if (!gunItem.getSelectedFireMode().equals(FireModes.BURST))
+        if (!gunItem.getSelectedFireMode(stack).equals(FireModes.BURST))
             return;
 
         if (mc.options.keyAttack.isDown() && event.getAction() == GLFW.GLFW_PRESS)
