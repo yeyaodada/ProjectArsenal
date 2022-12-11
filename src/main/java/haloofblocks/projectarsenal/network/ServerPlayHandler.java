@@ -1,7 +1,6 @@
 package haloofblocks.projectarsenal.network;
 
-import com.mrcrayfish.guns.common.Gun;
-import haloofblocks.projectarsenal.common.FireMode;
+import haloofblocks.projectarsenal.common.event.FireModesHandler;
 import haloofblocks.projectarsenal.common.item.ArsenalGunItem;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.item.ItemStack;
@@ -11,16 +10,14 @@ import net.minecraft.world.item.ItemStack;
  */
 public class ServerPlayHandler
 {
-    public static void handleSelectFireMode(int nextFireMode, ServerPlayer player)
+    public static void handleSelectFireMode(ServerPlayer player)
     {
         ItemStack stack = player.getMainHandItem();
 
-        if (!(stack.getItem() instanceof ArsenalGunItem gunItem))
+        if (!(stack.getItem() instanceof ArsenalGunItem gunItem) || !gunItem.hasFireMode())
             return;
 
-        FireMode fireMode = gunItem.getFireMode();
-
-        // Change selected fire mode
-        gunItem.setSelectedFireMode(fireMode.getFireModes().get(nextFireMode));
+        // Change selected fire mode to the next available fire mode
+        FireModesHandler.nextFireMode(stack);
     }
 }

@@ -33,7 +33,7 @@ public class ClientSafetyModeHandler
         if (!(stack.getItem() instanceof ArsenalGunItem gunItem) || !gunItem.hasFireMode())
             return;
 
-        if (!gunItem.getSelectedFireMode().equals(FireModes.SAFETY))
+        if (!gunItem.getSelectedFireMode(stack).equals(FireModes.SAFETY))
             return;
 
         if (mc.options.keyAttack.isDown() && event.getAction() == GLFW.GLFW_PRESS)
