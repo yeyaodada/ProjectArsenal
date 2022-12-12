@@ -20,4 +20,15 @@ public class ServerPlayHandler
         // Change selected fire mode to the next available fire mode
         FireModesHandler.nextFireMode(stack);
     }
+
+    public static void handleBurstReset(ServerPlayer player)
+    {
+        ItemStack stack = player.getMainHandItem();
+
+        if (!(stack.getItem() instanceof ArsenalGunItem gunItem) || !gunItem.hasFireMode())
+            return;
+
+        // Reset the burst counter + remove tag
+        FireModesHandler.resetBurstCount(stack);
+    }
 }
