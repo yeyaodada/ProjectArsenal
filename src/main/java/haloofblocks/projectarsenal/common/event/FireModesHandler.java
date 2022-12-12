@@ -39,8 +39,18 @@ public class FireModesHandler
 
         if (gunItem.getSelectedFireMode(stack).equals(FireModes.BURST))
         {
-            if (burstCount > gunItem.getFireMode().getBurstCount())
+            // questionable way to check if player is in singleplayer or multiplayer.
+            // I couldn't find a more reliable way to check this.
+            // GunFireEvent is fired on both sides which leads to different outcomes depending on the environment.
+            int serverModifier = event.getEntity().getServer() == null ? 2 : 1;
+            if ((burstCount / serverModifier) >= gunItem.getFireMode().getBurstCount())
             {
+                applyBurst(stack);
+            }
+
+            if (getBurst(stack))
+            {
+                // Cancel gun firing if Burst tag has been set
                 event.setCanceled(true);
             }
         }
@@ -143,10 +153,65 @@ public class FireModesHandler
     }
 
     /**
-     * Helper method for resetting the weapon's burst counter
+     * Applies <code>Burst</code> tag to the weapon that will prevent the weapon from firing.
+     * @param stack The weapon stack
      */
-    public static void resetBurstCount()
+    private static void applyBurst(ItemStack stack)
     {
-        burstCount = 0;
+        CompoundTag tag = stack.getTag();
+
+        if (tag == null)
+            return;
+
+        if (!(stack.getItem() instanceof ArsenalGunItem gunItem) || !gunItem.hasFireMode())
+            return;
+
+        if (!gunItem.getSelectedFireMode(stack).equals(FireModes.BURST))
+            return;
+
+        // Return early if we already have the tag set
+        if (getBurst(stack))
+            return;
+
+        // Set tag that will prevent the weapon from firing
+        tag.putBoolean("Burst", true);
+    }
+
+    /**
+     * Helper method for resetting the weapon's burst counter
+     * @param stack The weapon stack
+     */
+    public static void resetBurstCount(ItemStack stack) {
+        CompoundTag tag = stack.getTag();
+
+        if (tag == null)
+            return;
+
+        if (!(stack.getItem() instanceof ArsenalGunItem gunItem) || !gunItem.hasFireMode())
+            return;
+
+        burstCount = 0; // Reset server-side burst counter
+
+        if (getBurst(stack))
+        {
+            tag.remove("Burst"); // Remove nbt tag that prevents the weapon from firing
+        }
+    }
+
+    /**
+     * Helper method for checking if <code>Burst</code> tag is set for weapon
+     * @param stack The weapon stack
+     */
+    public static boolean getBurst(ItemStack stack)
+    {
+        CompoundTag tag  = stack.getTag();
+        boolean burst = false;
+
+        if (tag != null && stack.getItem() instanceof ArsenalGunItem)
+        {
+            burst = tag.getBoolean("Burst");
+        }
+
+        return burst;
     }
 }

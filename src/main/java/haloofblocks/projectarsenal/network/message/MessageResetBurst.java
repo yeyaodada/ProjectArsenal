@@ -1,6 +1,6 @@
 package haloofblocks.projectarsenal.network.message;
 
-import haloofblocks.projectarsenal.common.event.FireModesHandler;
+import haloofblocks.projectarsenal.network.ServerPlayHandler;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraftforge.network.NetworkEvent;
@@ -34,7 +34,7 @@ public class MessageResetBurst
 
             if (player != null)
             {
-                FireModesHandler.resetBurstCount();
+                ServerPlayHandler.handleBurstReset(player);
             }
         });
         supplier.get().setPacketHandled(true);
