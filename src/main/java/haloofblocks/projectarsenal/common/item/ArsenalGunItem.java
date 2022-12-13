@@ -181,6 +181,23 @@ public class ArsenalGunItem extends GunItem
     }
 
     /**
+     * Checks if the <code>Burst</code> tag has been set for the weapon
+     * @param stack The weapon stack
+     */
+    public boolean isBurst(ItemStack stack)
+    {
+        CompoundNBT tag  = stack.getTag();
+        boolean burst = false;
+
+        if (tag != null)
+        {
+            burst = tag.getBoolean("Burst");
+        }
+
+        return burst;
+    }
+
+    /**
      * @return The first available fire mode set using {@link FireMode#set(FireModes...)}.
      */
     public FireModes getInitialFireMode()
