@@ -48,7 +48,7 @@ public class FireModesHandler
                 applyBurst(stack);
             }
 
-            if (getBurst(stack))
+            if (gunItem.isBurst(stack))
             {
                 // Cancel gun firing if Burst tag has been set
                 event.setCanceled(true);
@@ -170,7 +170,7 @@ public class FireModesHandler
             return;
 
         // Return early if we already have the tag set
-        if (getBurst(stack))
+        if (gunItem.isBurst(stack))
             return;
 
         // Set tag that will prevent the weapon from firing
@@ -192,26 +192,9 @@ public class FireModesHandler
 
         burstCount = 0; // Reset server-side burst counter
 
-        if (getBurst(stack))
+        if (gunItem.isBurst(stack))
         {
             tag.remove("Burst"); // Remove nbt tag that prevents the weapon from firing
         }
-    }
-
-    /**
-     * Helper method for checking if <code>Burst</code> tag is set for weapon
-     * @param stack The weapon stack
-     */
-    public static boolean getBurst(ItemStack stack)
-    {
-        CompoundTag tag  = stack.getTag();
-        boolean burst = false;
-
-        if (tag != null && stack.getItem() instanceof ArsenalGunItem)
-        {
-            burst = tag.getBoolean("Burst");
-        }
-
-        return burst;
     }
 }
