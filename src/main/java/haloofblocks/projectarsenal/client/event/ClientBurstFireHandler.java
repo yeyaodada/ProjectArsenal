@@ -37,7 +37,7 @@ public class ClientBurstFireHandler
         if (!gunItem.getSelectedFireMode(stack).equals(FireModes.BURST))
             return;
 
-        if (mc.options.keyAttack.isDown() && event.getAction() == GLFW.GLFW_PRESS)
+        if (gunItem.isBurst(stack) && mc.options.keyAttack.isDown() && event.getAction() == GLFW.GLFW_PRESS)
         {
             // Send packet to reset the burst fire counter
             PacketHandler.getPlayChannel().sendToServer(new MessageResetBurst());
