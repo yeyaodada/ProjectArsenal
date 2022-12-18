@@ -30,7 +30,7 @@ public class ClientSafetyModeHandler
 
         ItemStack stack = player.getMainHandItem();
 
-        if (!(stack.getItem() instanceof ArsenalGunItem gunItem) || !gunItem.hasFireMode())
+        if (!(stack.getItem() instanceof ArsenalGunItem gunItem) || !gunItem.hasFireModeSelector())
             return;
 
         if (!gunItem.getSelectedFireMode(stack).equals(FireModes.SAFETY))
