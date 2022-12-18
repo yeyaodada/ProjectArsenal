@@ -3,7 +3,7 @@ package haloofblocks.projectarsenal.common.event;
 import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.event.GunFireEvent;
 import haloofblocks.projectarsenal.ProjectArsenal;
-import haloofblocks.projectarsenal.common.FireMode;
+import haloofblocks.projectarsenal.common.FireModeSelector;
 import haloofblocks.projectarsenal.common.FireModes;
 import haloofblocks.projectarsenal.common.item.ArsenalGunItem;
 import net.minecraft.item.ItemStack;
@@ -30,7 +30,7 @@ public class FireModesHandler
 
         ArsenalGunItem gunItem = (ArsenalGunItem) stack.getItem();
 
-        if (!gunItem.hasFireMode())
+        if (!gunItem.hasFireModeSelector())
             return;
 
         if (gunItem.getSelectedFireMode(stack).equals(FireModes.SAFETY))
@@ -45,7 +45,7 @@ public class FireModesHandler
             // I couldn't find a more reliable way to check this.
             // GunFireEvent is fired on both sides which leads to different outcomes depending on the environment.
             int serverModifier = event.getEntity().getServer() == null ? 2 : 1;
-            if ((burstCount / serverModifier) >= gunItem.getFireMode().getBurstCount())
+            if ((burstCount / serverModifier) >= gunItem.getFireModeSelector().getBurstCount())
             {
                 applyBurst(stack);
             }
@@ -74,12 +74,12 @@ public class FireModesHandler
 
         ArsenalGunItem gunItem = (ArsenalGunItem) stack.getItem();
 
-        if (!gunItem.hasFireMode())
+        if (!gunItem.hasFireModeSelector())
             return;
 
         if (gunItem.getSelectedFireMode(stack).equals(FireModes.BURST))
         {
-            if (burstCount <= gunItem.getFireMode().getBurstCount())
+            if (burstCount <= gunItem.getFireModeSelector().getBurstCount())
             {
                 burstCount++;
             }
@@ -138,20 +138,19 @@ public class FireModesHandler
         if (tag == null)
             return;
 
-        if (!(stack.getItem() instanceof ArsenalGunItem) || !((ArsenalGunItem) stack.getItem()).hasFireMode())
+        if (!(stack.getItem() instanceof ArsenalGunItem) || !((ArsenalGunItem) stack.getItem()).hasFireModeSelector())
             return;
 
         ArsenalGunItem gunItem = (ArsenalGunItem) stack.getItem();
-
-        FireMode fireMode = gunItem.getFireMode();
+        FireModeSelector fireModeSelector = gunItem.getFireModeSelector();
         FireModes selectedFireMode = gunItem.getSelectedFireMode(stack);
-        int index = fireMode.getFireModes().indexOf(selectedFireMode); // index of current fire mode
+        int index = fireModeSelector.getFireModes().indexOf(selectedFireMode); // index of current fire mode
         int next = index + 1; // index of the next fire mode
-        int size = fireMode.getFireModes().size();
+        int size = fireModeSelector.getFireModes().size();
 
         // reset back to initial fire mode if there are no more fire modes available
         if (index >= size - 1)
-            next = fireMode.getFireModes().indexOf(gunItem.getInitialFireMode());
+            next = fireModeSelector.getFireModes().indexOf(gunItem.getInitialFireMode());
 
         if (tag.contains("FireMode", Constants.NBT.TAG_INT))
             tag.remove("FireMode");
@@ -171,7 +170,7 @@ public class FireModesHandler
         if (tag == null)
             return;
 
-        if (!(stack.getItem() instanceof ArsenalGunItem) || !((ArsenalGunItem) stack.getItem()).hasFireMode())
+        if (!(stack.getItem() instanceof ArsenalGunItem) || !((ArsenalGunItem) stack.getItem()).hasFireModeSelector())
             return;
 
         ArsenalGunItem gunItem = (ArsenalGunItem) stack.getItem();
@@ -197,7 +196,7 @@ public class FireModesHandler
         if (tag == null)
             return;
 
-        if (!(stack.getItem() instanceof ArsenalGunItem) || !((ArsenalGunItem) stack.getItem()).hasFireMode())
+        if (!(stack.getItem() instanceof ArsenalGunItem) || !((ArsenalGunItem) stack.getItem()).hasFireModeSelector())
             return;
 
         ArsenalGunItem gunItem = (ArsenalGunItem) stack.getItem();

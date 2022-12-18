@@ -14,7 +14,7 @@ public class ServerPlayHandler
     {
         ItemStack stack = player.getMainHandItem();
 
-        if (!(stack.getItem() instanceof ArsenalGunItem) || !((ArsenalGunItem) stack.getItem()).hasFireMode())
+        if (!(stack.getItem() instanceof ArsenalGunItem) || !((ArsenalGunItem) stack.getItem()).hasFireModeSelector())
             return;
 
         // Change selected fire mode to the next available fire mode
@@ -25,7 +25,7 @@ public class ServerPlayHandler
     {
         ItemStack stack = player.getMainHandItem();
 
-        if (!(stack.getItem() instanceof ArsenalGunItem) || !((ArsenalGunItem) stack.getItem()).hasFireMode())
+        if (!(stack.getItem() instanceof ArsenalGunItem) || !((ArsenalGunItem) stack.getItem()).hasFireModeSelector())
             return;
 
         // Reset the burst counter + remove tag

@@ -36,7 +36,7 @@ public class ClientBurstFireHandler
 
         ArsenalGunItem gunItem = (ArsenalGunItem) stack.getItem();
 
-        if (!gunItem.hasFireMode())
+        if (!gunItem.hasFireModeSelector())
             return;
 
         if (!gunItem.getSelectedFireMode(stack).equals(FireModes.BURST))

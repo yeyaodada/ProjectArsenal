@@ -84,7 +84,7 @@ public class HudOverlay
         mc.font.drawShadow(matrixStack, ammoComponent, xPos, yPos - 8, TextFormatting.BLACK.getId());
 
         // fire mode
-        if (gunItem.hasFireMode())
+        if (gunItem.hasFireModeSelector())
         {
             IFormattableTextComponent component = new TranslationTextComponent("info.projectarsenal.fire_mode", gunItem.fireModeComponent(stack)).withStyle(TextFormatting.GRAY);
             mc.font.drawShadow(matrixStack, component, xPos, yPos + 8, TextFormatting.BLACK.getId());

@@ -3,8 +3,9 @@ package haloofblocks.projectarsenal.common.item;
 import com.mrcrayfish.guns.common.Gun;
 import com.mrcrayfish.guns.item.GunItem;
 import haloofblocks.projectarsenal.client.KeyBindings;
-import haloofblocks.projectarsenal.common.FireMode;
+import haloofblocks.projectarsenal.common.FireModeSelector;
 import haloofblocks.projectarsenal.common.FireModes;
+import haloofblocks.projectarsenal.common.IFireModeSelector;
 import haloofblocks.projectarsenal.config.Config;
 import net.minecraft.client.util.ITooltipFlag;
 import net.minecraft.item.ItemStack;
@@ -23,16 +24,20 @@ import java.util.Locale;
 /**
  * @author Autovw
  */
-public class ArsenalGunItem extends GunItem
+public class ArsenalGunItem extends GunItem implements IFireModeSelector
 {
     private final boolean canColor;
-    private final FireMode fireMode;
+    private FireModeSelector fireModeSelector;
 
-    public ArsenalGunItem(@Nullable FireMode fireMode, Properties properties, boolean canColor)
+    public ArsenalGunItem(@Nullable FireModeSelector.Builder fireModeSelector, Properties properties, boolean canColor)
     {
         super(properties);
-        this.fireMode = fireMode;
         this.canColor = canColor;
+
+        if (fireModeSelector != null)
+        {
+            this.fireModeSelector = fireModeSelector.get();
+        }
     }
 
     public ArsenalGunItem(Properties properties, boolean canColor)
@@ -90,7 +95,7 @@ public class ArsenalGunItem extends GunItem
             }
 
             // Switching fire mode
-            if (hasFireMode())
+            if (hasFireModeSelector())
             {
                 tooltip.add(index++, new TranslationTextComponent("info.projectarsenal.switch_fire_mode", KeyBindings.KEY_SELECT_FIRE_MODE.getTranslatedKeyMessage().getString().toUpperCase(Locale.ENGLISH)).withStyle(TextFormatting.YELLOW));
             }
@@ -101,7 +106,7 @@ public class ArsenalGunItem extends GunItem
     {
         String fireMode = null;
 
-        if (hasFireMode())
+        if (hasFireModeSelector())
         {
             switch (getSelectedFireMode(stack))
             {
@@ -139,17 +144,10 @@ public class ArsenalGunItem extends GunItem
         return super.isFoil(stack) && Config.CLIENT.enableGunEnchantmentGlint.get();
     }
 
-    /**
-     * @return If {@link FireMode} has been set for this gun
-     */
-    public boolean hasFireMode()
+    @Override
+    public FireModeSelector getFireModeSelector()
     {
-        return this.fireMode != null;
-    }
-
-    public FireMode getFireMode()
-    {
-        return this.fireMode;
+        return this.fireModeSelector;
     }
 
     /**
@@ -167,13 +165,13 @@ public class ArsenalGunItem extends GunItem
         {
             // write default fire mode into nbt if unset
             if (!tag.contains("FireMode", Constants.NBT.TAG_INT))
-                tag.putInt("FireMode", getFireMode().getFireModes().indexOf(getInitialFireMode()));
+                tag.putInt("FireMode", getFireModeSelector().getFireModes().indexOf(getInitialFireMode()));
 
             int fireModeTag = tag.getInt("FireMode");
-            int size = getFireMode().getFireModes().size();
+            int size = getFireModeSelector().getFireModes().size();
             if (fireModeTag < size)
             {
-                selectedFireMode = getFireMode().getFireModes().get(fireModeTag);
+                selectedFireMode = getFireModeSelector().getFireModes().get(fireModeTag);
             }
         }
 
@@ -195,13 +193,5 @@ public class ArsenalGunItem extends GunItem
         }
 
         return burst;
-    }
-
-    /**
-     * @return The first available fire mode set using {@link FireMode#set(FireModes...)}.
-     */
-    public FireModes getInitialFireMode()
-    {
-        return getFireMode().getFireModes().get(0);
     }
 }

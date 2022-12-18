@@ -40,7 +40,7 @@ public class ClientFireModeSelector
 
             ArsenalGunItem gunItem = (ArsenalGunItem) stack.getItem();
 
-            if (!gunItem.hasFireMode())
+            if (!gunItem.hasFireModeSelector())
                 return;
 
             // Change the fire mode through client to server message
