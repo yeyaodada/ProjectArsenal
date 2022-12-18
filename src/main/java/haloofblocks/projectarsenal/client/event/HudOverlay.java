@@ -80,7 +80,7 @@ public class HudOverlay
         mc.font.drawShadow(poseStack, ammoComponent, xPos, yPos - 8, ChatFormatting.BLACK.getId());
 
         // fire mode
-        if (gunItem.hasFireMode())
+        if (gunItem.hasFireModeSelector())
         {
             Component component = Component.translatable("info.projectarsenal.fire_mode", gunItem.fireModeComponent(stack)).withStyle(ChatFormatting.GRAY);
             mc.font.drawShadow(poseStack, component, xPos, yPos + 8, ChatFormatting.BLACK.getId());

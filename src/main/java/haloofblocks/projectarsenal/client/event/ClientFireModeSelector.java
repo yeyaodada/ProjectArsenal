@@ -35,7 +35,7 @@ public class ClientFireModeSelector
         // Check if the key to change the fire mode is pressed
         if (KeyBindings.KEY_SELECT_FIRE_MODE.consumeClick() && event.getAction() == GLFW.GLFW_PRESS)
         {
-            if (!(stack.getItem() instanceof ArsenalGunItem gunItem) || !gunItem.hasFireMode())
+            if (!(stack.getItem() instanceof ArsenalGunItem gunItem) || !gunItem.hasFireModeSelector())
                 return;
 
             // Change the fire mode through client to server message
