@@ -35,7 +35,7 @@ public class ArsenalGunItem extends GunItem implements IFireModeSelector
 
         if (fireModeSelector != null)
         {
-            this.fireModeSelector = fireModeSelector.get();
+            this.fireModeSelector = fireModeSelector.build();
         }
     }
 
