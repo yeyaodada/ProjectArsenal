@@ -74,9 +74,9 @@ public class FireModeSelector
         }
 
         /**
-         * @return Built instance of {@link FireModeSelector}
+         * @return A built instance of {@link FireModeSelector}
          */
-        public FireModeSelector get()
+        public FireModeSelector build()
         {
             return new FireModeSelector(this.fireModes, this.burstCount);
         }
