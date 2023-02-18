@@ -19,7 +19,24 @@ public enum SpecialModels
     AUTO_NINE("gun/auto9"),
     CZ_SEVEN_FIVE("gun/cz75"),
     DESERT_EAGLE("gun/desert_eagle"),
-    DESERT_EAGLE_CLASSIC("gun/desert_eagle_classic");
+    DESERT_EAGLE_CLASSIC("gun/desert_eagle_classic"),
+    DP_TWENTY_SEVEN("gun/dp27"),
+    GLOCK_TWENTY_ONE("gun/glock21"),
+    GOLDEN_HAWK("gun/golden_hawk"),
+    M_NINE("gun/m9"),
+    M_TWO_FOUR_NINE("gun/m249"),
+    M_NINETEEN_ELEVEN("gun/m1911"),
+    MARK_XIX("gun/markxix"),
+    MAXIM_NINE("gun/maxim9"),
+    MOSSOU("gun/mossou"),
+    MP_FIVE_A_FOUR("gun/mp5a4"),
+    P_NINETY("gun/p90"),
+    P_TWO_FIFTY("gun/p250"),
+    PRISMATIC("gun/prismatic"),
+    SCAR_H("gun/scarh"),
+    SHRIKE("gun/shrike"),
+    VAL("gun/val"),
+    VECTOR("gun/vector");
 
     private final ResourceLocation modelLoc;
     private BakedModel cachedModel;
