@@ -2,7 +2,7 @@
   "general": {
     "rate": 4,
     "gripType": "cgm:one_handed",
-    "maxAmmo": 20,
+    "maxAmmo": 18,
     "reloadAmount": 6,
     "recoilAngle": 7.0,
     "recoilKick": 2.0,
@@ -27,20 +27,20 @@
   },
   "display": {
     "flash": {
-      "yOffset": 9.5,
-      "zOffset": -2.4
+      "yOffset": 9.4,
+      "zOffset": -1.5
     }
   },
   "modules": {
     "zoom": {
       "fovModifier": 0.6,
-      "yOffset": 9.7,
-      "zOffset": 1
+      "yOffset": 9.75,
+      "zOffset": 0
     },
     "attachments": {
       "barrel": {
         "yOffset": 9.4,
-        "zOffset": -1,
+        "zOffset": -0.75,
         "scale": 0.25
       }
     }

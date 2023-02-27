@@ -15,7 +15,7 @@
     "item": "cgm:advanced_bullet",
     "visible": false,
     "gravity": true,
-    "damage": 9.0,
+    "damage": 11.0,
     "size": 1.2,
     "speed": 50.0,
     "life": 50
@@ -24,7 +24,7 @@
     "fire": "projectarsenal:item.m249.fire",
     "reload": "cgm:item.pistol.reload",
     "cock": "cgm:item.heavy_rifle.cock",
-    "silencedFire": "projectarsenal:item.shrike.suppressed"
+    "silencedFire": "projectarsenal:item.m249.suppressed"
   },
   "display": {
     "flash": {
@@ -35,8 +35,8 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.6,
-      "yOffset": 4.9,
-      "zOffset": 2.75
+      "yOffset": 4.92,
+      "zOffset": 2.0
     },
     "attachments": {
       "barrel": {

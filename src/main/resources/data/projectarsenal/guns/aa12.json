@@ -4,17 +4,17 @@
     "rate": 4,
     "gripType": "cgm:two_handed",
     "maxAmmo": 20,
-    "reloadAmount": 2,
+    "reloadAmount": 4,
     "recoilAngle": 4.0,
     "recoilKick": 4.0,
-    "recoilAdsReduction": 0.9,
+    "recoilAdsReduction": 0.7,
     "projectileAmount": 8,
     "alwaysSpread": true,
-    "spread": 24.0
+    "spread": 20.0
   },
   "projectile": {
     "item": "cgm:shell",
-    "damage": 24,
+    "damage": 20,
     "size": 1.0,
     "speed": 10.0,
     "life": 50
@@ -28,7 +28,7 @@
   "display": {
     "flash": {
       "yOffset": 0,
-      "zOffset": -20.7
+      "zOffset": -21.5
     }
   },
   "modules": {

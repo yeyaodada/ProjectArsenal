@@ -19,9 +19,9 @@
     "life": 50
   },
   "sounds": {
-    "fire": "projectarsenal:item.deserteagle.fire",
+    "fire": "projectarsenal:item.classic_desert_eagle.fire",
     "reload": "cgm:item.pistol.reload",
-    "cock": "cgm:item.pistol.cock"
+    "cock": "cgm:item.shotgun.cock"
     
   },
   "display": {
@@ -33,8 +33,8 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.6,
-      "yOffset": 10.05,
-      "zOffset": 1
+      "yOffset": 10.03,
+      "zOffset": 0
     }
   }
 }

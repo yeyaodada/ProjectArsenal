@@ -1,0 +1,57 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 2,
+    "gripType": "cgm:two_handed",
+    "maxAmmo": 35,
+    "reloadAmount": 7,
+    "recoilAngle": 2.0,
+    "recoilKick": 2.0,
+    "recoilAdsReduction": 0.7,
+    "alwaysSpread": true,
+    "spread": 5.0
+  },
+  "projectile": {
+    "item": "cgm:basic_bullet",
+    "damage": 10,
+    "size": 0.5,
+    "speed": 30.0,
+    "life": 50
+  },
+  "sounds": {
+    "fire": "projectarsenal:item.aug_smg.fire",
+    "reload": "cgm:item.pistol.reload",
+    "cock": "cgm:item.assault_rifle.cock",
+    "silencedFire": "projectarsenal:item.aug_smg.suppressed"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 9.22,
+      "zOffset": -9.75
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 10.885,
+      "zOffset": 5,
+      "fovModifier": 0.7
+    },
+    "attachments": {
+      "barrel": {
+        "yOffset": 9.22,
+        "zOffset": -7.5,
+        "scale": 0.4
+      },
+      "scope": {
+        "yOffset": 10.25,
+        "zOffset": -3.5,
+        "scale": 0.6
+      },
+      "underBarrel": {
+        "yOffset": 8,
+        "zOffset": -6,
+        "scale": 0.6
+      }
+    }
+  }
+}

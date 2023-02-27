@@ -1,0 +1,39 @@
+{
+  "general": {
+    "auto": false,
+    "rate": 9,
+    "gripType": "cgm:one_handed",
+    "maxAmmo": 6,
+    "reloadAmount": 1,
+    "recoilAngle": 8.0,
+    "recoilKick": 4.0,
+    "recoilAdsReduction": 0.6,
+    "alwaysSpread": false,
+    "spread": 1
+  },
+  "projectile": {
+    "item": "cgm:advanced_bullet",
+    "damage": 22,
+    "size": 0.75,
+    "speed": 60.0,
+    "life": 80
+  },
+  "sounds": {
+    "fire": "projectarsenal:item.unica.fire",
+    "reload": "cgm:item.pistol.reload",
+    "cock": "projectarsenal:item.switch_fire_mode"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 9,
+      "zOffset": -2.5
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 9.79,
+      "zOffset": 0,
+      "fovModifier": 0.7
+    }
+  }
+}

@@ -4,18 +4,18 @@
     "rate": 2,
     "gripType": "cgm:two_handed",
     "maxAmmo": 20,
-    "reloadAmount": 2,
-    "recoilAngle": 3.5,
+    "reloadAmount": 3,
+    "recoilAngle": 4.0,
     "recoilKick": 1.5,
     "recoilAdsReduction": 0.7,
     "alwaysSpread": true,
-    "spread": 2.0
+    "spread": 3.0
   },
   "projectile": {
     "item": "cgm:advanced_bullet",
     "visible": false,
     "gravity": true,
-    "damage": 10.0,
+    "damage": 13.0,
     "size": 0.5,
     "speed": 50.0,
     "life": 50
@@ -28,8 +28,8 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.8,
-      "yOffset": 4.6,
-	"zOffset": 1.5
+      "yOffset": 4.7,
+	  "zOffset": 1.5
     },
     "attachments": {
       "scope": {

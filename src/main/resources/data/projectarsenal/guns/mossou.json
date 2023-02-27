@@ -1,7 +1,7 @@
 {
   "general": {
     "auto": false,
-    "rate": 13,
+    "rate": 10,
     "gripType": "cgm:two_handed",
     "maxAmmo": 2,
     "reloadAmount": 1,
@@ -16,7 +16,7 @@
     "item": "cgm:shell",
     "visible": true,
     "gravity": true,
-    "damage": 56,
+    "damage": 48,
     "size": 1.5,
     "speed": 20.0,
     "life": 10

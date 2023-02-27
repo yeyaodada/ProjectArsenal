@@ -35,7 +35,7 @@
     "zoom": {
       "fovModifier": 0.6,
       "yOffset": 9.75,
-      "zOffset": 1.5
+      "zOffset": 1
     }
   }
 }

@@ -1,0 +1,39 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 2,
+    "gripType": "cgm:one_handed",
+    "maxAmmo": 24,
+    "reloadAmount": 5,
+    "recoilAngle": 2.0,
+    "recoilKick": 1.0,
+    "recoilAdsReduction": 0.6,
+    "alwaysSpread": true,
+    "spread": 7.0
+  },
+  "projectile": {
+    "item": "cgm:basic_bullet",
+    "damage": 8.5,
+    "size": 0.5,
+    "speed": 30.0,
+    "life": 50
+  },
+  "sounds": {
+    "fire": "projectarsenal:item.m1911.fire",
+    "reload": "cgm:item.pistol.reload",
+    "cock": "cgm:item.pistol.cock"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 9.5,
+      "zOffset": -2
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 9.8,
+      "zOffset": 1,
+      "fovModifier": 0.7
+    }
+  }
+}

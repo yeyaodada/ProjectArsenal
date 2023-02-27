@@ -21,9 +21,11 @@ public class ArsenalSounds
     public static final RegistryObject<SoundEvent> AA_TWELVE = register("item.aa12.fire");
     public static final RegistryObject<SoundEvent> AUTO_NINE = register("item.auto9.fire");
     public static final RegistryObject<SoundEvent> DESERT_EAGLE = register("item.deserteagle.fire");
+    public static final RegistryObject<SoundEvent> CLASSIC_DESERT_EAGLE = register("item.classic_desert_eagle.fire");
     public static final RegistryObject<SoundEvent> DP_TWENTY_SEVEN = register("item.dp27.fire");
     public static final RegistryObject<SoundEvent> GOLDEN_HAWK = register("item.goldenhawk.fire");
     public static final RegistryObject<SoundEvent> M_TWO_FOUR_NINE = register("item.m249.fire");
+    public static final RegistryObject<SoundEvent> M_TWO_FOUR_NINE_SUPPRESSED = register("item.m249.suppressed");
     public static final RegistryObject<SoundEvent> MOSSOU = register("item.mossou.fire");
     public static final RegistryObject<SoundEvent> MP_FIVE_A_FOUR = register("item.mp5a4.fire");
     public static final RegistryObject<SoundEvent> INTEGRAL_SUPPRESSION = register("item.integral_suppression.fire");
@@ -38,6 +40,15 @@ public class ArsenalSounds
     public static final RegistryObject<SoundEvent> VECTOR_SUPPRESSED = register("item.vector.suppressed");
     public static final RegistryObject<SoundEvent> SCARH = register("item.scarh.fire");
     public static final RegistryObject<SoundEvent> P_NINETY = register("item.p90.fire");
+    public static final RegistryObject<SoundEvent> FAMAS = register("item.famas.fire");
+    public static final RegistryObject<SoundEvent> FAMAS_SUPPRESSED = register("item.famas.suppressed");
+    public static final RegistryObject<SoundEvent> MISC = register("item.misc.fire");
+    public static final RegistryObject<SoundEvent> MISC_SUPPRESSED = register("item.misc.suppressed");
+    public static final RegistryObject<SoundEvent> AUG_SMG = register("item.aug_smg.fire");
+    public static final RegistryObject<SoundEvent> AUG_SMG_SUPPRESSED = register("item.aug_smg.suppressed");
+    public static final RegistryObject<SoundEvent> SMG_ONE = register("item.smg1.fire");
+    public static final RegistryObject<SoundEvent> SMG_ONE_SUPPRESSED = register("item.smg1.suppressed");
+    public static final RegistryObject<SoundEvent> UNICA = register("item.unica.fire");
 
     // ===== MISCELLANEOUS SOUNDS ===== //
     public static final RegistryObject<SoundEvent> SWITCH_FIRE_MODE = register("item.switch_fire_mode");

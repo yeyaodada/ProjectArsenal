@@ -1,0 +1,20 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 75,
+      "tag": "forge:ingots/iron"
+    },
+    {
+      "count": 2,
+      "tag": "forge:gems/diamond"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:fire_charge"
+    }
+  ],
+  "result": {
+    "item": "projectarsenal:mp1911"
+  }
+}

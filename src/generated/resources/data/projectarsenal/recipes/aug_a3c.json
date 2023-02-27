@@ -1,0 +1,24 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 50,
+      "tag": "forge:ingots/iron"
+    },
+    {
+      "count": 32,
+      "item": "minecraft:gray_concrete"
+    },
+    {
+      "count": 2,
+      "tag": "forge:gems/diamond"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:fire_charge"
+    }
+  ],
+  "result": {
+    "item": "projectarsenal:aug_a3c"
+  }
+}

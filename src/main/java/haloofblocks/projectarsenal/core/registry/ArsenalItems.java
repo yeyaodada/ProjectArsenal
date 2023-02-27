@@ -26,28 +26,33 @@ public class ArsenalItems
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ProjectArsenal.MOD_ID);
 
     // ===== GUNS ===== //
-    public static final RegistryObject<Item> AA_TWELVE = registerGun("aa12", true);
-    public static final RegistryObject<Item> AUTO_NINE = registerGun("auto9", false);
-    public static final RegistryObject<Item> DESERT_EAGLE = registerGun("desert_eagle", false);
-    public static final RegistryObject<Item> DP_TWENTY_SEVEN = registerGun("dp27", false);
-    public static final RegistryObject<Item> GOLDEN_HAWK = registerGun("golden_hawk", false);
-    public static final RegistryObject<Item> M_TWO_FOUR_NINE = registerGun("m249", false);
-    public static final RegistryObject<Item> MAXIM_NINE = registerGun("maxim9", false);
-    public static final RegistryObject<Item> MOSSOU = registerGun("mossou", false);
-    public static final RegistryObject<Item> MP_FIVE_A_FOUR = registerGun("mp5a4", false);
-    public static final RegistryObject<Item> VAL = registerGun("val", true);
-    public static final RegistryObject<Item> SHRIKE = registerGun("shrike", true);
-    public static final RegistryObject<Item> GLOCK_TWENTY_ONE = registerGun("glock21", true);
-    public static final RegistryObject<Item> P_TWO_FIFTY = registerGun("p250", true);
-    public static final RegistryObject<Item> MARK_XIX = registerGun("markxix", false);
-    public static final RegistryObject<Item> PRISMATIC = registerGun("prismatic", false);
-    public static final RegistryObject<Item> M_NINETEEN_ELEVEN = registerGun("m1911", false);
-    public static final RegistryObject<Item> CZ_SEVEN_FIVE = registerGun("cz75", true);
-    public static final RegistryObject<Item> VECTOR = registerGun("vector", true);
-    public static final RegistryObject<Item> M_NINE = registerGun("m9", false);
-    public static final RegistryObject<Item> SCARH = registerGun("scarh", true);
-    public static final RegistryObject<Item> DESERT_EAGLE_CLASSIC = registerGun("desert_eagle_classic", false);
-    public static final RegistryObject<Item> P_NINETY = registerGun("p90", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.BURST, FireModes.SAFETY).setBurstCount(5), true);
+    public static final RegistryObject<Item> GOLDEN_HAWK = registerGun("golden_hawk", FireModeSelector.set(FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> DESERT_EAGLE = registerGun("desert_eagle", FireModeSelector.set(FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> MARK_XIX = registerGun("markxix", FireModeSelector.set(FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> DESERT_EAGLE_CLASSIC = registerGun("desert_eagle_classic", FireModeSelector.set(FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> UNICA_MODEL_SIX = registerGun("unica_m6", FireModeSelector.set(FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> M_NINETEEN_ELEVEN = registerGun("m1911", FireModeSelector.set(FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> NINETEEN_ELEVEN_MACHINE_PISTOL = registerGun("mp1911", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.BURST, FireModes.SAFETY).setBurstCount(3), false);
+    public static final RegistryObject<Item> PRISMATIC = registerGun("prismatic", FireModeSelector.set(FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> CZ_SEVEN_FIVE = registerGun("cz75", FireModeSelector.set(FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), true);
+    public static final RegistryObject<Item> M_NINE = registerGun("m9", FireModeSelector.set(FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> P_TWO_FIFTY = registerGun("p250", FireModeSelector.set(FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> MAXIM_NINE = registerGun("maxim9", FireModeSelector.set(FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> GLOCK_TWENTY_ONE = registerGun("glock21", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), true);
+    public static final RegistryObject<Item> AUTO_NINE = registerGun("auto9", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.BURST, FireModes.SAFETY).setBurstCount(3), true);
+    public static final RegistryObject<Item> MP_FIVE_A_FOUR = registerGun("mp5a4", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> VECTOR = registerGun("vector", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), true);
+    public static final RegistryObject<Item> AUG_CARBINE = registerGun("aug_a3c", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> P_NINETY = registerGun("p90", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), true);
+    public static final RegistryObject<Item> VAL = registerGun("val", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), true);
+    public static final RegistryObject<Item> SCARH = registerGun("scarh", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), true);
+    public static final RegistryObject<Item> CLASSIC_AR = registerGun("ar15_classic", FireModeSelector.set(FireModes.SEMI_AUTOMATIC, FireModes.FULL_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> FAMAS = registerGun("famas", FireModeSelector.set(FireModes.BURST, FireModes.SEMI_AUTOMATIC, FireModes.SAFETY).setBurstCount(3),true);
+    public static final RegistryObject<Item> DP_TWENTY_SEVEN = registerGun("dp27", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> M_TWO_FOUR_NINE = registerGun("m249", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), false);
+    public static final RegistryObject<Item> SHRIKE = registerGun("shrike", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SEMI_AUTOMATIC, FireModes.SAFETY), true);
+    public static final RegistryObject<Item> MOSSOU = registerGun("mossou", FireModeSelector.set(FireModes.SEMI_AUTOMATIC), false);
+    public static final RegistryObject<Item> AA_TWELVE = registerGun("aa12", FireModeSelector.set(FireModes.FULL_AUTOMATIC, FireModes.SAFETY), true);
 
     // ===== ATTACHMENTS ===== //
     public static final RegistryObject<Item> SPECIAL_MUZZLE_BREAK = registerBarrel("special_muzzle_break", Barrel.create(6.0f, GunModifiers.REDUCED_RECOIL), false);

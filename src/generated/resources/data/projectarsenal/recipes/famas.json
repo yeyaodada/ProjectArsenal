@@ -1,0 +1,24 @@
+{
+  "type": "cgm:workbench",
+  "materials": [
+    {
+      "count": 70,
+      "tag": "forge:ingots/iron"
+    },
+    {
+      "count": 2,
+      "tag": "forge:ingots/netherite"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:repeater"
+    },
+    {
+      "count": 1,
+      "item": "minecraft:fire_charge"
+    }
+  ],
+  "result": {
+    "item": "projectarsenal:famas"
+  }
+}

@@ -27,6 +27,7 @@ public class ArsenalSoundDefinitionsGenerator extends SoundDefinitionsProvider
         regularFire(ArsenalSounds.AA_TWELVE.get(), "item/aa12");
         regularFire(ArsenalSounds.AUTO_NINE.get(), "item/auto9");
         regularFire(ArsenalSounds.DESERT_EAGLE.get(), "item/deserteagle");
+        regularFire(ArsenalSounds.CLASSIC_DESERT_EAGLE.get(), "item/classic_desert_eagle");
         regularFire(ArsenalSounds.DP_TWENTY_SEVEN.get(), "item/dp27");
         regularFire(ArsenalSounds.GOLDEN_HAWK.get(), "item/goldenhawk");
         regularFire(ArsenalSounds.M_TWO_FOUR_NINE.get(), "item/m249");
@@ -42,10 +43,20 @@ public class ArsenalSoundDefinitionsGenerator extends SoundDefinitionsProvider
         regularFire(ArsenalSounds.PRISMATIC.get(), "item/prismatic");
         regularFire(ArsenalSounds.SCARH.get(), "item/scarh");
         regularFire(ArsenalSounds.P_NINETY.get(), "item/p90");
+        regularFire(ArsenalSounds.FAMAS.get(), "item/famas");
+        regularFire(ArsenalSounds.MISC.get(), "item/misc");
+        regularFire(ArsenalSounds.AUG_SMG.get(), "item/aug_smg");
+        regularFire(ArsenalSounds.SMG_ONE.get(), "item/smg1");
+        regularFire(ArsenalSounds.UNICA.get(), "item/unica");
 
         // ===== SUPPRESSED FIRE ===== //
         suppressedFire(ArsenalSounds.SHRIKE_SUPPRESSED.get(), "item/shrike_suppressed");
         suppressedFire(ArsenalSounds.VECTOR_SUPPRESSED.get(), "item/vector_suppressed");
+        suppressedFire(ArsenalSounds.FAMAS_SUPPRESSED.get(), "item/famas_suppressed");
+        suppressedFire(ArsenalSounds.MISC_SUPPRESSED.get(), "item/misc_suppressed");
+        suppressedFire(ArsenalSounds.AUG_SMG_SUPPRESSED.get(), "item/aug_smg_suppressed");
+        suppressedFire(ArsenalSounds.SMG_ONE_SUPPRESSED.get(), "item/smg1_suppressed");
+        suppressedFire(ArsenalSounds.M_TWO_FOUR_NINE_SUPPRESSED.get(), "item/m249_suppressed");
 
         // ===== ENCHANTED FIRE ===== //
 

@@ -32,8 +32,8 @@
   "modules": {
     "zoom": {
       "fovModifier": 0.6,
-      "yOffset": 10.025,
-      "zOffset": 1.0
+      "yOffset": 9.972,
+      "zOffset": 0
     }
   }
 }

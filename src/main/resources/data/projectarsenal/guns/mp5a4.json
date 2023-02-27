@@ -20,15 +20,15 @@
     "life": 50
   },
   "sounds": {
-    "fire": "projectarsenal:item.mp5a4.fire",
+    "fire": "projectarsenal:item.smg1.fire",
     "reload": "cgm:item.pistol.reload",
-    "cock": "cgm:item.machine_pistol.cock",
-    "silencedFire": "cgm:item.machine_pistol.silenced_fire"
+    "cock": "cgm:item.assault_rifle.cock",
+    "silencedFire": "projectarsenal:item.smg1.suppressed"
   },
   "display": {
     "flash": {
       "yOffset": 3.6,
-      "zOffset": -3.4
+      "zOffset": -5
     }
   },
   "modules": {
@@ -40,8 +40,8 @@
     "attachments": {
       "barrel": {
         "yOffset": 3.6,
-        "zOffset": -2,
-        "scale": 0.35
+        "zOffset": -2.55,
+        "scale": 0.4
       },
       "underBarrel": {
         "yOffset": 2.5,

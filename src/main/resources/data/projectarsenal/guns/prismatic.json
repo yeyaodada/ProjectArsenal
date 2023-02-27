@@ -26,16 +26,16 @@
   },
   "display": {
     "flash": {
-      "yOffset": 9.5,
-      "zOffset": -2.5,
+      "yOffset": 9.65,
+      "zOffset": -2.25,
       "scale": 1.25
     }
   },
   "modules": {
     "zoom": {
       "fovModifier": 0.6,
-      "yOffset": 10.1,
-      "zOffset": 1
+      "yOffset": 10.12,
+      "zOffset": 0.7
     }
   }
 }

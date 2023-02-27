@@ -23,13 +23,12 @@
   "sounds": {
     "fire": "projectarsenal:item.dp27.fire",
     "reload": "cgm:item.pistol.reload",
-    "cock": "cgm:item.heavy_rifle.cock",
-    "silencedFire": "projectarsenal:item.shrike.suppressed"
+    "cock": "cgm:item.heavy_rifle.cock"
   },
   "display": {
     "flash": {
       "yOffset": 3.825,
-      "zOffset": -12.5
+      "zOffset": -13
     }
   },
   "modules": {
@@ -37,13 +36,6 @@
       "fovModifier": 0.7,
       "yOffset": 5.075,
       "zOffset": 0.5
-    },
-    "attachments": {
-      "barrel": {
-        "yOffset": 3.825,
-        "zOffset": -11,
-        "scale": 0.35
-      }
     }
   }
 }

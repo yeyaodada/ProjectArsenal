@@ -35,13 +35,6 @@
       "fovModifier": 0.6,
       "yOffset": 9.65,
       "zOffset": 1
-    },
-    "attachments": {
-      "barrel": {
-        "yOffset": 9.325,
-        "zOffset": -1,
-        "scale": 0.25
-      }
     }
   }
 }

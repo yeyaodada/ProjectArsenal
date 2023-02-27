@@ -5,9 +5,27 @@
     ],
     "subtitle": "subtitle.projectarsenal.regular_fire"
   },
+  "item.aug_smg.fire": {
+    "sounds": [
+      "projectarsenal:item/aug_smg"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.aug_smg.suppressed": {
+    "sounds": [
+      "projectarsenal:item/aug_smg_suppressed"
+    ],
+    "subtitle": "subtitle.projectarsenal.suppressed_fire"
+  },
   "item.auto9.fire": {
     "sounds": [
       "projectarsenal:item/auto9"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.classic_desert_eagle.fire": {
+    "sounds": [
+      "projectarsenal:item/classic_desert_eagle"
     ],
     "subtitle": "subtitle.projectarsenal.regular_fire"
   },
@@ -28,6 +46,18 @@
       "projectarsenal:item/dp27"
     ],
     "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.famas.fire": {
+    "sounds": [
+      "projectarsenal:item/famas"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.famas.suppressed": {
+    "sounds": [
+      "projectarsenal:item/famas_suppressed"
+    ],
+    "subtitle": "subtitle.projectarsenal.suppressed_fire"
   },
   "item.goldenhawk.fire": {
     "sounds": [
@@ -59,11 +89,29 @@
     ],
     "subtitle": "subtitle.projectarsenal.regular_fire"
   },
+  "item.m249.suppressed": {
+    "sounds": [
+      "projectarsenal:item/m249_suppressed"
+    ],
+    "subtitle": "subtitle.projectarsenal.suppressed_fire"
+  },
   "item.markxix.fire": {
     "sounds": [
       "projectarsenal:item/markxix"
     ],
     "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.misc.fire": {
+    "sounds": [
+      "projectarsenal:item/misc"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.misc.suppressed": {
+    "sounds": [
+      "projectarsenal:item/misc_suppressed"
+    ],
+    "subtitle": "subtitle.projectarsenal.suppressed_fire"
   },
   "item.mossou.fire": {
     "sounds": [
@@ -113,11 +161,29 @@
     ],
     "subtitle": "subtitle.projectarsenal.suppressed_fire"
   },
+  "item.smg1.fire": {
+    "sounds": [
+      "projectarsenal:item/smg1"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
+  },
+  "item.smg1.suppressed": {
+    "sounds": [
+      "projectarsenal:item/smg1_suppressed"
+    ],
+    "subtitle": "subtitle.projectarsenal.suppressed_fire"
+  },
   "item.switch_fire_mode": {
     "sounds": [
       "projectarsenal:item/switch_fire_mode"
     ],
     "subtitle": "subtitle.projectarsenal.switch_fire_mode"
+  },
+  "item.unica.fire": {
+    "sounds": [
+      "projectarsenal:item/unica"
+    ],
+    "subtitle": "subtitle.projectarsenal.regular_fire"
   },
   "item.vector.fire": {
     "sounds": [
