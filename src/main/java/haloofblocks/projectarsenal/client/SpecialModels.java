@@ -16,11 +16,14 @@ import net.minecraftforge.fml.common.Mod;
 public enum SpecialModels
 {
     AA_TWELVE("gun/aa12"),
+    AR_FIFTEEN_CLASSIC("gun/ar15_classic"),
+    AUG_A_THREE_C("gun/aug_a3c"),
     AUTO_NINE("gun/auto9"),
     CZ_SEVEN_FIVE("gun/cz75"),
     DESERT_EAGLE("gun/desert_eagle"),
     DESERT_EAGLE_CLASSIC("gun/desert_eagle_classic"),
     DP_TWENTY_SEVEN("gun/dp27"),
+    FAMAS("gun/famas"),
     GLOCK_TWENTY_ONE("gun/glock21"),
     GOLDEN_HAWK("gun/golden_hawk"),
     M_NINE("gun/m9"),
@@ -30,11 +33,13 @@ public enum SpecialModels
     MAXIM_NINE("gun/maxim9"),
     MOSSOU("gun/mossou"),
     MP_FIVE_A_FOUR("gun/mp5a4"),
+    MP_NINETEEN_ELEVEN("gun/mp1911"),
     P_NINETY("gun/p90"),
     P_TWO_FIFTY("gun/p250"),
     PRISMATIC("gun/prismatic"),
     SCAR_H("gun/scarh"),
     SHRIKE("gun/shrike"),
+    UNICA_M_SIX("gun/unica_m6"),
     VAL("gun/val"),
     VECTOR("gun/vector");
 
