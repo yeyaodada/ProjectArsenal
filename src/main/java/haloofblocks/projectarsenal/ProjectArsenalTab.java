@@ -1,42 +1,55 @@
 package haloofblocks.projectarsenal;
 
-import com.mrcrayfish.guns.client.CustomGunManager;
-import com.mrcrayfish.guns.item.GunItem;
+import haloofblocks.projectarsenal.common.item.ArsenalGunItem;
 import haloofblocks.projectarsenal.core.registry.ArsenalItems;
-import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.core.NonNullList;
+import net.minecraftforge.event.CreativeModeTabEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.registries.RegistryObject;
 
 /**
  * Creative tab for Project Arsenal
  *
  * @author Autovw
  */
-public class ProjectArsenalTab extends CreativeModeTab
+@Mod.EventBusSubscriber(modid = ProjectArsenal.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
+public class ProjectArsenalTab
 {
-    /**
-     * Instance of the {@link ProjectArsenalTab}
-     */
-    public static final CreativeModeTab TAB = new ProjectArsenalTab(ProjectArsenal.MOD_ID);
-
-    private ProjectArsenalTab(String label)
+    private ProjectArsenalTab()
     {
-        super(label);
     }
 
-    @Override
-    public ItemStack makeIcon()
+    @SubscribeEvent
+    public static void onRegisterCreativeModeTab(final CreativeModeTabEvent.Register event)
     {
-        GunItem gun = (GunItem) ArsenalItems.GOLDEN_HAWK.get();
-        ItemStack stack = gun.getDefaultInstance();
-        stack.getOrCreateTag().putInt("AmmoCount", gun.getGun().getGeneral().getMaxAmmo());
-        return stack;
-    }
-
-    @Override
-    public void fillItemList(NonNullList<ItemStack> items)
-    {
-        super.fillItemList(items);
-        CustomGunManager.fill(items);
+        event.registerCreativeModeTab(new ResourceLocation(ProjectArsenal.MOD_ID), (builder) ->
+        {
+            builder.title(Component.translatable("itemGroup." + ProjectArsenal.MOD_ID));
+            builder.icon(() ->
+            {
+                ItemStack stack = ArsenalItems.GOLDEN_HAWK.get().getDefaultInstance();
+                stack.getOrCreateTag().putBoolean("IgnoreAmmo", true);
+                return stack;
+            });
+            builder.displayItems((flags, entries, perms) ->
+            {
+                ArsenalItems.ITEMS.getEntries().stream().map(RegistryObject::get).forEach((entry) ->
+                {
+                    if (entry instanceof ArsenalGunItem gunItem)
+                    {
+                        ItemStack stack = gunItem.getDefaultInstance();
+                        stack.getOrCreateTag().putInt("AmmoCount", gunItem.getGun().getGeneral().getMaxAmmo());
+                        entries.accept(stack);
+                    }
+                    else
+                    {
+                        entries.accept(entry);
+                    }
+                });
+            });
+        });
     }
 }

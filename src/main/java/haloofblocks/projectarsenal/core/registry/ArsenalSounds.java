@@ -60,6 +60,6 @@ public class ArsenalSounds
      */
     private static RegistryObject<SoundEvent> register(String name)
     {
-        return SOUNDS.register(name, () -> new SoundEvent(new ResourceLocation(ProjectArsenal.MOD_ID, name)));
+        return SOUNDS.register(name, () -> SoundEvent.createVariableRangeEvent(new ResourceLocation(ProjectArsenal.MOD_ID, name)));
     }
 }

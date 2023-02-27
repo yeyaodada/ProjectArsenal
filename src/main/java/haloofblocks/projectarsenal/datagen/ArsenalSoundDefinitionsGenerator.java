@@ -2,7 +2,7 @@ package haloofblocks.projectarsenal.datagen;
 
 import haloofblocks.projectarsenal.ProjectArsenal;
 import haloofblocks.projectarsenal.core.registry.ArsenalSounds;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -15,9 +15,9 @@ import net.minecraftforge.common.data.SoundDefinitionsProvider;
  */
 public class ArsenalSoundDefinitionsGenerator extends SoundDefinitionsProvider
 {
-    public ArsenalSoundDefinitionsGenerator(DataGenerator generator, ExistingFileHelper helper)
+    public ArsenalSoundDefinitionsGenerator(PackOutput packOutput, ExistingFileHelper helper)
     {
-        super(generator, ProjectArsenal.MOD_ID, helper);
+        super(packOutput, ProjectArsenal.MOD_ID, helper);
     }
 
     @Override

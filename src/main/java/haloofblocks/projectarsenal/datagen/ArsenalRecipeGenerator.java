@@ -3,7 +3,7 @@ package haloofblocks.projectarsenal.datagen;
 import com.mrcrayfish.guns.crafting.WorkbenchIngredient;
 import com.mrcrayfish.guns.crafting.WorkbenchRecipeBuilder;
 import haloofblocks.projectarsenal.core.registry.ArsenalItems;
-import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
@@ -16,13 +16,13 @@ import java.util.function.Consumer;
  */
 public class ArsenalRecipeGenerator extends RecipeProvider
 {
-    public ArsenalRecipeGenerator(DataGenerator generatorIn)
+    public ArsenalRecipeGenerator(PackOutput packOutput)
     {
-        super(generatorIn);
+        super(packOutput);
     }
 
     @Override
-    protected void buildCraftingRecipes(Consumer<FinishedRecipe> consumer)
+    protected void buildRecipes(Consumer<FinishedRecipe> consumer)
     {
         // ===== GUNS ===== //
         WorkbenchRecipeBuilder.crafting(ArsenalItems.AA_TWELVE.get())

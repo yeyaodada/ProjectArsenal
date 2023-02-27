@@ -7,6 +7,7 @@ import haloofblocks.projectarsenal.core.registry.ArsenalSounds;
 import haloofblocks.projectarsenal.datagen.*;
 import haloofblocks.projectarsenal.network.PacketHandler;
 import net.minecraft.data.DataGenerator;
+import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -56,10 +57,11 @@ public class ProjectArsenal
     private void gatherData(final GatherDataEvent event)
     {
         DataGenerator generator = event.getGenerator();
+        PackOutput packOutput = generator.getPackOutput();
         ExistingFileHelper helper = event.getExistingFileHelper();
 
-        generator.addProvider(event.includeClient(), new ArsenalSoundDefinitionsGenerator(generator, helper));
+        generator.addProvider(event.includeClient(), new ArsenalSoundDefinitionsGenerator(packOutput, helper));
 
-        generator.addProvider(event.includeServer(), new ArsenalRecipeGenerator(generator));
+        generator.addProvider(event.includeServer(), new ArsenalRecipeGenerator(packOutput));
     }
 }

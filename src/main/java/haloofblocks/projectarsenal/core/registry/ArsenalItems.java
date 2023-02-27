@@ -6,7 +6,6 @@ import com.mrcrayfish.guns.item.UnderBarrelItem;
 import com.mrcrayfish.guns.item.attachment.impl.Barrel;
 import com.mrcrayfish.guns.item.attachment.impl.UnderBarrel;
 import haloofblocks.projectarsenal.ProjectArsenal;
-import haloofblocks.projectarsenal.ProjectArsenalTab;
 import haloofblocks.projectarsenal.common.FireModeSelector;
 import haloofblocks.projectarsenal.common.FireModes;
 import haloofblocks.projectarsenal.common.item.ArsenalGunItem;
@@ -72,12 +71,12 @@ public class ArsenalItems
      */
     private static RegistryObject<Item> registerGun(String name, boolean canColor)
     {
-        return ITEMS.register(name, () -> new ArsenalGunItem(new Item.Properties().stacksTo(1).tab(ProjectArsenalTab.TAB), canColor));
+        return ITEMS.register(name, () -> new ArsenalGunItem(new Item.Properties().stacksTo(1), canColor));
     }
 
     private static RegistryObject<Item> registerGun(String name, FireModeSelector.Builder fireModeSelector, boolean canColor)
     {
-        return ITEMS.register(name, () -> new ArsenalGunItem(fireModeSelector, new Item.Properties().stacksTo(1).tab(ProjectArsenalTab.TAB), canColor));
+        return ITEMS.register(name, () -> new ArsenalGunItem(fireModeSelector, new Item.Properties().stacksTo(1), canColor));
     }
 
     /**
@@ -90,7 +89,7 @@ public class ArsenalItems
      */
     private static RegistryObject<Item> registerBarrel(String name, Barrel barrel, boolean canColor)
     {
-        return ITEMS.register(name, () -> new BarrelItem(barrel, new Item.Properties().stacksTo(1).tab(ProjectArsenalTab.TAB), canColor));
+        return ITEMS.register(name, () -> new BarrelItem(barrel, new Item.Properties().stacksTo(1), canColor));
     }
 
     /**
@@ -103,6 +102,6 @@ public class ArsenalItems
      */
     private static RegistryObject<Item> registerUnderBarrel(String name, UnderBarrel underBarrel, boolean canColor)
     {
-        return ITEMS.register(name, () -> new UnderBarrelItem(underBarrel, new Item.Properties().stacksTo(1).tab(ProjectArsenalTab.TAB), canColor));
+        return ITEMS.register(name, () -> new UnderBarrelItem(underBarrel, new Item.Properties().stacksTo(1), canColor));
     }
 }

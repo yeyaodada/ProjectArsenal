@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[43,)"
+loaderVersion="[44,)"
 license="GNU General Public License v3.0"
 issueTrackerURL="https://github.com/HaloOfBlocks/ProjectArsenal/issues"
 
@@ -19,13 +19,13 @@ A community project and add-on to MrCrayfish's Gun Mod
 [[dependencies.projectarsenal]]
     modId="forge"
     mandatory=true
-    versionRange="[43,)"
+    versionRange="[44,)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.projectarsenal]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.2]"
+    versionRange="[1.19.3,1.20)"
     ordering="NONE"
     side="BOTH"
 [[dependencies.projectarsenal]]
